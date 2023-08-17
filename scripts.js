@@ -73,9 +73,11 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 	img.setAttribute("title",country);
 	team.append(img);
 	link = document.createElement("A");
-	_teamUrl = wiki.toLowerCase().replaceAll(".","_").replaceAll("__","_");
+	_teamUrl = wiki.toLowerCase()
+		.replaceAll("%c3%b8","o").replaceAll("ø","o")
+		.replaceAll(" ","_").replaceAll(".","_").replaceAll("__","_");
     if ( /[^a-z0-9_]/.test(_teamUrl) ) {
-        alert("Invalid URL " + _teamUrl);
+        _teamUrl = prompt("Invalid URL " + _teamUrl);
     }
 	link.setAttribute("href","../../c/"+flag.toLowerCase()+"/"+_teamUrl+".html");
 	link.setAttribute("data-wiki",wiki);
@@ -150,9 +152,13 @@ f = "f";
 g = "g";
 h = "h";
 n = "new";
-function store(division) {
+function store(division,split=true) {
 	divTbl = document.querySelectorAll("#div_"+division+" table tbody")[0];
-	console.log(divTbl.innerHTML.trim().split("<tr").join("\n<tr"));
+	if ( split ) {
+		console.log(divTbl.innerHTML.trim().split("<tr").join("\n<tr"));
+	} else {
+		console.log(divTbl.innerHTML.trim());//.split("<tr").join("\n<tr"));
+	}
 }
 
 function sort(division) {
@@ -194,5 +200,27 @@ function sort(division) {
 	var _rows = Array.from(_tbody.rows);
 	_rows.forEach(function (k,v) {
 		k.querySelectorAll("td")[0].innerHTML = (v+1);
+	});
+}
+
+function nextSeason() {
+	divisions = ["a","b","c","d","e","f","g","h"];
+	divisions.forEach(function(i) {
+		divTbl = document.querySelectorAll("#div_"+i+" table tbody")
+		if ( divTbl.length !== 0 ) {
+			str = "";
+			divTbl = divTbl[0];
+			rows = divTbl.querySelectorAll("tr");
+			rows.forEach(function(r){
+				r.classList.remove( ...r.classList );
+				tds = r.querySelectorAll("td");
+				for ( j=2 ; j!==14 ; j++ ) {
+					tds[j].innerHTML = "";
+				}
+				str += '<tr class="">' + r.innerHTML.trim() + '</tr>\n';
+			});
+			console.warn("DIVISION " + i);
+			console.log(str);
+		}
 	});
 }

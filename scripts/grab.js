@@ -6,6 +6,7 @@ rows = usl.querySelectorAll("tr");
 flag = prompt("Please enter country code:").toUpperCase();
 country = "";
 switch (flag) {
+    case "DNK": country = "Denmark"; break;
     case "ENG": country = "England"; break;
     default: country = prompt("Unkonwn flag, please provide country name");
 }
@@ -20,8 +21,13 @@ for ( r=1 ; r!==rows.length ; r++ ) {
     thisRow = rows[r];
     td = thisRow.querySelectorAll("td,th");
     _team = td[1].querySelector("a");
-    _teamName = _team.innerText;
-    _teamWiki = _team.getAttribute("href").split("/").pop();
+    if ( _team ) {
+        _teamName = _team.innerText;
+        _teamWiki = _team.getAttribute("href").split("/").pop();
+    } else {
+        _teamName = td[1].innerText;
+        _teamWiki = _teamName;
+    }
     _played = td[2].innerText;
     _won = td[3].innerText;
     _drawn = td[4].innerText;
