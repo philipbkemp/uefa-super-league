@@ -1,0 +1,26 @@
+
+* {
+	font-family: Verdana;
+	font-size: 14px;
+}
+h1 {
+	font-size: 1.5rem;
+}
+.nav {
+	background-color: #2B5873;
+	color: white;
+	padding: 10px;
+}
+a {
+	color: #2b5873;
+}
+.nav a {
+	color: white;
+}
+.btn.btn-outline-primary {
+	border-color: #2b5873;
+	color: #2b5873;
+}
+.btn.btn-outline-primary:hover {
+	background-color: #2b587311;
+}
