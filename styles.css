@@ -6,13 +6,16 @@
 h1 {
 	font-size: 1.5rem;
 }
-.nav {
+div.nav {
 	background-color: #2B5873;
 	color: white;
 	padding: 10px;
 }
 a {
 	color: #2b5873;
+}
+a.pe-none.disabled {
+	opacity: 0.4;
 }
 .nav a {
 	color: white;
@@ -22,5 +25,126 @@ a {
 	color: #2b5873;
 }
 .btn.btn-outline-primary:hover {
-	background-color: #2b587311;
+	background-color: #f1f4f6;
+}
+.nav-tabs .nav-link {
+    color: #2b5873;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: #f1f4f6;
+    color: #2b5873;
+    border-color: #2b5873 #2b5873 transparent;
+}
+.nav-tabs {
+    border-color: #2b5873;
+}
+.nav-tabs .nav-link.disabled {
+    opacity: 0.4;
+}
+table.division {
+    border-collapse: collapse;
+    border: 1px solid #2b5873;
+    width: calc( 350px + 820px );
+    margin-bottom: 10px;
+}
+table.division thead {
+    background-color: #f1f4f6;
+    position: sticky;
+    top: -1px;
+    z-index: 99;
+}
+table.division thead tr th {
+    font-size: 1.2rem;
+    border: 1px solid #2b5873;
+    padding: 3px;
+    text-align: center;
+}
+table.division tbody tr td {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #2b5873;
+}
+table.division tbody tr td,
+table.division thead tr th {
+    width: 60px;
+}
+table.division thead tr th:nth-of-type(2),
+table.division tbody tr td:nth-of-type(2) {
+	width: 350px;
+}
+table.division thead tr th:nth-of-type(1),
+table.division tbody tr td:nth-of-type(1) {
+    width: 100px;
+}
+table.division tbody tr td:nth-of-type(2) {
+	text-align: left;
+}
+table.division tbody tr.removed td:nth-of-type(1),
+table.division tbody tr.relegated td:nth-of-type(1),
+table.division tbody tr.promoted td:nth-of-type(1) {
+    position: relative;
+}
+table.division tbody tr.newclub td:nth-of-type(2):after {
+    content: "\f005";
+    float: right;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    font-size: 0.8rem;
+    position: relative;
+    top: 3px;
+}
+table.division tbody tr.returning td:nth-of-type(2):after {
+    content: "\f005";
+    float: right;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 100;
+    font-size: 0.8rem;
+    position: relative;
+    top: 3px;
+}
+table.division tbody tr.promoted:not(.champion) {
+    background-color: #d1e8d1;
+}
+table.division tbody tr.promoted td:nth-of-type(1):after {
+    content: "\f30c";
+    float: right;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    font-size: 0.8rem;
+    position: absolute;
+    right: 11px;
+    top: 9px;
+}
+table.division tbody tr.removed:not(.champion),
+table.division tbody tr.relegated:not(.champion) {
+    background-color: #ffbfbf;
+}
+table.division tbody tr.relegated td:nth-of-type(1):after {
+    content: "\f309";
+    float: right;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    font-size: 0.8rem;
+    position: absolute;
+    right: 11px;
+    top: 9px;
+}
+table.division tbody tr.removed td:nth-of-type(1):after {
+    content: "\f05e";
+    float: right;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    font-size: 0.8rem;
+    position: absolute;
+    right: 9px;
+    top: 9px;
+}
+table.division tbody tr.champion, table.division-club tbody tr.champion {
+    background-color: #fff7cc;
+}
+table.division tbody tr td:nth-of-type(2) img,
+.notes img {
+    height: 16px;
+    margin-right: 10px;
+    margin-left: 5px;
 }
