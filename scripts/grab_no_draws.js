@@ -10,10 +10,6 @@ flag = prompt("Please enter country code:").toUpperCase();
 country = "";
 switch (flag) {
     case "DNK": country = "Denmark"; break;
-    case "EIR": country = "Ireland"; break;
-    case "ENG": country = "England"; break;
-    case "NLD": country = "Netherlands"; break;
-    case "SCO": country = "Scotland"; break;
     default: country = prompt("Unkonwn flag, please provide country name");
 }
 if ( typeof deduct === "undefined" ) {
@@ -36,10 +32,10 @@ for ( r=1 ; r!==rows.length ; r++ ) {
     }
     _played = td[2].innerText;
     _won = td[3].innerText;
-    _drawn = td[4].innerText;
-    _lost = td[5].innerText;
-    _for = td[6].innerText;
-    _against = td[7].innerText;
+    _drawn = 0;
+    _lost = td[4].innerText;
+    _for = td[5].innerText;
+    _against = td[6].innerText;
     _deduct = 0;
     if ( deduct.indexOf(r) !== -1 ) {
         _deduct = prompt("How many points are deducted from " + _teamName);

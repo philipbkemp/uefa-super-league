@@ -32,6 +32,8 @@ function updateTeam(link,name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 		});
 	}
 
+	clubName = tds[1].querySelector("a");
+	clubName.innerHTML = name;
 	tds[2].innerHTML = _games;
 	tds[3].innerHTML = _w;
 	tds[4].innerHTML = _d;
@@ -75,6 +77,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 	link = document.createElement("A");
 	_teamUrl = wiki.toLowerCase()
 		.replaceAll("%c3%b8","o").replaceAll("ø","o")
+		.replaceAll("(","").replaceAll(")","")
 		.replaceAll(" ","_").replaceAll(".","_").replaceAll("__","_");
     if ( /[^a-z0-9_]/.test(_teamUrl) ) {
         _teamUrl = prompt("Invalid URL " + _teamUrl);
@@ -182,8 +185,15 @@ function sort(division) {
 			if ( valueA_FPG !== valueB_FPG ) {
 				return valueB_FPG - valueA_FPG;
 			} else {
-				alert("NEED ANOTHER SORTING LEVEL");
-				console.log(a.cells[1].textContent," // ",b.cells[1].textContent);
+
+				var valueA_APG = parseFloat(a.cells[12].textContent);
+				var valueB_APG = parseFloat(b.cells[12].textContent);
+				if ( valueA_APG !== valueB_APG ) {
+					return valueA_APG - valueB_APG;
+				} else {
+					alert("NEED ANOTHER SORTING LEVEL");
+					console.log(a.cells[1].textContent," // ",b.cells[1].textContent);
+				}
 			}
 		}
 
@@ -205,22 +215,32 @@ function sort(division) {
 
 function nextSeason() {
 	divisions = ["a","b","c","d","e","f","g","h"];
-	divisions.forEach(function(i) {
+	str = [];
+	divisions.forEach(function(i,idx) {
 		divTbl = document.querySelectorAll("#div_"+i+" table tbody")
 		if ( divTbl.length !== 0 ) {
-			str = "";
+			str[idx] = "";
 			divTbl = divTbl[0];
 			rows = divTbl.querySelectorAll("tr");
 			rows.forEach(function(r){
-				r.classList.remove( ...r.classList );
-				tds = r.querySelectorAll("td");
-				for ( j=2 ; j!==14 ; j++ ) {
-					tds[j].innerHTML = "";
+				if ( r.classList.contains("removed") ) {
+					r.classList.add("d-none");
+				} else {
+					r.classList.remove( ...r.classList );
+					tds = r.querySelectorAll("td");
+					for ( j=2 ; j!==14 ; j++ ) {
+						tds[j].innerHTML = "";
+					}
+					str[idx] += '<tr class="">' + r.innerHTML.trim() + '</tr>\n';
 				}
-				str += '<tr class="">' + r.innerHTML.trim() + '</tr>\n';
 			});
-			console.warn("DIVISION " + i);
-			console.log(str);
+		}
+	});
+	divisions.forEach(function(i,idx) {
+		if ( str[idx] && str[idx] !== "" ) {
+			alert( "DIVISON " + i.toUpperCase() + ": " + document.querySelectorAll("#div_"+i+" table tbody tr:not(.d-none)").length );
+			console.log("DIVISON " + i.toUpperCase());
+			console.log(str[idx]);
 		}
 	});
 }

@@ -1,7 +1,4 @@
 usl = document.querySelector(".usl");
-if ( ! usl ) {
-    alert("No .usl class");
-}
 while ( usl.tagName !== "TABLE" ) {
     usl = usl.parentNode;
 }
@@ -9,11 +6,7 @@ rows = usl.querySelectorAll("tr");
 flag = prompt("Please enter country code:").toUpperCase();
 country = "";
 switch (flag) {
-    case "DNK": country = "Denmark"; break;
-    case "EIR": country = "Ireland"; break;
     case "ENG": country = "England"; break;
-    case "NLD": country = "Netherlands"; break;
-    case "SCO": country = "Scotland"; break;
     default: country = prompt("Unkonwn flag, please provide country name");
 }
 if ( typeof deduct === "undefined" ) {
@@ -40,6 +33,11 @@ for ( r=1 ; r!==rows.length ; r++ ) {
     _lost = td[5].innerText;
     _for = td[6].innerText;
     _against = td[7].innerText;
+    _won = parseInt(_won) + parseInt(td[8].innerText);
+    _drawn = parseInt(_drawn) + parseInt(td[9].innerText);
+    _lost = parseInt(_lost) + parseInt(td[10].innerText);
+    _for = parseInt(_for) + parseInt(td[11].innerText);
+    _against = parseInt(_against) + parseInt(td[12].innerText);
     _deduct = 0;
     if ( deduct.indexOf(r) !== -1 ) {
         _deduct = prompt("How many points are deducted from " + _teamName);
