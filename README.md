@@ -1,2 +1,2 @@
-# uefa-super-league
+# UEFA Super League
 My take on a UEFA Super League
