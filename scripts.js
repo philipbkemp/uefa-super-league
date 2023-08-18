@@ -250,3 +250,41 @@ function nextSeason() {
 		}
 	});
 }
+
+function listTeams() {
+	divisions = ["a","b","c","d","e","f","g","h"];
+	str = "";
+	divisions.forEach(function(i,idx) {
+		divTbl = document.querySelectorAll("#div_"+i+" table tbody")
+		if ( divTbl.length !== 0 ) {
+			divTbl = divTbl[0];
+			rows = divTbl.querySelectorAll("tr");
+			rows.forEach(function(r){
+				link = r.querySelectorAll("a")[0];
+				s = link.getAttribute("data-wiki");
+				img = r.querySelectorAll("img")[0].getAttribute("src").split("/").pop().split(".")[0].toLowerCase();
+				str += '"' + img + "/" + s + '",\n';
+			});
+		}
+	})
+	console.log(str);
+}
+
+function listNewTeams() {
+	divisions = ["a","b","c","d","e","f","g","h"];
+	str = "";
+	divisions.forEach(function(i,idx) {
+		divTbl = document.querySelectorAll("#div_"+i+" table tbody")
+		if ( divTbl.length !== 0 ) {
+			divTbl = divTbl[0];
+			rows = divTbl.querySelectorAll("tr.newclub");
+			rows.forEach(function(r){
+				link = r.querySelectorAll("a")[0];
+				s = link.getAttribute("data-wiki");
+				img = r.querySelectorAll("img")[0].getAttribute("src").split("/").pop().split(".")[0].toLowerCase();
+				str += '"' + img + "/" + s + '",\n';
+			});
+		}
+	})
+	console.log(str);
+}
