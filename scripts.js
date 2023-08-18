@@ -18,6 +18,11 @@ function updateTeam(link,name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 
 	tds = row.querySelectorAll("TD");
 
+	if ( tds[2].innerHTML.trim() !== "" ) {
+		alert("Duplicate team " + wiki + " / " + name);
+		return;
+	}
+
 	_games = _w + _d + _l;
 	_pts = (_w*3) + _d - deduct;
 	_winPercent = ((_w / _games)*100).toFixed(1) + "%";
@@ -78,6 +83,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 	_teamUrl = wiki.toLowerCase()
 		.replaceAll("%c3%b8","o").replaceAll("ø","o")
 		.replaceAll("(","").replaceAll(")","")
+		.replaceAll("/","_")
 		.replaceAll(" ","_").replaceAll(".","_").replaceAll("__","_");
     if ( /[^a-z0-9_]/.test(_teamUrl) ) {
         _teamUrl = prompt("Invalid URL " + _teamUrl);

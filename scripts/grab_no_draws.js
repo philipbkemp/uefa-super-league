@@ -25,7 +25,7 @@ for ( r=1 ; r!==rows.length ; r++ ) {
     _team = td[1].querySelector("a");
     if ( _team ) {
         _teamName = _team.innerText;
-        _teamWiki = _team.getAttribute("href").split("/").pop().replace("index.php?title=","").replace("&action=edit&redlink=1","");
+        _teamWiki = _team.getAttribute("href").replace("/wiki/","").replace("/w/index.php?title=","").replace("&action=edit&redlink=1","");
     } else {
         _teamName = td[1].innerText;
         _teamWiki = _teamName;

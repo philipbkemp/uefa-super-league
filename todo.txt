@@ -1,11 +1,10 @@
 1888-89	ENG
 1889-90	ENG	DNK
 1890-91	ENG	DNK	NLD	EIR	SCO
+1891-92	ENG	DNK	NLD	EIR	SCO
 
-https://en.wikipedia.org/wiki/Template:1890%E2%80%9391_in_European_football_(UEFA)
+https://en.wikipedia.org/wiki/Template:1891%E2%80%9392_in_European_football_(UEFA)
 
-1890–91 | Denmark | England | Netherlands | Ireland | Scotland
-1891–92 | Denmark | England | Netherlands | Ireland | Scotland
 1892–93 | Denmark | England | Netherlands | Ireland | Scotland
 1893–94 | Denmark | England | Netherlands | Ireland | Scotland
 1894–95 | Denmark | England | Netherlands | Ireland | Scotland
