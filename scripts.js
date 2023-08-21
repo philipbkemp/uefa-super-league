@@ -282,7 +282,7 @@ function listNewTeams() {
 				link = r.querySelectorAll("a")[0];
 				s = link.getAttribute("data-wiki");
 				img = r.querySelectorAll("img")[0].getAttribute("src").split("/").pop().split(".")[0].toLowerCase();
-				str += '"' + img + "/" + s + '",\n';
+				str += '' + img + "/" + s + '\n';
 			});
 		}
 	})

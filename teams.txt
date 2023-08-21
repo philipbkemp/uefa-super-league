@@ -51,3 +51,8 @@ sco/Renton_F.C.
 sco/St_Mirren_F.C.
 sco/Third_Lanark_A.C.
 sco/Vale_of_Leven_F.C.
+eng/Sheffield_Wednesday_F.C.
+eng/Nottingham_Forest_F.C.
+eng/Manchester_United_F.C.
+dnk/Boldklubben_Fri
+eir/Derry_Olympic_F.C.
