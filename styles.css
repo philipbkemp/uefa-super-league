@@ -41,28 +41,38 @@ a.pe-none.disabled {
 .nav-tabs .nav-link.disabled {
     opacity: 0.4;
 }
-table.division {
+table.division,
+table.winners {
     border-collapse: collapse;
     border: 1px solid #2b5873;
     width: calc( 350px + 820px );
     margin-bottom: 10px;
 }
-table.division thead {
+table.winners {
+    width: 100%;
+}
+table.division thead,
+table.winners thead {
     background-color: #f1f4f6;
     position: sticky;
     top: -1px;
     z-index: 99;
 }
-table.division thead tr th {
+table.division thead tr th,
+table.winners thead tr th {
     font-size: 1.2rem;
     border: 1px solid #2b5873;
     padding: 3px;
     text-align: center;
 }
-table.division tbody tr td {
+table.division tbody tr td,
+table.winners tbody tr td {
     text-align: center;
     padding: 5px;
     border: 1px solid #2b5873;
+}
+table.winners tbody tr td {
+    text-align: left;
 }
 table.division tbody tr td,
 table.division thead tr th {
@@ -143,7 +153,8 @@ table.division tbody tr.champion, table.division-club tbody tr.champion {
     background-color: #fff7cc;
 }
 table.division tbody tr td:nth-of-type(2) img,
-#notes img {
+#notes img,
+table.winners tbody tr td:nth-of-type(1) img {
     height: 16px;
     margin-right: 10px;
     margin-left: 5px;
@@ -155,4 +166,14 @@ table.division tbody tr td:nth-of-type(2) img,
 #notes .list-group-item.removed {
     border-left: 10px solid #ffbfbf;
     padding-left: 5px;
+}
+
+table.winners thead th:nth-of-type(2),
+table.winners tbody td:nth-of-type(2) {
+    text-align: center;
+    width: 90px;
+}
+table.winners thead tr th:nth-of-type(1),
+table.winners tbody tr td:nth-of-type(1) {
+    width: 350px;
 }

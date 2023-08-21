@@ -288,3 +288,109 @@ function listNewTeams() {
 	})
 	console.log(str);
 }
+
+function getWinner() {
+	winner = document.querySelector("#div_a .division tbody tr");
+	_t = winner.querySelector("a");
+	_n = winner.querySelector("img");
+	year = document.querySelector("head title").innerHTML.split(" / ")[1].split(" ")[1].trim();
+	tURL = _t.getAttribute("href").replaceAll("../../","");
+	tWiki = _t.getAttribute("data-wiki");
+	tName = _t.innerHTML;
+	nFlag = _n.getAttribute("src").split("/").pop().split(".")[0];
+	nName = _n.getAttribute("title");
+	u = window.location.href.split("/");
+	y = u.pop();
+	f = u.pop();
+	s = 'addWinner("'+f+'/'+y+'","'+year+'","'+tURL+'","'+tWiki+'","'+tName+'","'+nFlag+'","'+nName+'");';
+	console.log(s);
+}
+
+function addWinner(_url,_year,_club,_wiki,_name,_flag,_country) {
+    thisPage = window.location.href.split("/").pop().split(".")[0] === "winners_club" ? "CLUB" : "NATION";
+    if ( thisPage === "CLUB" ) {
+        exists = document.querySelectorAll("a[data-wiki='"+_wiki+"']");
+        if ( exists.length !== 0 ) {
+        	winnersRow = exists[0].parentNode.parentNode;
+            ya = document.createElement("A");
+            ya.innerHTML = _year;
+            ya.setAttribute("href",_url);
+            winnersTD = winnersRow.querySelectorAll("td");
+            winnersTD[2].append(" ");
+            winnersTD[2].append(ya);
+            winnersTD[1].innerHTML = parseInt(winnersTD[1].innerHTML) +1;
+        } else {
+            winnersRow = document.querySelector(".winners tbody");
+            r = document.createElement("TR");
+            t = document.createElement("TD");
+            i = document.createElement("IMG");
+            i.setAttribute("src","f/"+_flag+".png");
+            i.setAttribute("title",_country);
+            a = document.createElement("A");
+            a.setAttribute("href",_club);
+            a.setAttribute("data-wiki",_wiki);
+            a.innerHTML = _name;
+            t.append(i);
+            t.append(a);
+            c = document.createElement("TD");
+            c.innerHTML = "1";
+            y = document.createElement("TD");
+            ya = document.createElement("A");
+            ya.innerHTML = _year;
+            ya.setAttribute("href",_url);
+            y.append(ya);
+            r.append(t);
+            r.append(c);
+            r.append(y);
+            winnersRow.append(r);
+        }
+    } else {
+        exists = document.querySelectorAll("img[src='f/"+_flag+".png']");
+        if ( exists.length !== 0 ) {
+        	winnersRow = exists[0].parentNode.parentNode;
+            ya = document.createElement("A");
+            ya.innerHTML = _year;
+            ya.setAttribute("href",_url);
+            winnersTD = winnersRow.querySelectorAll("td");
+            winnersTD[2].append(" ");
+            winnersTD[2].append(ya);
+            winnersTD[1].innerHTML = parseInt(winnersTD[1].innerHTML) +1;
+		} else {
+			winnersRow = document.querySelector(".winners tbody");
+            r = document.createElement("TR");
+            n = document.createElement("TD");
+            i = document.createElement("IMG");
+            i.setAttribute("src","f/"+_flag+".png");
+            i.setAttribute("title",_country);
+            n.append(i);
+            n.append(_country);
+            c = document.createElement("TD");
+            c.innerHTML = "1";
+            y = document.createElement("TD");
+            ya = document.createElement("A");
+            ya.innerHTML = _year;
+            ya.setAttribute("href",_url);
+            y.append(ya);
+            r.append(n);
+            r.append(c);
+            r.append(y);
+            winnersRow.append(r);
+        }
+    }
+
+	var table = document.querySelectorAll("table.winners")[0];
+	var tbody = table.querySelector("tbody");
+	var rows = Array.from(tbody.rows);
+	rows.sort(function (a, b) {	
+		var countA = parseInt(a.cells[1].textContent);
+		var countB = parseInt(b.cells[1].textContent);
+		if (countA !== countB) {
+			return countB - countA;
+		}
+	});
+	rows.forEach(function (row) {
+		tbody.appendChild(row);
+	});
+
+    console.log( document.querySelector(".winners").innerHTML );
+}
