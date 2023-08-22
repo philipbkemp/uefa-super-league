@@ -62,3 +62,6 @@ sco/St_Bernard%27s_F.C.
 sco/St_Mirren_F.C.
 sco/Third_Lanark_A.C.
 sco/Vale_of_Leven_F.C.
+eng/Birmingham_City_F.C.
+nld/Rapiditas_Rotterdam
+eng/Liverpool_F.C.
