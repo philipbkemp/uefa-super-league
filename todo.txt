@@ -5,11 +5,11 @@
 1892-93	ENG	DNK	-		EIR	SCO
 1893-94	ENG	DNK	NLD	EIR	SCO
 1894-95	ENG	DNK	NLD	EIR	SCO
+1895-96	ENG	DNK	NLD	EIR	SCO	BEL
+1896-97	ENG	DNK	NLD	EIR	SCO	BEL
 
-https://en.wikipedia.org/wiki/Template:1894%E2%80%9395_in_European_football_(UEFA)
+https://en.wikipedia.org/wiki/Template:1896%E2%80%9397_in_European_football_(UEFA)
 
-1895–96 | Belgium | Denmark | England | Netherlands | Ireland | Scotland
-1896–97 | Belgium | Denmark | England | Netherlands | Ireland | Scotland
 1897–98 | Belgium | Denmark | England | Ireland | Italy | Netherlands | Scotland | Switzerland
 1898–99 | Belgium | Denmark | England | Ireland | Italy | Netherlands | Scotland | Switzerland
 1899–00 | Belgium | Denmark | England | Italy | Netherlands | Ireland | Scotland | Switzerland

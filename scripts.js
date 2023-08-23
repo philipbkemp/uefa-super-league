@@ -61,7 +61,11 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 		});
 	}
 
-	newReturn = prompt("Is " + name + " [N]ew or [R]eturning?").toUpperCase();
+	if ( allTeams.indexOf(flag.toLowerCase() + "/" + wiki) !== -1 ) {
+		newReturn = "R";
+	} else {
+		newReturn = prompt("Is " + wiki + " [N]ew or [R]eturning?").toUpperCase();
+	}
 	if ( newReturn === "N" || newReturn === "NEW" ) {
 		row.classList.add("newclub");
 	} else if ( newReturn === "R" || newReturn === "RETURNING" ) {
@@ -85,9 +89,11 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 		.replaceAll("(","").replaceAll(")","")
 		.replaceAll("/","_")
 		.replaceAll("%27","_").replaceAll("'","_")
+		.replaceAll("%C3%A8","e").replaceAll("%C3%A9","e")
+		.replaceAll("%c3%98","o").replaceAll("%C3%98","o")
 		.replaceAll(" ","_").replaceAll(".","_").replaceAll("__","_");
     if ( /[^a-z0-9_]/.test(_teamUrl) ) {
-        _teamUrl = prompt("Invalid URL " + _teamUrl);
+        _teamUrl = prompt("Invalid URL " + _teamUrl,_teamUrl);
     }
 	link.setAttribute("href","../../c/"+flag.toLowerCase()+"/"+_teamUrl+".html");
 	link.setAttribute("data-wiki",wiki);
@@ -254,7 +260,7 @@ function nextSeason() {
 
 function listTeams() {
 	divisions = ["a","b","c","d","e","f","g","h"];
-	str = "";
+	str = [];
 	divisions.forEach(function(i,idx) {
 		divTbl = document.querySelectorAll("#div_"+i+" table tbody")
 		if ( divTbl.length !== 0 ) {
@@ -264,16 +270,16 @@ function listTeams() {
 				link = r.querySelectorAll("a")[0];
 				s = link.getAttribute("data-wiki");
 				img = r.querySelectorAll("img")[0].getAttribute("src").split("/").pop().split(".")[0].toLowerCase();
-				str += '' + img + "/" + s + '\n';
+				str.push('"' + img + "/" + s + '"');
 			});
 		}
 	})
-	console.log(str);
+	console.log(",\n"+str.join(",\n"));
 }
 
 function listNewTeams() {
 	divisions = ["a","b","c","d","e","f","g","h"];
-	str = "";
+	str = [];
 	divisions.forEach(function(i,idx) {
 		divTbl = document.querySelectorAll("#div_"+i+" table tbody")
 		if ( divTbl.length !== 0 ) {
@@ -283,11 +289,11 @@ function listNewTeams() {
 				link = r.querySelectorAll("a")[0];
 				s = link.getAttribute("data-wiki");
 				img = r.querySelectorAll("img")[0].getAttribute("src").split("/").pop().split(".")[0].toLowerCase();
-				str += '' + img + "/" + s + '\n';
+				str.push('"' + img + "/" + s + '"');
 			});
 		}
 	})
-	console.log(str);
+	console.log(",\n"+str.join(",\n"));
 }
 
 function getWinner() {
@@ -304,7 +310,7 @@ function getWinner() {
 	y = u.pop();
 	f = u.pop();
 	s = 'addWinner("'+f+'/'+y+'","'+year+'","'+tURL+'","'+tWiki+'","'+tName+'","'+nFlag+'","'+nName+'");';
-	console.log(s);
+	console.log(s.trim());
 }
 
 function addWinner(_url,_year,_club,_wiki,_name,_flag,_country) {
@@ -394,4 +400,17 @@ function addWinner(_url,_year,_club,_wiki,_name,_flag,_country) {
 	});
 
     console.log( document.querySelector(".winners tbody").innerHTML );
+}
+
+function moveNew(target,count) {
+    sort(n);
+    fromDiv = document.querySelectorAll(".division_new tbody tr");
+    toDiv = document.querySelector("#div_"+target+" .division tbody");
+    moved = 0;
+    fromDiv.forEach(function(k){
+        if ( moved !== count ) {
+            toDiv.appendChild(k);
+            moved++;
+        }
+    });
 }

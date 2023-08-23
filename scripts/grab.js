@@ -9,6 +9,7 @@ rows = usl.querySelectorAll("tr");
 flag = prompt("Please enter country code:").toUpperCase();
 country = "";
 switch (flag) {
+    case "BEL": country = "Belgium"; break;
     case "DNK": country = "Denmark"; break;
     case "EIR": country = "Ireland"; break;
     case "ENG": country = "England"; break;
