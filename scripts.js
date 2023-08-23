@@ -64,12 +64,23 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 	if ( allTeams.indexOf(flag.toLowerCase() + "/" + wiki) !== -1 ) {
 		newReturn = "R";
 	} else {
-		newReturn = prompt("Is " + wiki + " [N]ew or [R]eturning?").toUpperCase();
+		newReturn = prompt("Is " + wiki + " [N]ew or [R]eturning or [D]uplicate?").toUpperCase();
 	}
 	if ( newReturn === "N" || newReturn === "NEW" ) {
 		row.classList.add("newclub");
 	} else if ( newReturn === "R" || newReturn === "RETURNING" ) {
 		row.classList.add("returning");
+	} else if ( newReturn === "D" || newReturn === "DUPLICATE" ) {
+		suggestWiki = redirects.filter(function(k){
+			return k[1] === (flag.toLowerCase() + "/" + wiki);
+		});
+		if ( suggestWiki.length === 0 ) {
+			newWiki = prompt("What is their correct Wiki page?",wiki);
+			console.log('NEW REDIRECT => ["'+flag.toLowerCase()+"/"+newWiki+'","'+flag.toLowerCase()+"/"+wiki+'"]');
+		} else {
+			newWiki = suggestWiki[0][0].replace( flag.toLowerCase() + "/" , "");
+		}
+		return addTeam(name,newWiki,_w,_d,_l,_f,_a,deduct,classes);
 	} else {
 		alert("Unable to categorise new club " + name);
 	}

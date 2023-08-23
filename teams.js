@@ -80,5 +80,10 @@ allTeams = [
 "bel/Athletic_and_Running_Club_de_Bruxelles",
 "dnk/%C3%98sterbros_Boldklub",
 "eir/North_Staffordshire_Regiment_F.C.",
-"eir/Belfast_Celtic_F.C."
+"eir/Belfast_Celtic_F.C.",
+"sco/Partick_Thistle_F.C."
+];
+
+redirects = [
+["dnk/%C3%98sterbros_Boldklub","dnk/%C3%98sterbros_BK"]
 ];
