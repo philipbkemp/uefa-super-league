@@ -87,7 +87,14 @@ allTeams = [
 "eng/Manchester_City_F.C.",
 "sco/Kilmarnock_F.C.",
 "eir/Royal_Scots_F.C.",
-"eng/Glossop_North_End_A.F.C."
+"eng/Glossop_North_End_A.F.C.",
+"bel/K._Beerschot_V.A.C.",
+"sco/Greenock_Morton_F.C.",
+"sco/Queen%27s_Park_F.C.",
+"bel/Skill_F.C._de_Bruxelles",
+"bel/R.C.S._Vervi%C3%A9tois",
+"bel/Cercle_Brugge_K.S.V.",
+"eir/Derry_Celtic_F.C."
 ];
 
 redirects = [
