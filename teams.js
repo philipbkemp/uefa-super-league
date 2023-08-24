@@ -83,7 +83,11 @@ allTeams = [
 "eir/Belfast_Celtic_F.C.",
 "sco/Partick_Thistle_F.C.",
 "eng/Newcastle_United_F.C.",
-"dnk/Boldklubben_Dana"
+"dnk/Boldklubben_Dana",
+"eng/Manchester_City_F.C.",
+"sco/Kilmarnock_F.C.",
+"eir/Royal_Scots_F.C.",
+"eng/Glossop_North_End_A.F.C."
 ];
 
 redirects = [
