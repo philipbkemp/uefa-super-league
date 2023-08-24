@@ -7,7 +7,15 @@ function addTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 	if ( existingClub.length === 1 ) {
 		updateTeam(existingClub[0],name,wiki,_w,_d,_l,_f,_a,deduct,classes);
 	} else if ( existingClub.length === 0 ) {
-		newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes);
+		suggestWiki = redirects.filter(function(k){
+			return k[1] === (flag.toLowerCase() + "/" + wiki);
+		});
+		if ( suggestWiki.length === 1 ) {
+			newWiki = suggestWiki[0][0].replace( flag.toLowerCase() + "/" , "");
+			addTeam(name,newWiki,_w,_d,_l,_f,_a,deduct,classes);
+		} else {
+			newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes);
+		}
 	} else {
 		alert("Issue findining " + wiki);
 	}
