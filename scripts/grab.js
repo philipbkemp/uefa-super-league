@@ -13,6 +13,7 @@ switch (flag) {
     case "DNK": country = "Denmark"; break;
     case "EIR": country = "Ireland"; break;
     case "ENG": country = "England"; break;
+    case "HUN": country = "Hungary"; break;
     case "NLD": country = "Netherlands"; break;
     case "SCO": country = "Scotland"; break;
     default: country = prompt("Unkonwn flag, please provide country name");

@@ -94,7 +94,14 @@ allTeams = [
 "bel/Skill_F.C._de_Bruxelles",
 "bel/R.C.S._Vervi%C3%A9tois",
 "bel/Cercle_Brugge_K.S.V.",
-"eir/Derry_Celtic_F.C."
+"eir/Derry_Celtic_F.C.",
+"hun/Budapesti_TC",
+"hun/Magyar_%C3%9Asz%C3%B3_Egylet",
+"eng/Grimsby_Town_F.C.",
+"hun/Ferencv%C3%A1rosi_TC",
+"hun/M%C5%B1egyetemi_AFC",
+"hun/Budapesti_SC",
+"eir/St_Columb%27s_Court_F.C."
 ];
 
 redirects = [
