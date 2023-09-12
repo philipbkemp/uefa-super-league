@@ -101,7 +101,11 @@ allTeams = [
 "hun/Ferencv%C3%A1rosi_TC",
 "hun/M%C5%B1egyetemi_AFC",
 "hun/Budapesti_SC",
-"eir/St_Columb%27s_Court_F.C."
+"eir/St_Columb%27s_Court_F.C.",
+"hun/33_FC",
+"eng/Middlesbrough_F.C.",
+"eir/Bohemian_F.C.",
+"sco/Port_Glasgow_Athletic_F.C."
 ];
 
 redirects = [
