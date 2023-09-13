@@ -13,10 +13,10 @@
 1900-01	ENG	DNK	-		EIR	SCO	BEL
 1901-02	ENG	DNK	-		EIR	SCO	-		HUN
 1902-03	ENG	DNK	-		EIR	SCO	-		HUN
+1903-04	ENG	DNK	-		EIR	SCO	-		HUN
 
-https://en.wikipedia.org/wiki/Template:1902%E2%80%9303_in_European_football_(UEFA)
+https://en.wikipedia.org/wiki/Template:1903%E2%80%9304_in_European_football_(UEFA)
 
-1903–04 | bel | Denmark | England | deu | Hungary | ita | nld | Ireland | Scotland | che
 1904–05 | Belgium | Denmark | England | deu | Hungary | ita | nld | Ireland | Scotland | che
 1905–06 | Belgium | Denmark | England | deu | Greece | Hungary | ita | nld | Ireland | Scotland | che
 1906–07 | Belgium | Denmark | England | deu | Greece | Hungary | ita | nld | Ireland | Scotland | che

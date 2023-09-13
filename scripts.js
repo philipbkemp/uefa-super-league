@@ -111,9 +111,10 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 		.replaceAll("%c3%a1","a")
 		.replaceAll("%c3%a8","e")
 		.replaceAll("%c3%a9","e")
+		.replaceAll("%c3%9a","u")
 		.replaceAll("%c3%98","o")
 		.replaceAll("%c3%b3","o")
-		.replaceAll("%c3%9a","u")
+		.replaceAll("%c3%b6","o")
 		.replaceAll("%c5%b1","u")
 		.replaceAll(" ","_").replaceAll(".","_").replaceAll("__","_");
     if ( /[^a-z0-9_]/.test(_teamUrl) ) {
@@ -333,7 +334,7 @@ function getWinner() {
 	u = window.location.href.split("/");
 	y = u.pop();
 	f = u.pop();
-	s = 'addWinner("'+f+'/'+y+'","'+year+'","'+tURL+'","'+tWiki+'","'+tName+'","'+nFlag+'","'+nName+'");';
+	s = 'addWinner("y/'+f+'/'+y+'","'+year+'","'+tURL+'","'+tWiki+'","'+tName+'","'+nFlag+'","'+nName+'");';
 	console.log(s.trim());
 }
 

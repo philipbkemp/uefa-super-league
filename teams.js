@@ -105,7 +105,14 @@ allTeams = [
 "hun/33_FC",
 "eng/Middlesbrough_F.C.",
 "eir/Bohemian_F.C.",
-"sco/Port_Glasgow_Athletic_F.C."
+"sco/Port_Glasgow_Athletic_F.C.",
+"hun/MTK_Budapest_FC",
+"hun/Budapesti_Post%C3%A1s_SE",
+"sco/Airdrieonians_F.C._(1878)",
+"hun/Magyar_AC",
+"sco/Motherwell_F.C.",
+"eir/King%27s_Own_Scottish_Borderers_F.C.",
+"hun/T%C3%B6rekv%C3%A9s_SE"
 ];
 
 redirects = [
