@@ -112,7 +112,12 @@ allTeams = [
 "hun/Magyar_AC",
 "sco/Motherwell_F.C.",
 "eir/King%27s_Own_Scottish_Borderers_F.C.",
-"hun/T%C3%B6rekv%C3%A9s_SE"
+"hun/T%C3%B6rekv%C3%A9s_SE",
+"bel/R._Union_Saint-Gilloise",
+"bel/Daring_Club_de_Bruxelles",
+"eng/Arsenal_F.C.",
+"eir/Shelbourne_F.C.",
+"hun/Ter%C3%A9zv%C3%A1rosi_TC"
 ];
 
 redirects = [

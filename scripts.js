@@ -107,6 +107,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 		.replaceAll("%c3%b8","o").replaceAll("ø","o")
 		.replaceAll("(","").replaceAll(")","")
 		.replaceAll("/","_")
+		.replaceAll("-","_")
 		.replaceAll("%27","_").replaceAll("'","_")
 		.replaceAll("%c3%a1","a")
 		.replaceAll("%c3%a8","e")
