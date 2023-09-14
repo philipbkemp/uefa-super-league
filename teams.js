@@ -117,9 +117,13 @@ allTeams = [
 "bel/Daring_Club_de_Bruxelles",
 "eng/Arsenal_F.C.",
 "eir/Shelbourne_F.C.",
-"hun/Ter%C3%A9zv%C3%A1rosi_TC"
+"hun/Ter%C3%A9zv%C3%A1rosi_TC",
+"hun/%C3%9Ajpest_FC",
+"sco/Falkirk_F.C.",
+"sco/Aberdeen_F.C."
 ];
 
 redirects = [
 ["dnk/%C3%98sterbros_Boldklub","dnk/%C3%98sterbros_BK"]
+["eir/Bohemian_F.C.","eir/Bohemian_Dublin"]
 ];
