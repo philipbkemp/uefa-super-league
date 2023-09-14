@@ -120,10 +120,15 @@ allTeams = [
 "hun/Ter%C3%A9zv%C3%A1rosi_TC",
 "hun/%C3%9Ajpest_FC",
 "sco/Falkirk_F.C.",
-"sco/Aberdeen_F.C."
+"sco/Aberdeen_F.C.",
+"eng/Bristol_City_F.C.",
+"hun/Budapesti_AK",
+"hun/Typographia_SC",
+"sco/Hamilton_Academical_F.C.",
+"bel/K.V._Kortrijk"
 ];
 
 redirects = [
-["dnk/%C3%98sterbros_Boldklub","dnk/%C3%98sterbros_BK"]
+["dnk/%C3%98sterbros_Boldklub","dnk/%C3%98sterbros_BK"],
 ["eir/Bohemian_F.C.","eir/Bohemian_Dublin"]
 ];
