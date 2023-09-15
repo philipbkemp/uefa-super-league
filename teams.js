@@ -130,7 +130,18 @@ allTeams = [
 "bel/R.E._Sport%27s_Club",
 "eng/Bradford_City_A.F.C.",
 "eng/Leicester_City_F.C.",
-"bel/K.R.C._Gent-Zeehaven"
+"bel/K.R.C._Gent-Zeehaven",
+"mlt/Floriana_F.C.",
+"rou/Olympia_Bucure%C8%99ti",
+"mlt/Sliema_Wanderers_F.C.",
+"hun/Nemzeti_SC",
+"bel/Standard_Li%C3%A8ge",
+"rou/Colentina_Bucure%C8%99ti",
+"mlt/St. Joseph%27s United",
+"eng/Tottenham_Hotspur_F.C.",
+"mlt/Boys Empire League",
+"rou/United_Ploie%C8%99ti",
+"mlt/Malta University"
 ];
 
 redirects = [

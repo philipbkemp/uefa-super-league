@@ -3,6 +3,7 @@ country = "";
 newTeams = document.querySelector(".division.division_new tbody");
 
 function addTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
+	wiki = wiki.replaceAll("'","%27");
 	existingClub = document.querySelectorAll("a[data-wiki='"+wiki+"']");
 	if ( existingClub.length === 1 ) {
 		updateTeam(existingClub[0],name,wiki,_w,_d,_l,_f,_a,deduct,classes);
@@ -116,6 +117,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 		.replaceAll("%c3%98","o")
 		.replaceAll("%c3%b3","o")
 		.replaceAll("%c3%b6","o")
+		.replaceAll("%c8%99","s")
 		.replaceAll("%c5%b1","u")
 		.replaceAll(" ","_").replaceAll(".","_").replaceAll("__","_");
     if ( /[^a-z0-9_]/.test(_teamUrl) ) {
