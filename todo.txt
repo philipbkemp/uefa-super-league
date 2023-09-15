@@ -18,10 +18,10 @@
 1905-06	ENG	DNK	-		EIR	SCO	BEL	HUN
 1906-07	ENG	DNK	-		EIR	SCO	BEL	HUN
 1907-08	ENG	DNK	-		EIR	SCO	BEL	HUN
+1908-09	ENG	DNK	-		EIR	SCO	
 
-https://en.wikipedia.org/wiki/Template:1907%E2%80%9308_in_European_football_(UEFA)
+https://en.wikipedia.org/wiki/Template:1908%E2%80%9309_in_European_football_(UEFA)
 
-1908–09 | Belgium | Denmark | England | deu | grc | Hungary | ita | nld | Ireland | Scotland | che
 1909–10 | Belgium | Denmark | England | deu | grc | Hungary | Italy | Luxembourg | Malta | nld | Ireland | Romania | Scotland | Sweden | che
 1910–11 | Belgium | Denmark | England | deu | grc | Hungary | Ireland | Italy | Luxembourg | nld | Romania | Scotland | Sweden | che
 1911–12 | Austria | Belgium | Croatia | Denmark | England | deu | grc | Hungary | Iceland | Ireland | Italy | Luxembourg | Malta | nld | Romania | Russia | Scotland | Sweden | che

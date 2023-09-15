@@ -126,7 +126,11 @@ allTeams = [
 "hun/Typographia_SC",
 "sco/Hamilton_Academical_F.C.",
 "bel/K.V._Kortrijk",
-"eng/Chelsea_F.C."
+"eng/Chelsea_F.C.",
+"bel/R.E._Sport%27s_Club",
+"eng/Bradford_City_A.F.C.",
+"eng/Leicester_City_F.C.",
+"bel/K.R.C._Gent-Zeehaven"
 ];
 
 redirects = [
