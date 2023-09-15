@@ -125,7 +125,8 @@ allTeams = [
 "hun/Budapesti_AK",
 "hun/Typographia_SC",
 "sco/Hamilton_Academical_F.C.",
-"bel/K.V._Kortrijk"
+"bel/K.V._Kortrijk",
+"eng/Chelsea_F.C."
 ];
 
 redirects = [

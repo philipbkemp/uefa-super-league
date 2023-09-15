@@ -213,25 +213,37 @@ function sort(division) {
 			return 0;
 		}
 	
+		// 1: PPG
 		var valueA_PPG = parseFloat(a.cells[13].textContent);
 		var valueB_PPG = parseFloat(b.cells[13].textContent);
 		if (valueA_PPG !== valueB_PPG) {
 			return valueB_PPG - valueA_PPG;
 		} else {
 
+			// 2: FPG
 			var valueA_FPG = parseFloat(a.cells[11].textContent);
 			var valueB_FPG = parseFloat(b.cells[11].textContent);
 			if ( valueA_FPG !== valueB_FPG ) {
 				return valueB_FPG - valueA_FPG;
 			} else {
 
+				// 3: APG
 				var valueA_APG = parseFloat(a.cells[12].textContent);
 				var valueB_APG = parseFloat(b.cells[12].textContent);
 				if ( valueA_APG !== valueB_APG ) {
 					return valueA_APG - valueB_APG;
 				} else {
-					alert("NEED ANOTHER SORTING LEVEL");
-					console.log(a.cells[1].textContent," // ",b.cells[1].textContent);
+
+					// 4: W%
+					var valueA_W5 = parseFloat(a.cells[10].textContent.replace("%",""));
+					var valueB_W5 = parseFloat(b.cells[10].textContent.replace("%",""));
+					if ( valueA_W5 !== valueB_W5 ) {
+						return valueB_W5 - valueA_W5;
+					} else {
+
+						alert("NEED ANOTHER SORTING LEVEL?");
+						console.log(a.cells[1].textContent," // ",b.cells[1].textContent);
+					}
 				}
 			}
 		}
