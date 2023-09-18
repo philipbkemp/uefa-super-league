@@ -141,7 +141,11 @@ allTeams = [
 "eng/Tottenham_Hotspur_F.C.",
 "mlt/Boys Empire League",
 "rou/United_Ploie%C8%99ti",
-"mlt/Malta University"
+"mlt/Malta University",
+"eng/Oldham_Athletic_A.F.C.",
+"bel/K.R.C._Mechelen",
+"sco/Raith_Rovers_F.C.",
+"dnk/Boldklubben_1903"
 ];
 
 redirects = [
