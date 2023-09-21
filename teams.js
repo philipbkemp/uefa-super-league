@@ -145,10 +145,28 @@ allTeams = [
 "eng/Oldham_Athletic_A.F.C.",
 "bel/K.R.C._Mechelen",
 "sco/Raith_Rovers_F.C.",
-"dnk/Boldklubben_1903"
+"dnk/Boldklubben_1903",
+"aut/SK_Rapid_Wien",
+"aut/Wiener_Sportclub",
+"aut/Wiener_AF",
+"aut/Wiener_AC",
+"aut/1._Simmeringer_SC",
+"aut/First_Vienna_FC",
+"aut/Floridsdorfer_AC",
+"mlt/%C4%A6amrun_Spartans_F.C.",
+"aut/SV_Amateure",
+"aut/ASV_Hertha",
+"mlt/St._George%27s_F.C.",
+"mlt/Valletta_F.C.",
+"aut/SC_Rudolfsh%C3%BCgel",
+"hun/III._Ker%C3%BCleti_TUE",
+"eir/Glenavon_F.C.",
+"aut/Vienna_Cricket_and_Football-Club"
 ];
 
 redirects = [
 ["dnk/%C3%98sterbros_Boldklub","dnk/%C3%98sterbros_BK"],
-["eir/Bohemian_F.C.","eir/Bohemian_Dublin"]
+["eir/Bohemian_F.C.","eir/Bohemian_Dublin"],
+["bel/R._L%C3%A9opold_Uccle_Forestoise","bel/L%C3%A9opold_FC"],
+["bel/R.E._Sport%27s_Club","bel/Royal_Excelsior_Sports_Club"]
 ];

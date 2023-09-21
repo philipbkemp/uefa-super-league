@@ -1,7 +1,7 @@
 1888-89	ENG
 1889-90	ENG	DNK
-1890-91	ENG	DNK	NLD	EIR	SCO
-1891-92	ENG	DNK	NLD	EIR	SCO
+1890-91		ENG	DNK	NLD	EIR	SCO
+1891-92		ENG	DNK	NLD	EIR	SCO
 1892-93	ENG	DNK	-		EIR	SCO
 1893-94	ENG	DNK	NLD	EIR	SCO
 1894-95	ENG	DNK	NLD	EIR	SCO
@@ -10,8 +10,8 @@
 1897-98	ENG	DNK	-		EIR	SCO	BEL
 1898-99	ENG	DNK	-		EIR	SCO	-	
 1899-00	ENG	DNK	-		EIR	SCO	-
-1900-01	ENG	DNK	-		EIR	SCO	BEL
-1901-02	ENG	DNK	-		EIR	SCO	-		HUN
+1900-01		ENG	DNK	-		EIR	SCO	BEL
+1901-02		ENG	DNK	-		EIR	SCO	-		HUN
 1902-03	ENG	DNK	-		EIR	SCO	-		HUN
 1903-04	ENG	DNK	-		EIR	SCO	-		HUN
 1904-05	ENG	DNK	-		EIR	SCO	BEL	HUN
@@ -19,15 +19,15 @@
 1906-07	ENG	DNK	-		EIR	SCO	BEL	HUN
 1907-08	ENG	DNK	-		EIR	SCO	BEL	HUN
 1908-09	ENG	DNK	-		EIR	SCO	BEL	HUN
-1909-10	ENG	DNK	-		EIR	SCO	BEL	HUN	MLT	ROU
-1910-11	ENG	DNK	-		EIR	SCO	BEL	HUN	-		ROU
+1909-10		ENG	DNK	-		EIR	SCO	BEL	HUN	MLT	ROU
+1910-11		ENG	DNK	-		EIR	SCO	BEL	HUN	-		ROU
+1911-12		ENG	-		-		EIR	SCO	BEL	HUN	MLT	ROU	AUT
 
-https://en.wikipedia.org/wiki/Template:1910%E2%80%9311_in_European_football_(UEFA)
+https://en.wikipedia.org/wiki/Template:1911%E2%80%9312_in_European_football_(UEFA)
 
-1911–12 | Austria | Belgium | Croatia | dnk | England | deu | grc | Hungary | Iceland | Ireland | ita | lux | Malta | nld | Romania | Russia | Scotland | swe | che
-1912–13 | Austria | Belgium | dnk | England | deu | Hungary | Iceland | Ireland | ita | Malta | nld | Romania | Russia | Scotland | Sweden | che
-1913–14 | Austria | Belgium | dnk | England | deu | Hungary | Iceland | Ireland | ita | lux | Malta | nld | Romania | Russia | Scotland | Sweden | che
-1914–15 | Austria | dnk | England | Iceland | Ireland | ita | lux | Malta | nld | Romania | Scotland | Sweden | che
+1912–13 | Austria | Belgium | dnk | England | deu | Hungary | isl | Ireland | ita | Malta | nld | Romania | Russia | Scotland | Sweden | che
+1913–14 | Austria | Belgium | dnk | England | deu | Hungary | isl | Ireland | ita | lux | Malta | nld | Romania | Russia | Scotland | Sweden | che
+1914–15 | Austria | dnk | England | isl | Ireland | ita | lux | Malta | nld | Romania | Scotland | Sweden | che
 1915–16 | Austria | dnk | Iceland | Ireland | Luxembourg | nld | Romania | Scotland | Sweden | che
 1916–17 | Austria | dnk | Hungary | Iceland | Ireland | Luxembourg | Malta | nld | Scotland | Sweden | che
 1917–18 | Austria | dnk | Hungary | Iceland | Ireland | Luxembourg | Malta | nld | Scotland | che

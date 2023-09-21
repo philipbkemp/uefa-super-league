@@ -9,6 +9,7 @@ rows = usl.querySelectorAll("tr");
 flag = prompt("Please enter country code:").toUpperCase();
 country = "";
 switch (flag) {
+    case "AUT": country = "Austria"; break;
     case "BEL": country = "Belgium"; break;
     case "DNK": country = "Denmark"; break;
     case "EIR": country = "Ireland"; break;
@@ -18,7 +19,7 @@ switch (flag) {
     case "NLD": country = "Netherlands"; break;
     case "ROU": country = "Romania"; break;
     case "SCO": country = "Scotland"; break;
-    default: country = prompt("Unkonwn flag, please provide country name");
+    default: country = prompt("Unknown flag, please provide country name");
 }
 if ( typeof deduct === "undefined" ) {
     deduct = [];
