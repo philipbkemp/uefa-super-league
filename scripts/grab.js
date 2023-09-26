@@ -19,6 +19,7 @@ switch (flag) {
     case "NLD": country = "Netherlands"; break;
     case "ROU": country = "Romania"; break;
     case "SCO": country = "Scotland"; break;
+    case "SWE": country = "Sweden"; break;
     default: country = prompt("Unknown flag, please provide country name");
 }
 if ( typeof deduct === "undefined" ) {

@@ -161,7 +161,20 @@ allTeams = [
 "aut/SC_Rudolfsh%C3%BCgel",
 "hun/III._Ker%C3%BCleti_TUE",
 "eir/Glenavon_F.C.",
-"aut/Vienna_Cricket_and_Football-Club"
+"aut/Vienna_Cricket_and_Football-Club",
+"swe/IFK_G%C3%B6teborg",
+"swe/%C3%96rgryte_IS",
+"swe/AIK_Fotboll",
+"swe/Djurg%C3%A5rdens_IF_Fotboll",
+"mlt/Vittoriosa_Stars_F.C.",
+"rou/Cercul_Atletic_Bucure%C8%99ti",
+"rou/Bukarester_FC",
+"swe/IFK_Uppsala_Fotboll",
+"mlt/Msida_Saint-Joseph_F.C.",
+"eir/Tritonville_F.C.",
+"swe/IFK_Norrk%C3%B6ping",
+"rou/Uniunea_Sportiv%C4%83_Bucure%C8%99ti",
+"mlt/Senglea_Athletic_F.C."
 ];
 
 redirects = [
