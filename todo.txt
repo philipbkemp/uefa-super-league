@@ -26,10 +26,10 @@
 1913-14	ENG	-		-		EIR	SCO	BEL	HUN	MLT	ROU	AUT	SWE
 1914-15	ENG	-		-		EIR	SCO	-		-		MLT	ROU	AUT	SWE
 1915-16	-		-		-		-		SCO	-		-		-		ROU	AUT	SWE	ISL	LUX
+1916-17	-		-		-		-		SCO	-		HUN	-		-		AUT	SWE	ISL	LUX
 
-https://en.wikipedia.org/wiki/Template:1915%E2%80%9316_in_European_football_(UEFA)
+https://en.wikipedia.org/wiki/Template:1916%E2%80%9317_in_European_football_(UEFA)
 
-1916–17 | Austria | dnk | Hungary | Iceland | eir | Luxembourg | Malta | nld | Scotland | Sweden | che
 1917–18 | Austria | dnk | Hungary | Iceland | eir | Luxembourg | Malta | nld | Scotland | che
 1918–19 | Austria | dnk | Hungary | Iceland | eir | Luxembourg | Malta | nld | Scotland | che
 1919–20 | Austria | Belgium | dnk | England | deu | Hungary | Iceland | Ireland | ita | Luxembourg | Malta | nld | Poland | Romania | Scotland | che

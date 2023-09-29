@@ -193,7 +193,13 @@ allTeams = [
 "swe/GAIS",
 "lux/Jeunesse_Esch",
 "lux/Stade_Dudelange",
-"isl/Valur_men%27s_football"
+"isl/Valur_men%27s_football",
+"swe/Helsingborgs_IF",
+"hun/Vasas_SC",
+"hun/Budapest_Honv%C3%A9d_FC",
+"lux/FCM_Young_Boys_Diekirch",
+"mlt/Floriana Liberty",
+"hun/F%C5%91v%C3%A1rosi_TK"
 ];
 
 redirects = [
