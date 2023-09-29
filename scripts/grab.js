@@ -15,6 +15,8 @@ switch (flag) {
     case "EIR": country = "Ireland"; break;
     case "ENG": country = "England"; break;
     case "HUN": country = "Hungary"; break;
+    case "ISL": country = "Iceland"; break;
+    case "LUX": country = "Luxembourg"; break;
     case "MLT": country = "Malta"; break;
     case "NLD": country = "Netherlands"; break;
     case "ROU": country = "Romania"; break;

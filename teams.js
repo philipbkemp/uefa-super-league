@@ -183,7 +183,17 @@ allTeams = [
 "rou/Prahova_Ploie%C8%99ti",
 "aut/SC_Wacker",
 "rou/Col%C8%9Bea_Bucure%C8%99ti",
-"rou/Oltenia_Craiova"
+"rou/Oltenia_Craiova",
+"isl/Knattspyrnuf%C3%A9lagi%C3%B0_Fram",
+"lux/US_Hollerich_Bonnevoie",
+"lux/Sporting_Club_Luxembourg",
+"isl/Knattspyrnuf%C3%A9lag_Reykjav%C3%ADkur",
+"lux/Racing_Club_Luxembourg",
+"lux/CS_Fola_Esch",
+"swe/GAIS",
+"lux/Jeunesse_Esch",
+"lux/Stade_Dudelange",
+"isl/Valur_men%27s_football"
 ];
 
 redirects = [
