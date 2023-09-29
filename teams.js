@@ -198,8 +198,12 @@ allTeams = [
 "hun/Vasas_SC",
 "hun/Budapest_Honv%C3%A9d_FC",
 "lux/FCM_Young_Boys_Diekirch",
-"mlt/Floriana Liberty",
-"hun/F%C5%91v%C3%A1rosi_TK"
+"mlt/Floriana_Liberty",
+"hun/F%C5%91v%C3%A1rosi_TK",
+"sco/Clydebank_F.C._(1914)",
+"hun/Budapesti_M%C3%81VAG_SK",
+"mlt/Hibernians_F.C.",
+"lux/CS_P%C3%A9tange"
 ];
 
 redirects = [

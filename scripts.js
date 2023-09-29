@@ -140,6 +140,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 		.replaceAll("%c3%a5","a")
 		.replaceAll("%c4%83","a")
 		.replaceAll("%c3%a2","a")
+		.replaceAll("%c3%81","a")
 		.replaceAll("%c3%a8","e")
 		.replaceAll("%c3%a9","e")
 		.replaceAll("%c4%a6","h")
