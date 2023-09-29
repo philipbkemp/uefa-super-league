@@ -174,12 +174,15 @@ allTeams = [
 "eir/Tritonville_F.C.",
 "swe/IFK_Norrk%C3%B6ping",
 "rou/Uniunea_Sportiv%C4%83_Bucure%C8%99ti",
-"mlt/Senglea_Athletic_F.C."
+"mlt/Senglea_Athletic_F.C.",
+"sco/Ayr_United_F.C.",
+"bel/K.A.A._Gent"
 ];
 
 redirects = [
 ["dnk/%C3%98sterbros_Boldklub","dnk/%C3%98sterbros_BK"],
 ["eir/Bohemian_F.C.","eir/Bohemian_Dublin"],
 ["bel/R._L%C3%A9opold_Uccle_Forestoise","bel/L%C3%A9opold_FC"],
-["bel/R.E._Sport%27s_Club","bel/Royal_Excelsior_Sports_Club"]
+["bel/R.E._Sport%27s_Club","bel/Royal_Excelsior_Sports_Club"],
+["bel/Daring_Club_de_Bruxelles","bel/R._Daring_Club_Molenbeek"]
 ];
