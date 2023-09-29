@@ -176,7 +176,14 @@ allTeams = [
 "rou/Uniunea_Sportiv%C4%83_Bucure%C8%99ti",
 "mlt/Senglea_Athletic_F.C.",
 "sco/Ayr_United_F.C.",
-"bel/K.A.A._Gent"
+"bel/K.A.A._Gent",
+"rou/Rom%C3%A2no-American%C4%83_Bucure%C8%99ti",
+"eng/Bradford_(Park_Avenue)_A.F.C.",
+"mlt/Cottonera_F.C.",
+"rou/Prahova_Ploie%C8%99ti",
+"aut/SC_Wacker",
+"rou/Col%C8%9Bea_Bucure%C8%99ti",
+"rou/Oltenia_Craiova"
 ];
 
 redirects = [

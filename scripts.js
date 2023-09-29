@@ -63,6 +63,7 @@ function updateTeam(link,name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 }
 
 function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
+
 	row = document.createElement("TR");
 	if ( classes !== "" ) {
 		classes.split("|").forEach(function(k){
@@ -94,6 +95,31 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 		alert("Unable to categorise new club " + name);
 	}
 
+	if ( ! newTeams ) {
+		var divNew = document.createElement("div");
+		divNew.id = "div_new";
+		var table = document.createElement("table");
+		table.className = "division division_new";
+		var thead = document.createElement("thead");
+		var headers = ["#","New Teams","P","W","D","L","F","A","Pts","GD","W%","FPG","APG","PPG"];
+		var tr = document.createElement("tr");
+		for (var i = 0; i < headers.length; i++) {
+			var th = document.createElement("th");
+			var abbr = document.createElement("abbr");
+			abbr.title = headers[i];
+			abbr.textContent = headers[i];
+			th.appendChild(abbr);
+			tr.appendChild(th);
+		}
+		thead.appendChild(tr);
+		var tbody = document.createElement("tbody");
+		table.appendChild(thead);
+		table.appendChild(tbody);
+		divNew.appendChild(table);
+		document.getElementById("myTabContent").append(divNew);
+		newTeams = document.querySelector(".division.division_new tbody");
+	}
+
 	pos = document.createElement("TD");
 	pos.innerHTML = newTeams.querySelectorAll("tr").length + 1;
 	row.append(pos);
@@ -113,6 +139,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 		.replaceAll("%c3%a1","a")
 		.replaceAll("%c3%a5","a")
 		.replaceAll("%c4%83","a")
+		.replaceAll("%c3%a2","a")
 		.replaceAll("%c3%a8","e")
 		.replaceAll("%c3%a9","e")
 		.replaceAll("%c4%a6","h")
@@ -121,6 +148,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 		.replaceAll("%c3%b3","o")
 		.replaceAll("%c3%b6","o")
 		.replaceAll("%c8%99","s")
+		.replaceAll("%c8%9b","t")
 		.replaceAll("%c3%9a","u")
 		.replaceAll("%c3%bc","u")
 		.replaceAll("%c5%b1","u")
@@ -274,6 +302,7 @@ function sort(division) {
 function nextSeason() {
 	divisions = ["a","b","c","d","e","f","g","h"];
 	str = [];
+	newPos = 0;
 	divisions.forEach(function(i,idx) {
 		divTbl = document.querySelectorAll("#div_"+i+" table tbody")
 		if ( divTbl.length !== 0 ) {
@@ -285,7 +314,9 @@ function nextSeason() {
 					r.classList.add("d-none");
 				} else {
 					r.classList.remove( ...r.classList );
+					newPos++;
 					tds = r.querySelectorAll("td");
+					tds[0].innerHTML = newPos;
 					for ( j=2 ; j!==14 ; j++ ) {
 						tds[j].innerHTML = "";
 					}
