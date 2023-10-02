@@ -449,8 +449,11 @@ function addWinner(_url,_year,_club,_wiki,_name,_flag,_country) {
             i = document.createElement("IMG");
             i.setAttribute("src","f/"+_flag+".png");
             i.setAttribute("title",_country);
+            a = document.createElement("A");
+            a.setAttribute("href","c/"+_flag.toLowerCase()+"/index.html");
+            a.innerHTML = _country;
             n.append(i);
-            n.append(_country);
+            n.append(a);
             c = document.createElement("TD");
             c.innerHTML = "1";
             y = document.createElement("TD");
