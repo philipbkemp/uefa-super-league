@@ -78,23 +78,27 @@ table.division tbody tr td,
 table.division thead tr th {
     width: 60px;
 }
-table.division thead tr th:nth-of-type(2),
-table.division tbody tr td:nth-of-type(2) {
+table.division:not(.history) thead tr th:nth-of-type(2),
+table.division:not(.history) tbody tr td:nth-of-type(2) {
 	width: 350px;
 }
-table.division thead tr th:nth-of-type(1),
-table.division tbody tr td:nth-of-type(1) {
+table.division:not(.history) thead tr th:nth-of-type(1),
+table.division:not(.history) tbody tr td:nth-of-type(1) {
     width: 100px;
 }
-table.division tbody tr td:nth-of-type(2) {
+table.division:not(.history) tbody tr td:nth-of-type(2) {
 	text-align: left;
 }
-table.division tbody tr.removed td:nth-of-type(1),
-table.division tbody tr.relegated td:nth-of-type(1),
-table.division tbody tr.promoted td:nth-of-type(1) {
+table.division:not(.history) tbody tr.removed td:nth-of-type(1),
+table.division.history tbody tr.removed td:nth-of-type(2),
+table.division:not(.history) tbody tr.relegated td:nth-of-type(1),
+table.division.history tbody tr.relegated td:nth-of-type(2),
+table.division:not(.history) tbody tr.promoted td:nth-of-type(1),
+table.division.history tbody tr.promoted td:nth-of-type(2) {
     position: relative;
 }
-table.division tbody tr.newclub td:nth-of-type(2):after {
+table.division:not(.history) tbody tr.newclub td:nth-of-type(2):after,
+table.division.history tbody tr.newclub td:nth-of-type(3):after {
     content: "\f005";
     float: right;
     font-family: "Font Awesome 6 Free";
@@ -103,7 +107,8 @@ table.division tbody tr.newclub td:nth-of-type(2):after {
     position: relative;
     top: 3px;
 }
-table.division tbody tr.returning td:nth-of-type(2):after {
+table.division:not(.history) tbody tr.returning td:nth-of-type(2):after,
+table.division.history tbody tr.returning td:nth-of-type(3):after {
     content: "\f005";
     float: right;
     font-family: "Font Awesome 6 Free";
@@ -129,7 +134,8 @@ table.division tbody tr.removed:not(.champion),
 table.division tbody tr.relegated:not(.champion) {
     background-color: #ffbfbf;
 }
-table.division tbody tr.relegated td:nth-of-type(1):after {
+table.division:not(.history) tbody tr.relegated td:nth-of-type(1):after,
+table.division.history tbody tr.relegated td:nth-of-type(2):after {
     content: "\f309";
     float: right;
     font-family: "Font Awesome 6 Free";
@@ -139,7 +145,8 @@ table.division tbody tr.relegated td:nth-of-type(1):after {
     right: 11px;
     top: 9px;
 }
-table.division tbody tr.removed td:nth-of-type(1):after {
+table.division:not(.history) tbody tr.removed td:nth-of-type(1):after,
+table.division.history tbody tr.removed td:nth-of-type(2):after {
     content: "\f05e";
     float: right;
     font-family: "Font Awesome 6 Free";
@@ -176,4 +183,30 @@ table.winners tbody td:nth-of-type(2) {
 table.winners thead tr th:nth-of-type(1),
 table.winners tbody tr td:nth-of-type(1) {
     width: 350px;
+}
+
+a.card-body {
+    text-decoration: none;
+}
+a.card-body img {
+    height: 20px;
+    margin-right: 10px;
+}
+a.card-body:hover {
+    background-color: #2b5873cc;
+    color: white;
+}
+
+table.division.history thead tr th:nth-of-type(3),
+table.division.history tbody tr td:nth-of-type(3) {
+    width: 250px;
+}
+table.division.history thead tr th:nth-of-type(1),
+table.division.history tbody tr td:nth-of-type(1),
+table.division.history thead tr th:nth-of-type(2),
+table.division.history tbody tr td:nth-of-type(2) {
+    width: 100px;
+}
+table.division.history tbody tr td:nth-of-type(3) {
+    text-align: left;
 }

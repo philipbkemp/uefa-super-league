@@ -376,6 +376,34 @@ function listNewTeams() {
 	console.log(",\n"+str.join(",\n"));
 }
 
+function listNewPages() {
+	divisions = ["a","b","c","d","e","f","g","h"];
+	str = [];
+	divisions.forEach(function(i,idx) {
+		divTbl = document.querySelectorAll("#div_"+i+" table tbody")
+		if ( divTbl.length !== 0 ) {
+			divTbl = divTbl[0];
+			rows = divTbl.querySelectorAll("tr.newclub");
+			rows.forEach(function(r){
+				link = r.querySelectorAll("a")[0];
+				s = link.getAttribute("href").split("/").pop();
+				img = r.querySelectorAll("img")[0].getAttribute("src").split("/").pop().split(".")[0].toLowerCase();
+				spaces = 50 - s.length;
+				spacer = "";
+				if ( spaces > 0 ) {
+					for ( j=0 ; j!==spaces ; j++ ) {
+						spacer += " ";
+					}
+				}
+				name = link.innerHTML;
+				str.push(img + "  " + s + "" + spacer + name);
+			});
+		}
+	})
+	str.sort();
+	console.log(str.join("\n"));
+}
+
 function getWinner() {
 	winner = document.querySelector("#div_a .division tbody tr");
 	_t = winner.querySelector("a");
@@ -496,4 +524,42 @@ function moveNew(target,count) {
             moved++;
         }
     });
+}
+
+function archive() {
+    ex = [];
+    divisions = ["a","b","c","d","e","f","g","h"];
+    year = document.querySelector("head title").innerHTML.split(" / ")[1].split(" ")[1].trim();
+    divisions.forEach(function(i,idx){
+        divs = document.querySelectorAll("#div_"+i+" tbody tr")
+        divs.forEach(function(row){
+            tds = row.querySelectorAll("td");
+            teamData = [];
+            teamData.push(year);
+            teamData.push(row.classList.value);
+            teamData.push(i.toUpperCase());
+            tds.forEach(function(col){
+                links = col.querySelectorAll("a");
+                if ( links.length !== 0 ) {
+                    teamData.push(links[0].getAttribute("href").split("/").pop());
+                    teamData.push(links[0].innerHTML);
+                } else {
+                    teamData.push(col.innerHTML);
+                }
+            });
+            ex.push(teamData);
+        });
+    });
+    s = "";
+    ex.forEach(function(x){
+        s += "";
+        s += "goArchive(";
+        for ( i=0 ; i!==x.length ; i++ ) {
+            if ( i !== 0 ) { s+= ","; }
+            s += '"'+x[i]+'"';
+        }
+        s += ");";
+        s += "\n";
+    });
+    console.log(s);
 }
