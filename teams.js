@@ -207,7 +207,16 @@ allTeams = [
 "mlt/King%27s_Own_Malta_Regiment",
 "isl/Knattspyrnuf%C3%A9lagi%C3%B0_V%C3%ADkingur",
 "mlt/Army_Service_Corps",
-"mlt/Cospicua_Rangers"
+"mlt/Cospicua_Rangers",
+"rou/Venus_Bucure%C8%99ti",
+"rou/Unirea_Tricolor_Bucure%C8%99ti",
+"hun/%C3%9Ajpesti_T%C3%B6rekv%C3%A9s_SE",
+"sco/Albion_Rovers_F.C.",
+"mlt/Marsa_F.C.",
+"bel/R._Uccle_Sport",
+"bel/K.F.C._Rhodienne-De_Hoek",
+"aut/VfB_Admira_Wacker_M%C3%B6dling",
+"mlt/Paola_United"
 ];
 
 redirects = [
@@ -215,5 +224,7 @@ redirects = [
 ["eir/Bohemian_F.C.","eir/Bohemian_Dublin"],
 ["bel/R._L%C3%A9opold_Uccle_Forestoise","bel/L%C3%A9opold_FC"],
 ["bel/R.E._Sport%27s_Club","bel/Royal_Excelsior_Sports_Club"],
-["bel/Daring_Club_de_Bruxelles","bel/R._Daring_Club_Molenbeek"]
+["bel/Daring_Club_de_Bruxelles","bel/R._Daring_Club_Molenbeek"],
+["bel/Club_Brugge","bel/Club_Brugge_K.V."],
+["bel/R._Antwerp_F.C.","bel/Royal_Antwerp_FC"]
 ];

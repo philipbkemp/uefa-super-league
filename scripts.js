@@ -306,21 +306,37 @@ function sort(division) {
 function nextSeason() {
 	divisions = ["a","b","c","d","e","f","g","h"];
 	str = [];
-	newPos = 0;
+	clubCount = [];
+	clubCount[0] = 0;
+	str[0] = "";
 	divisions.forEach(function(i,idx) {
 		divTbl = document.querySelectorAll("#div_"+i+" table tbody")
 		if ( divTbl.length !== 0 ) {
-			str[idx] = "";
+			str[idx+1] = "";
+			clubCount[idx+1] = 0;
 			divTbl = divTbl[0];
 			rows = divTbl.querySelectorAll("tr");
 			rows.forEach(function(r){
 				if ( r.classList.contains("removed") ) {
 					r.classList.add("d-none");
-				} else {
+				} else if ( r.classList.contains("relegated") ) {
 					r.classList.remove( ...r.classList );
-					newPos++;
+					document.querySelector("#div_"+divisions[idx+1]+" table tbody").append(r);
+				} else if ( r.classList.contains("promoted") ) {
+					clubCount[idx-1]++;
+					r.classList.remove( ...r.classList );
 					tds = r.querySelectorAll("td");
-					tds[0].innerHTML = newPos;
+					tds[0].innerHTML = clubCount[idx-1];
+					for ( j=2 ; j!==14 ; j++ ) {
+						tds[j].innerHTML = "";
+					}
+					str[idx-1] += '<tr class="">' + r.innerHTML.trim() + '</tr>\n';
+					document.querySelector("#div_"+divisions[idx-1]+" table tbody").append(r);
+				} else {
+					clubCount[idx]++;
+					r.classList.remove( ...r.classList );
+					tds = r.querySelectorAll("td");
+					tds[0].innerHTML = clubCount[idx];
 					for ( j=2 ; j!==14 ; j++ ) {
 						tds[j].innerHTML = "";
 					}
@@ -332,7 +348,7 @@ function nextSeason() {
 	divisions.forEach(function(i,idx) {
 		if ( str[idx] && str[idx] !== "" ) {
 			alert( "DIVISON " + i.toUpperCase() + ": " + document.querySelectorAll("#div_"+i+" table tbody tr:not(.d-none)").length );
-			console.log("DIVISON " + i.toUpperCase());
+			console.log("DIVISON " + i.toUpperCase() + "==================================================");
 			console.log(str[idx]);
 		}
 	});
@@ -562,4 +578,32 @@ function archive() {
         s += "\n";
     });
     console.log(s);
+}
+
+function relegatePromote() {
+    divisions = ["a","b","c","d","e","f","g","h"];
+    afterCount = [];
+    afterCount[0] = 0;
+	divisions.forEach(function(i,idx) {
+		divRows = document.querySelectorAll("#div_"+i+" table tbody tr");
+		if ( divRows.length !== 0 ) {
+            afterCount[idx+1] = 0;
+            divRows.forEach(function(r){
+                if ( r.classList.contains("removed") ) {
+                    // removed
+                } else if ( r.classList.contains("relegated") ) {
+                    afterCount[idx+1]++
+                } else if ( r.classList.contains("promoted") ) {
+                    afterCount[idx-1]++;
+                } else {
+                    afterCount[idx]++;
+                }
+            });
+        }
+    });
+    afterCount.forEach(function(x,idx){
+    	if ( x !== 0 ) {
+        	console.log(divisions[idx].toUpperCase() + ": " + x);
+        }
+    });
 }
