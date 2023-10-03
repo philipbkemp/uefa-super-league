@@ -203,7 +203,11 @@ allTeams = [
 "sco/Clydebank_F.C._(1914)",
 "hun/Budapesti_M%C3%81VAG_SK",
 "mlt/Hibernians_F.C.",
-"lux/CS_P%C3%A9tange"
+"lux/CS_P%C3%A9tange",
+"mlt/King%27s_Own_Malta_Regiment",
+"isl/Knattspyrnuf%C3%A9lagi%C3%B0_V%C3%ADkingur",
+"mlt/Army_Service_Corps",
+"mlt/Cospicua_Rangers"
 ];
 
 redirects = [
