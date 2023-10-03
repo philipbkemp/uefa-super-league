@@ -67,7 +67,7 @@ goArchive("1890-91","","A","35","west_bromwich_albion_f_c_.html","West Bromwich 
 goArchive("1890-91","removed newclub","A","36","clarence_f_c_.html","Clarence","14","3","1","10","21","49","10","-28","21.4%","1.50","3.50","0.71");
 goArchive("1890-91","","A","37","melchioraner_boldklubben.html","Melchioraner Boldklubben","5","1","0","4","12","16","3","-4","20.0%","2.40","3.20","0.60");
 goArchive("1890-91","removed deduction newclub","A","38","cowlairs_f_c_.html","Cowlairs","18","3","4","11","24","50","9","-26","16.7%","1.33","2.78","0.50");
-goArchive("1890-91","removed newclub","A","39","rc_en_vv_rotterdam.html","VV Concordia","8","0","2","6","1","10","2","-9","0.0%","0.13","1.25","0.25");
+goArchive("1890-91","removed newclub","A","39","rc_en_vv_rotterdam_merge1.html","VV Concordia","8","0","2","6","1","10","2","-9","0.0%","0.13","1.25","0.25");
 goArchive("1890-91","removed newclub","A","40","milford_f_c_.html","Milford","14","0","0","14","10","62","0","-52","0.0%","0.71","4.43","0.00");
 goArchive("1890-91","removed","A","41","boldklubben_haabet.html","Boldklubben Haabet","4","0","0","4","1","18","0","-17","0.0%","0.25","4.50","0.00");
 goArchive("1890-91","newclub expunged","A","42","renton_f_c_.html","Renton","0","0","0","0","0","0","0","0","0.0%","0.00","0.00","0.00");
