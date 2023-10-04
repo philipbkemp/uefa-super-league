@@ -216,7 +216,24 @@ allTeams = [
 "bel/R._Uccle_Sport",
 "bel/K.F.C._Rhodienne-De_Hoek",
 "aut/VfB_Admira_Wacker_M%C3%B6dling",
-"mlt/Paola_United"
+"mlt/Paola_United",
+"lva/Kaiserwald",
+"lva/YMCA",
+"lux/Union_Luxembourg",
+"swe/Hammarby_Fotboll",
+"swe/IFK_Malm%C3%B6_Fotboll",
+"lva/Union",
+"lux/FA_Red_Boys_Differdange",
+"aut/Hakoah_Vienna",
+"eng/Huddersfield_Town_A.F.C.",
+"hun/Turul_FC",
+"mlt/Qormi_United",
+"swe/IFK_Eskilstuna",
+"mlt/Dockyard_Police",
+"rou/Excelsior_Bucure%C8%99ti",
+"rou/Educa%C8%9Bia_Fizic%C4%83_Bucure%C8%99ti",
+"lux/US_Rumelange",
+"lva/Karaskola"
 ];
 
 redirects = [
