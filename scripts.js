@@ -557,6 +557,8 @@ function archive() {
             tds.forEach(function(col){
                 links = col.querySelectorAll("a");
                 if ( links.length !== 0 ) {
+                	img = col.querySelectorAll("img")[0].getAttribute("src").split("/").pop().split(".")[0];
+                	teamData.push(img);
                     teamData.push(links[0].getAttribute("href").split("/").pop());
                     teamData.push(links[0].innerHTML);
                 } else {

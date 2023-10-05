@@ -1,52 +1,52 @@
 1888-89	ENG
 1889-90	ENG	DNK
-1890-91	ENG	DNK	NLD	EIR	SCO
-1891-92	ENG	DNK	NLD	EIR	SCO
-1892-93	ENG	DNK	-		EIR	SCO
-1893-94	ENG	DNK	NLD	EIR	SCO
-1894-95	ENG	DNK	NLD	EIR	SCO
-1895-96	ENG	DNK	NLD	EIR	SCO	BEL
-1896-97	ENG	DNK	NLD	EIR	SCO	BEL
-1897-98	ENG	DNK	-		EIR	SCO	BEL
-1898-99	ENG	DNK	-		EIR	SCO	-	
-1899-00	ENG	DNK	-		EIR	SCO	-
-1900-01	ENG	DNK	-		EIR	SCO	BEL
-1901-02	ENG	DNK	-		EIR	SCO	-		HUN
-1902-03	ENG	DNK	-		EIR	SCO	-		HUN
-1903-04	ENG	DNK	-		EIR	SCO	-		HUN
-1904-05	ENG	DNK	-		EIR	SCO	BEL	HUN
-1905-06	ENG	DNK	-		EIR	SCO	BEL	HUN
-1906-07	ENG	DNK	-		EIR	SCO	BEL	HUN
-1907-08	ENG	DNK	-		EIR	SCO	BEL	HUN
-1908-09	ENG	DNK	-		EIR	SCO	BEL	HUN
-1909-10	ENG	DNK	-		EIR	SCO	BEL	HUN	MLT	ROU
-1910-11	ENG	DNK	-		EIR	SCO	BEL	HUN	-		ROU
-1911-12	ENG	-		-		EIR	SCO	BEL	HUN	MLT	ROU	AUT
-1912-13	ENG	-		-		EIR	SCO	BEL	HUN	MLT	ROU	AUT	SWE
-1913-14	ENG	-		-		EIR	SCO	BEL	HUN	MLT	ROU	AUT	SWE
-1914-15	ENG	-		-		EIR	SCO	-		-		MLT	ROU	AUT	SWE
-1915-16	-		-		-		-		SCO	-		-		-		ROU	AUT	SWE	ISL	LUX
-1916-17	-		-		-		-		SCO	-		HUN	-		-		AUT	SWE	ISL	LUX
-1917-18	-		-		-		-		SCO	-		HUN	MLT	-		AUT	-		ISL	LUX
-1918-19	-		-		-		-		SCO	-		HUN	MLT	-		AUT	-		ISL	LUX
-1919-20	ENG	-		-		EIR	SCO	BEL	HUN	MLT	ROU	AUT	-		ISL	LUX
-1920-21	ENG	-		-		EIR	SCO	BEL	HUN	MLT	ROU	AUT	SWE	ISL	LUX	LVA
+1890-91	ENG	DNK	NLD	EIR			SCO
+1891-92	ENG	DNK	NLD	EIR			SCO
+1892-93	ENG	DNK	-		EIR			SCO
+1893-94	ENG	DNK	NLD	EIR			SCO
+1894-95	ENG	DNK	NLD	EIR			SCO
+1895-96	ENG	DNK	NLD	EIR			SCO	BEL
+1896-97	ENG	DNK	NLD	EIR			SCO	BEL
+1897-98	ENG	DNK	-		EIR			SCO	BEL
+1898-99	ENG	DNK	-		EIR			SCO	-	
+1899-00	ENG	DNK	-		EIR			SCO	-
+1900-01	ENG	DNK	-		EIR			SCO	BEL
+1901-02	ENG	DNK	-		EIR			SCO	-		HUN
+1902-03	ENG	DNK	-		EIR			SCO	-		HUN
+1903-04	ENG	DNK	-		EIR			SCO	-		HUN
+1904-05	ENG	DNK	-		EIR			SCO	BEL	HUN
+1905-06	ENG	DNK	-		EIR			SCO	BEL	HUN
+1906-07	ENG	DNK	-		EIR			SCO	BEL	HUN
+1907-08	ENG	DNK	-		EIR			SCO	BEL	HUN
+1908-09	ENG	DNK	-		EIR			SCO	BEL	HUN
+1909-10	ENG	DNK	-		EIR			SCO	BEL	HUN	MLT	ROU
+1910-11	ENG	DNK	-		EIR			SCO	BEL	HUN	-		ROU
+1911-12	ENG	-		-		EIR			SCO	BEL	HUN	MLT	ROU	AUT
+1912-13	ENG	-		-		EIR			SCO	BEL	HUN	MLT	ROU	AUT	SWE
+1913-14	ENG	-		-		EIR			SCO	BEL	HUN	MLT	ROU	AUT	SWE
+1914-15	ENG	-		-		EIR			SCO	-		-		MLT	ROU	AUT	SWE
+1915-16	-		-		-		-				SCO	-		-		-		ROU	AUT	SWE	ISL	LUX
+1916-17	-		-		-		-				SCO	-		HUN	-		-		AUT	SWE	ISL	LUX
+1917-18	-		-		-		-				SCO	-		HUN	MLT	-		AUT	-		ISL	LUX
+1918-19	-		-		-		-				SCO	-		HUN	MLT	-		AUT	-		ISL	LUX
+1919-20	ENG	-		-		EIR			SCO	BEL	HUN	MLT	ROU	AUT	-		ISL	LUX
+1920-21	ENG	-		-		EIR			SCO	BEL	HUN	MLT	ROU	AUT	SWE	ISL	LUX	LVA
+1921-22	ENG	-		-		NIR	IRL	SCO	BEL	HUN	MLT	-	AUT	-		ISL	LUX	LVA	LTU
 
-https://en.wikipedia.org/wiki/Template:1920%E2%80%9321_in_European_football_(UEFA)
+https://en.wikipedia.org/wiki/Template:1921%E2%80%9322_in_European_football_(UEFA)
 
-1921–22 | Austria | Belgium | dnk | England | est | deu | grc | Hungary | Iceland | ita | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | pol | Republic of Ireland | Romania | Russia | Scotland | che
-1922–23 | Austria | Belgium | dnk | England | est | deu | grc | Hungary | Iceland | ita | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | pol | Republic of Ireland | Romania | Russia | Scotland | Sweden | che | Yugoslavia
-1923–24 | Austria | Belgium | Bulgaria | dnk | England | est | deu | grc | Hungary | Iceland | ita | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | pol | Republic of Ireland | Romania | Russia | Scotland | Sweden | che | Turkey | Yugoslavia
-1924–25 | Austria | Belgium | Bulgaria | Czechoslovakia | dnk | England | est | deu | grc | Hungary | Iceland | ita | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | pol | Republic of Ireland | Romania | Scotland | Soviet Union | Sweden | che | Turkey | Yugoslavia
-1925–26 | Austria | Belgium | Bulgaria | Czechoslovakia | dnk | England | est | deu | grc | Hungary | Iceland | ita | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | pol | Republic of Ireland | Romania | Scotland | Sweden | che | Yugoslavia
-1926–27 | Austria | Belgium | Bulgaria | Czechoslovakia | dnk | England | est | deu | grc | Hungary | Iceland | ita | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | pol | Republic of Ireland | Romania | Scotland | Sweden | che | Turkey | Yugoslavia
-1927–28 | Austria | Belgium | Bulgaria | Czechoslovakia | dnk | England | est | deu | grc | Hungary | Iceland | ita | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | Poland | Republic of Ireland | Romania | Scotland | Soviet Union | Sweden | che | Turkey | Yugoslavia
-1928–29 | Austria | Belgium | Bulgaria | Czechoslovakia | dnk | England | est | deu | grc | Hungary | Iceland | ita | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | Poland | Republic of Ireland | Romania | Scotland | Soviet Union | Spain | Sweden | che | Yugoslavia
-1929–30 | Albania | Austria | Belgium | Bulgaria | Czechoslovakia | Denmark | England | Estonia | Finland | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | Poland | Republic of Ireland | Romania | Scotland | Spain | Sweden | che | Yugoslavia
-1930–31 | Albania | Austria | Belgium | Bulgaria | Czechoslovakia | Denmark | England | Estonia | Finland | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | Poland | Republic of Ireland | Romania | Scotland | Soviet Union | Spain | Sweden | che | Yugoslavia
-1931–32 | Albania | Austria | Belgium | Bulgaria | Czechoslovakia | Denmark | England | Estonia | Finland | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | Palestine | Poland | Republic of Ireland | Romania | Scotland | Soviet Union | Spain | Sweden | che | Turkey | Yugoslavia
-1932–33 | Albania | Austria | Belgium | Bulgaria | Czechoslovakia | Denmark | England | Estonia | Finland | France | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | Poland | Republic of Ireland | Romania | Scotland | Soviet Union | Spain | Sweden | che | Turkey | Yugoslavia
-1933–34 | Albania | Austria | Belgium | Bulgaria | Czechoslovakia | Denmark | England | Estonia | Finland | France | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | Palestine | Poland | Republic of Ireland | Romania | Scotland | Spain | Sweden | Switzerland | Turkey
+1922–23 | Austria | Belgium | dnk | England | est | deu | grc | Hungary | Iceland | ita | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | pol | Republic of Ireland | rou | Russia | Scotland | Sweden | che | Yugoslavia
+1923–24 | Austria | Belgium | Bulgaria | dnk | England | est | deu | grc | Hungary | Iceland | ita | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | pol | Republic of Ireland | rou | Russia | Scotland | Sweden | che | Turkey | Yugoslavia
+1924–25 | Austria | Belgium | Bulgaria | Czechoslovakia | dnk | England | est | deu | grc | Hungary | Iceland | ita | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | pol | Republic of Ireland | rou | Scotland | Soviet Union | Sweden | che | Turkey | Yugoslavia
+1925–26 | Austria | Belgium | Bulgaria | Czechoslovakia | dnk | England | est | deu | grc | Hungary | Iceland | ita | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | pol | Republic of Ireland | rou | Scotland | Sweden | che | Yugoslavia
+1926–27 | Austria | Belgium | Bulgaria | Czechoslovakia | dnk | England | est | deu | grc | Hungary | Iceland | ita | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | pol | Republic of Ireland | rou | Scotland | Sweden | che | Turkey | Yugoslavia
+1927–28 | Austria | Belgium | Bulgaria | Czechoslovakia | dnk | England | est | deu | grc | Hungary | Iceland | ita | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | Poland | Republic of Ireland | rou | Scotland | Soviet Union | Sweden | che | Turkey | Yugoslavia
+1928–29 | Austria | Belgium | Bulgaria | Czechoslovakia | dnk | England | est | deu | grc | Hungary | Iceland | ita | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | Poland | Republic of Ireland | rou | Scotland | Soviet Union | Spain | Sweden | che | Yugoslavia
+1929–30 | Albania | Austria | Belgium | Bulgaria | Czechoslovakia | Denmark | England | Estonia | Finland | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | Poland | Republic of Ireland | rou | Scotland | Spain | Sweden | che | Yugoslavia
+1930–31 | Albania | Austria | Belgium | Bulgaria | Czechoslovakia | Denmark | England | Estonia | Finland | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | Poland | Republic of Ireland | rou | Scotland | Soviet Union | Spain | Sweden | che | Yugoslavia
+1931–32 | Albania | Austria | Belgium | Bulgaria | Czechoslovakia | Denmark | England | Estonia | Finland | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | Palestine | Poland | Republic of Ireland | rou | Scotland | Soviet Union | Spain | Sweden | che | Turkey | Yugoslavia
+1932–33 | Albania | Austria | Belgium | Bulgaria | Czechoslovakia | Denmark | England | Estonia | Finland | France | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | Poland | Republic of Ireland | rou | Scotland | Soviet Union | Spain | Sweden | che | Turkey | Yugoslavia
+1933–34 | Albania | Austria | Belgium | Bulgaria | Czechoslovakia | Denmark | England | Estonia | Finland | France | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | Palestine | Poland | Republic of Ireland | rou | Scotland | Spain | Sweden | Switzerland | Turkey
 1934–35 | Albania | Austria | Belgium | Bulgaria | Cyprus | Czechoslovakia | Denmark | England | Estonia | Finland | France | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | Palestine | Poland | Portugal | Republic of Ireland | Romania | Scotland | Soviet Union | Spain | Sweden | Switzerland | Turkey | Yugoslavia
 1935–36 | Albania | Austria | Belgium | Bulgaria | Cyprus | Czechoslovakia | Denmark | England | Estonia | Finland | France | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | Palestine | Poland | Portugal | Republic of Ireland | Romania | Scotland | Soviet Union | Spain | Sweden | Switzerland | Turkey | Yugoslavia
 1936–37 | Albania | Austria | Belgium | Bulgaria | Cyprus | Czechoslovakia | Denmark | England | Estonia | Finland | France | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | Northern Ireland | Palestine | Poland | Portugal | Republic of Ireland | Romania | Scotland | Soviet Union | Sweden | Switzerland | Turkey | Yugoslavia

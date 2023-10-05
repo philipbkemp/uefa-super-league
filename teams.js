@@ -233,7 +233,31 @@ allTeams = [
 "rou/Excelsior_Bucure%C8%99ti",
 "rou/Educa%C8%9Bia_Fizic%C4%83_Bucure%C8%99ti",
 "lux/US_Rumelange",
-"lva/Karaskola"
+"lva/Karaskola",
+"ltu/LFLS_Kaunas",
+"irl/St._James%27s_Gate_F.C.",
+"ltu/Aviacija_Kaunas",
+"mlt/Malta_Police",
+"eng/Cardiff_City_F.C.",
+"ltu/Kovas_Kaunas",
+"irl/Olympia_F.C._(Dublin)",
+"ltu/LFLS_Kaunas_merge",
+"irl/Jacobs_F.C.",
+"hun/V%C3%ADv%C3%B3_%C3%A9s_Atl%C3%A9tikai_Club",
+"ltu/Makabi_Kaunas",
+"nir/Queens_Island_F.C.",
+"irl/Dublin_United_F.C.",
+"irl/Frankfort_F.C.",
+"aut/FC_Ostmark",
+"bel/R.S.C._Anderlecht",
+"hun/VII._Ker%C3%BCleti_SC",
+"mlt/Sliema_Rangers",
+"bel/KV_Mechelen",
+"lux/Tricolore_Muhlenweg",
+"lux/FC_Schifflange_95",
+"irl/YMCA_F.C._(Dublin)",
+"mlt/Old_Lions",
+"ltu/BAB_(football_club)"
 ];
 
 redirects = [
@@ -243,5 +267,6 @@ redirects = [
 ["bel/R.E._Sport%27s_Club","bel/Royal_Excelsior_Sports_Club"],
 ["bel/Daring_Club_de_Bruxelles","bel/R._Daring_Club_Molenbeek"],
 ["bel/Club_Brugge","bel/Club_Brugge_K.V."],
-["bel/R._Antwerp_F.C.","bel/Royal_Antwerp_FC"]
+["bel/R._Antwerp_F.C.","bel/Royal_Antwerp_FC"],
+["sco/Albion_Rovers_F.C.","sco/Albion_Rovers_F.C._(Scotland)"]
 ];
