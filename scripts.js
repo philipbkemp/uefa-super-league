@@ -392,6 +392,7 @@ function listNewTeams() {
 	console.log(",\n"+str.join(",\n"));
 }
 
+/*
 function listNewPages() {
 	divisions = ["a","b","c","d","e","f","g","h"];
 	str = [];
@@ -418,7 +419,7 @@ function listNewPages() {
 	})
 	str.sort();
 	console.log(str.join("\n"));
-}
+}*/
 
 function getWinner() {
 	winner = document.querySelector("#div_a .division tbody tr");

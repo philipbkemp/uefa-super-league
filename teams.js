@@ -272,6 +272,19 @@ allTeams = [
 "irl/Rathmines_Athletic_F.C.",
 "lva/Maccabi",
 "lux/Union_05_Kayl-T%C3%A9tange",
+"lva/RFK",
+"lux/CA_Spora_Luxembourg",
+"ltu/KSK_Kaunas",
+"eng/West_Ham_United_F.C.",
+"nir/Larne_F.C.",
+"nir/Barn_F.C.",
+"lva/Amatieris",
+"aut/SK_Slovan_HAC",
+"nir/Ards_F.C.",
+"lux/FC_Red_Black_Pfaffenthal",
+"irl/Brooklyn_F.C._(Dublin)",
+"nir/Newry_City_F.C.",
+"lux/Eclair_Bettembourg"
 ];
 
 redirects = [
@@ -284,4 +297,5 @@ redirects = [
 ["bel/R._Antwerp_F.C.","bel/Royal_Antwerp_FC"],
 ["sco/Albion_Rovers_F.C.","sco/Albion_Rovers_F.C._(Scotland)"],
 ["mlt/%C4%A6amrun_Spartans_F.C.","mlt/Hamrun_Spartans_F.C."]
+["aut/SV_Amateure","aut/FK_Austria_Wien"]
 ];
