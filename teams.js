@@ -257,7 +257,21 @@ allTeams = [
 "lux/FC_Schifflange_95",
 "irl/YMCA_F.C._(Dublin)",
 "mlt/Old_Lions",
-"ltu/BAB_(football_club)"
+"ltu/BAB_(football_club)",
+"irl/Shamrock_Rovers_F.C.",
+"lva/JKS",
+"irl/Shelbourne_United_F.C.",
+"irl/Athlone_Town_A.F.C.",
+"lva/LJS",
+"lva/LSB",
+"irl/Pioneers_F.C._(Dublin)",
+"hun/Zugl%C3%B3i_AC",
+"irl/Midland_Athletic_F.C.",
+"bel/K_Berchem_Sport",
+"sco/Alloa_Athletic_F.C.",
+"irl/Rathmines_Athletic_F.C.",
+"lva/Maccabi",
+"lux/Union_05_Kayl-T%C3%A9tange",
 ];
 
 redirects = [
@@ -268,5 +282,6 @@ redirects = [
 ["bel/Daring_Club_de_Bruxelles","bel/R._Daring_Club_Molenbeek"],
 ["bel/Club_Brugge","bel/Club_Brugge_K.V."],
 ["bel/R._Antwerp_F.C.","bel/Royal_Antwerp_FC"],
-["sco/Albion_Rovers_F.C.","sco/Albion_Rovers_F.C._(Scotland)"]
+["sco/Albion_Rovers_F.C.","sco/Albion_Rovers_F.C._(Scotland)"],
+["mlt/%C4%A6amrun_Spartans_F.C.","mlt/Hamrun_Spartans_F.C."]
 ];
