@@ -11,8 +11,9 @@ country = "";
 switch (flag) {
     case "AUT": country = "Austria"; break;
     case "BEL": country = "Belgium"; break;
+    case "CZE": country = "Czechoslovakia"; break;
     case "DNK": country = "Denmark"; break;
-    case "EIR": country = "Ireland"; break;
+    /*case "EIR": country = "Ireland"; break;*/
     case "ENG": country = "England"; break;
     case "HUN": country = "Hungary"; break;
     case "IRL": country = "Republic of Ireland"; break;

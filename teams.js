@@ -81,6 +81,7 @@ allTeams = [
 "dnk/%C3%98sterbros_Boldklub",
 "eir/North_Staffordshire_Regiment_F.C.",
 "eir/Belfast_Celtic_F.C.",
+"nir/Belfast_Celtic_F.C..",
 "sco/Partick_Thistle_F.C.",
 "eng/Newcastle_United_F.C.",
 "dnk/Boldklubben_Dana",
@@ -284,7 +285,32 @@ allTeams = [
 "lux/FC_Red_Black_Pfaffenthal",
 "irl/Brooklyn_F.C._(Dublin)",
 "nir/Newry_City_F.C.",
-"lux/Eclair_Bettembourg"
+"lux/Eclair_Bettembourg",
+"cze/SK_Slavia_Prague",
+"cze/AC_Sparta_Prague",
+"lva/ASK",
+"irl/Cork_F.C.",
+"cze/FK_Viktoria_%C5%BDi%C5%BEkov",
+"nir/Portadown_F.C.",
+"cze/DFC_Prag",
+"sco/Cowdenbeath_F.C.",
+"cze/%C4%8CAFC_Prague",
+"sco/St_Johnstone_F.C.",
+"swe/Landskrona_BoIS",
+"swe/IK_Sleipner",
+"mlt/Valletta_Rovers",
+"hun/Budapesti_EAC",
+"cze/SK_Libe%C5%88",
+"cze/%C4%8Cechie_Karl%C3%ADn",
+"eng/Leeds_United_F.C.",
+"cze/Bohemians_1905",
+"cze/Nuselsk%C3%BD_SK",
+"bel/R.W.D._Molenbeek",
+"lux/Progres_Grund",
+"irl/Bray_Unknowns_F.C.",
+"cze/FK_Meteor_Prague_VIII",
+"swe/V%C3%A4ster%C3%A5s_IK_Fotboll",
+"lux/F91_Dudelange"
 ];
 
 redirects = [
@@ -296,6 +322,7 @@ redirects = [
 ["bel/Club_Brugge","bel/Club_Brugge_K.V."],
 ["bel/R._Antwerp_F.C.","bel/Royal_Antwerp_FC"],
 ["sco/Albion_Rovers_F.C.","sco/Albion_Rovers_F.C._(Scotland)"],
-["mlt/%C4%A6amrun_Spartans_F.C.","mlt/Hamrun_Spartans_F.C."]
-["aut/SV_Amateure","aut/FK_Austria_Wien"]
+["mlt/%C4%A6amrun_Spartans_F.C.","mlt/Hamrun_Spartans_F.C."],
+["aut/SV_Amateure","aut/FK_Austria_Wien"],
+["aut/SC_Rudolfsh%C3%BCgel","aut/https://de.wikipedia.orgSpC_Rudolfsh%C3%BCgel"]
 ];

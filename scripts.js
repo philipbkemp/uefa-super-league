@@ -141,10 +141,13 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 		.replaceAll("%c4%83","a")
 		.replaceAll("%c3%a2","a")
 		.replaceAll("%c3%81","a")
+		.replaceAll("%c3%a4","a")
+		.replaceAll("%c4%8c","c")
 		.replaceAll("%c3%a8","e")
 		.replaceAll("%c3%a9","e")
 		.replaceAll("%c4%a6","h")
 		.replaceAll("%c3%ad","i")
+		.replaceAll("%c5%88","n")
 		.replaceAll("%c3%96","o")
 		.replaceAll("%c3%98","o")
 		.replaceAll("%c3%b3","o")
@@ -156,6 +159,9 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 		.replaceAll("%c3%9a","u")
 		.replaceAll("%c3%bc","u")
 		.replaceAll("%c5%b1","u")
+		.replaceAll("%c3%bd","y")
+		.replaceAll("%c5%bd","z")
+		.replaceAll("%c5%be","z")
 		.replaceAll(" ","_").replaceAll(".","_").replaceAll("__","_");
     if ( /[^a-z0-9_]/.test(_teamUrl) ) {
         _teamUrl = prompt("Invalid URL " + _teamUrl,_teamUrl);
