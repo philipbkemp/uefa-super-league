@@ -310,7 +310,17 @@ allTeams = [
 "irl/Bray_Unknowns_F.C.",
 "cze/FK_Meteor_Prague_VIII",
 "swe/V%C3%A4ster%C3%A5s_IK_Fotboll",
-"lux/F91_Dudelange"
+"lux/F91_Dudelange",
+"cze/SK_Kladno",
+"irl/Brideville_F.C.",
+"sco/Dundee_United_F.C.",
+"swe/IFK_Uddevalla",
+"hun/Erzs%C3%A9beti_TC",
+"lux/US_Esch",
+"bel/R.F.C._Tilleur",
+"swe/IK_City",
+"cze/SK_Slavoj_%C5%BDi%C5%BEkov",
+"cze/SK_%C4%8Cechie_VIII"
 ];
 
 redirects = [
