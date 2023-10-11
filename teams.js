@@ -320,7 +320,18 @@ allTeams = [
 "bel/R.F.C._Tilleur",
 "swe/IK_City",
 "cze/SK_Slavoj_%C5%BDi%C5%BEkov",
-"cze/SK_%C4%8Cechie_VIII"
+"cze/SK_%C4%8Cechie_VIII",
+"aut/Brigittenauer_AC",
+"hun/Sabaria_FC",
+"hun/Szegedi_AK",
+"swe/IF_Elfsborg",
+"sco/Dunfermline_Athletic_F.C.",
+"swe/Westermalms_IF",
+"irl/Dundalk_F.C.",
+"lux/FC_Aris_Bonnevoie",
+"bel/CS_La_Forestoise",
+"lux/FC_Progr%C3%A8s_Niedercorn",
+"isl/%C3%8D%C3%BEr%C3%B3ttabandalag_Vestmannaeyja"
 ];
 
 redirects = [

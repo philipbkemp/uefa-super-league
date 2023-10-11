@@ -36,10 +36,10 @@
 1923-24	ENG	-		-		NIR	IRL	SCO	BEL	HUN	MLT	-		AUT	-		ISL	LUX	LVA	LTU
 1924-25	ENG	-		-		NIR	IRL	SCO	BEL	HUN	MLT	-		AUT	SWE	ISL	LUX	LVA	-		CZE
 1925-26	ENG	-		-		NIR	IRL	SCO	BEL	HUN	MLT	-		AUT	SWE	ISL	LUX	LVA	-		CZE
+1926-27	ENG	-		-		NIR	IRL	SCO	BEL	HUN	MLT	-		AUT	SWE	ISL	LUX	-		-		CZE
 
-https://en.wikipedia.org/wiki/Template:1925%E2%80%9326_in_European_football_(UEFA)
+https://en.wikipedia.org/wiki/Template:1926%E2%80%9327_in_European_football_(UEFA)
 
-1926–27 | Austria | Belgium | bul | Czechoslovakia | dnk | England | est | deu | grc | Hungary | Iceland | ita | lva | lth | Luxembourg | Malta | nld | NorthernIreland | pol | RepublicOfIreland | rou | Scotland | Sweden | che | tur | yug
 1927–28 | Austria | Belgium | bul | Czechoslovakia | dnk | England | est | deu | grc | Hungary | Iceland | ita | Latvia | lth | Luxembourg | Malta | nld | NorthernIreland | Poland | RepublicOfIreland | rou | Scotland | Soviet Union | Sweden | che | tur | Yugoslavia
 1928–29 | Austria | Belgium | bul | Czechoslovakia | dnk | England | est | deu | grc | Hungary | Iceland | ita | Latvia | lth | Luxembourg | Malta | nld | NorthernIreland | Poland | RepublicOfIreland | rou | Scotland | Soviet Union | Spain | Sweden | che | Yugoslavia
 1929–30 | Albania | Austria | Belgium | bul | Czechoslovakia | Denmark | England | Estonia | Finland | deu | grc | Hungary | Iceland | Italy | Latvia | lth | Luxembourg | Malta | nld | NorthernIreland | Poland | RepublicOfIreland | rou | Scotland | Spain | Sweden | che | Yugoslavia
