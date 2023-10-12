@@ -24,9 +24,11 @@ switch (flag) {
     case "MLT": country = "Malta"; break;
     case "NIR": country = "Northern Ireland"; break;
     case "NLD": country = "Netherlands"; break;
+    case "POL": country = "Poland"; break;
     case "ROU": country = "Romania"; break;
     case "SCO": country = "Scotland"; break;
     case "SWE": country = "Sweden"; break;
+    case "YUG": country = "Yugoslavia"; break;
     default: country = prompt("Unknown flag, please provide country name");
 }
 if ( typeof deduct === "undefined" ) {
