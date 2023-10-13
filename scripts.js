@@ -143,8 +143,11 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 		.replaceAll("%c3%81","a")
 		.replaceAll("%c3%a4","a")
 		.replaceAll("%c4%81","a")
+		.replaceAll("%c4%85","a")
 		.replaceAll("%c4%8c","c")
+		.replaceAll("%c4%91","d")
 		.replaceAll("%c3%a8","e")
+		.replaceAll("%c4%99","e")
 		.replaceAll("%c3%a9","e")
 		.replaceAll("%c4%a6","h")
 		.replaceAll("%c3%ad","i")
@@ -161,6 +164,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 		.replaceAll("%c3%be","p")
 		.replaceAll("%c8%99","s")
 		.replaceAll("%c5%a0","s")
+		.replaceAll("%c5%9a","s")
 		.replaceAll("%c8%9b","t")
 		.replaceAll("%c3%9a","u")
 		.replaceAll("%c3%bc","u")
@@ -622,4 +626,19 @@ function relegatePromote() {
         	console.log(divisions[idx].toUpperCase() + ": " + x);
         }
     });
+}
+
+function checkMissiong() {
+	document.querySelectorAll("tbody tr").forEach(function(row){
+	    p = row.querySelectorAll("td")[2].innerHTML;
+	    if ( p === '' ) {
+	        division = row.parentElement.parentElement.parentElement.getAttribute("id").split("_")[1].toUpperCase();
+	        tds = row.querySelectorAll("td");
+	        position = tds[0].innerHTML;
+	        club = tds[1].querySelector("a").innerHTML;
+	        clubCountry = tds[1].querySelector("img").getAttribute("src").split("/").pop().split(".")[0];
+	        clubUrl = tds[1].querySelector("a").getAttribute("data-wiki");
+	        console.log("Division " + division + " / " + position + " / " + clubCountry + " / " + club + " / " + clubUrl);
+	    }
+	});
 }

@@ -360,7 +360,17 @@ allTeams = [
 "hun/Bocskai_FC",
 "swe/Stattena_IF",
 "hun/Miskolci_AK",
-"pol/Jutrzenka_Krak%C3%B3w"
+"pol/Jutrzenka_Krak%C3%B3w",
+"yug/Gra%C4%91anski_Zagreb",
+"pol/Cracovia_(football_club)",
+"aut/SC_Nicholson",
+"nir/Ballymena_F.C.",
+"irl/Drumcondra_F.C.",
+"hun/Somogy_FC",
+"lux/FC_Differdange_03",
+"lva/LNJS",
+"pol/%C5%9Al%C4%85sk_%C5%9Awi%C4%99toch%C5%82owice",
+"yug/SK_Jugoslavija"
 ];
 
 redirects = [
@@ -380,5 +390,11 @@ redirects = [
 ["hun/MTK_Budapest_FC","hun/MTK_Hung%C3%A1ria_FC"],
 ["mlt/Cottonera_F.C.","mlt/Cottonera"],
 ["lva/RFK","lva/R%C4%ABgas_FK"],
-["lva/LSB","lva/LSB_R%C4%ABga"]
+["lva/LSB","lva/LSB_R%C4%ABga"],
+["irl/St._James%27s_Gate_F.C.","irl/St_James%27s_Gate_F.C."],
+["yug/HNK_Hajduk_Split","yug/Hajduk_Split"],
+["yug/OFK_Beograd","yug/BSK_Beograd"],
+["yug/NK_SA%C5%A0K_Napredak","yug/SA%C5%A0K"],
+["pol/Pogo%C5%84_Lw%C3%B3w_(1904)","pol/Pogo%C5%84_Lw%C3%B3w"],
+["pol/KS_Warszawianka","pol/Warszawianka_Warszawa"]
 ]
