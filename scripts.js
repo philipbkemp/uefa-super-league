@@ -628,7 +628,7 @@ function relegatePromote() {
     });
 }
 
-function checkMissiong() {
+function checkMissing() {
 	document.querySelectorAll("tbody tr").forEach(function(row){
 	    p = row.querySelectorAll("td")[2].innerHTML;
 	    if ( p === '' ) {

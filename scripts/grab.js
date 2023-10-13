@@ -15,9 +15,12 @@ switch (flag) {
     case "DNK": country = "Denmark"; break;
     /*case "EIR": country = "Ireland"; break;*/
     case "ENG": country = "England"; break;
+    case "ESP": country = "Spain"; break;
+    case "EST": country = "Estonia"; break;
     case "HUN": country = "Hungary"; break;
     case "IRL": country = "Republic of Ireland"; break;
     case "ISL": country = "Iceland"; break;
+    case "ITA": country = "Italy"; break;
     case "LTU": country = "Lithuania"; break;
     case "LUX": country = "Luxembourg"; break;
     case "LVA": country = "Latvia"; break;

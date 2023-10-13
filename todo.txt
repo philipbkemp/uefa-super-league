@@ -39,11 +39,11 @@
 1926-27	ENG	-		-		NIR	IRL	SCO	BEL	HUN	MLT	-		AUT	SWE	ISL	LUX	-		-		CZE
 1927-28	ENG	-		-		NIR	IRL	SCO	BEL	HUN	MLT	-		AUT	SWE	ISL	LUX	LVA	-		CZE	YUG	POL
 1928-29	ENG	-		-		NIR	IRL	SCO	BEL	HUN	MLT	-		AUT	SWE	ISL	LUX	LVA	-		CZE	YUG	POL
+1929-30	ENG	DNK	-		NIR	IRL	SCO	BEL	HUN	MLT	-		AUT	SWE	-		LUX	LVA	-		CZE	YUG	POL	EST	ITA	ESP
 
-https://en.wikipedia.org/wiki/Template:1928%E2%80%9329_in_European_football_(UEFA)
+https://en.wikipedia.org/wiki/Template:1929%E2%80%9330_in_European_football_(UEFA)
 
-1929–30 | Albania | Austria | Belgium | bul | Czechoslovakia | Denmark | England | Estonia | Finland | deu | grc | Hungary | isl | Italy | Latvia | ltu | Luxembourg | Malta | nld | NorthernIreland | Poland | RepublicOfIreland | rou | Scotland | Spain | Sweden | che | Yugoslavia
-1930–31 | Albania | Austria | Belgium | bul | Czechoslovakia | Denmark | England | Estonia | Finland | deu | grc | Hungary | Iceland | Italy | Latvia | ltu | Luxembourg | Malta | nld | NorthernIreland | Poland | RepublicOfIreland | rou | Scotland | SovietUnion | Spain | Sweden | che | Yugoslavia
+1930–31 | alb | Austria | Belgium | bul | Czechoslovakia | Denmark | England | Estonia | Finland | deu | grc | Hungary | Iceland | Italy | Latvia | ltu | Luxembourg | Malta | nld | NorthernIreland | Poland | RepublicOfIreland | rou | Scotland | SovietUnion | Spain | Sweden | che | Yugoslavia
 1931–32 | Albania | Austria | Belgium | bul | Czechoslovakia | Denmark | England | Estonia | Finland | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | NorthernIreland | Palestine | Poland | RepublicOfIreland | rou | Scotland | SovietUnion | Spain | Sweden | che | tur | Yugoslavia
 1932–33 | Albania | Austria | Belgium | bul | Czechoslovakia | Denmark | England | Estonia | Finland | France | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | NorthernIreland | Poland | RepublicOfIreland | rou | Scotland | SovietUnion | Spain | Sweden | che | tur | Yugoslavia
 1933–34 | Albania | Austria | Belgium | bul | Czechoslovakia | Denmark | England | Estonia | Finland | France | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | NorthernIreland | Palestine | Poland | RepublicOfIreland | rou | Scotland | Spain | Sweden | Switzerland | tur
