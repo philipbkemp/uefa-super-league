@@ -40,11 +40,12 @@
 1927-28	ENG	-		-		NIR	IRL	SCO	BEL	HUN	MLT	-		AUT	SWE	ISL	LUX	LVA	-		CZE	YUG	POL
 1928-29	ENG	-		-		NIR	IRL	SCO	BEL	HUN	MLT	-		AUT	SWE	ISL	LUX	LVA	-		CZE	YUG	POL
 1929-30	ENG	DNK	-		NIR	IRL	SCO	BEL	HUN	MLT	-		AUT	SWE	-		LUX	LVA	-		CZE	YUG	POL	EST	ITA	ESP
+1930-31	ENG	DNK	-		NIR	IRL	SCO	BEL	HUN	MLT	-		AUT	SWE	IS
+L	LUX	LVA	-		CZE	YUG	POL	EST	ITA	ESP	FIN
 
-https://en.wikipedia.org/wiki/Template:1929%E2%80%9330_in_European_football_(UEFA)
+https://en.wikipedia.org/wiki/Template:1930%E2%80%9331_in_European_football_(UEFA)
 
-1930–31 | alb | Austria | Belgium | bul | Czechoslovakia | Denmark | England | Estonia | Finland | deu | grc | Hungary | Iceland | Italy | Latvia | ltu | Luxembourg | Malta | nld | NorthernIreland | Poland | RepublicOfIreland | rou | Scotland | SovietUnion | Spain | Sweden | che | Yugoslavia
-1931–32 | Albania | Austria | Belgium | bul | Czechoslovakia | Denmark | England | Estonia | Finland | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | NorthernIreland | Palestine | Poland | RepublicOfIreland | rou | Scotland | SovietUnion | Spain | Sweden | che | tur | Yugoslavia
+1931–32 | Albania | Austria | Belgium | bul | Czechoslovakia | Denmark | England | Estonia | Finland | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | NorthernIreland | Palestine | Poland | RepublicOfIreland | rou | Scotland | SovietUnion | Spain | Sweden | che | tur | yug
 1932–33 | Albania | Austria | Belgium | bul | Czechoslovakia | Denmark | England | Estonia | Finland | France | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | NorthernIreland | Poland | RepublicOfIreland | rou | Scotland | SovietUnion | Spain | Sweden | che | tur | Yugoslavia
 1933–34 | Albania | Austria | Belgium | bul | Czechoslovakia | Denmark | England | Estonia | Finland | France | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | NorthernIreland | Palestine | Poland | RepublicOfIreland | rou | Scotland | Spain | Sweden | Switzerland | tur
 1934–35 | Albania | Austria | Belgium | bul | Cyprus | Czechoslovakia | Denmark | England | Estonia | Finland | France | deu | grc | Hungary | Iceland | Italy | Latvia | Lithuania | Luxembourg | Malta | nld | NorthernIreland | Palestine | Poland | Portugal | RepublicOfIreland | Romania | Scotland | SovietUnion | Spain | Sweden | Switzerland | tur | Yugoslavia

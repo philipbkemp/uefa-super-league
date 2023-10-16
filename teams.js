@@ -441,5 +441,8 @@ redirects = [
 ["yug/NK_SA%C5%A0K_Napredak","yug/SA%C5%A0K"],
 ["pol/Pogo%C5%84_Lw%C3%B3w_(1904)","pol/Pogo%C5%84_Lw%C3%B3w"],
 ["pol/KS_Warszawianka","pol/Warszawianka_Warszawa"],
-["lva/ASK","lva/FK_ASK"]
+["lva/ASK","lva/FK_ASK"],
+["lva/Union","lva/Union_Riga"],
+["ita/F.C._Pro_Vercelli_1892","ita/U.S._Pro_Vercelli_Calcio"],
+["ita/U.S._Triestina_Calcio_1918","ita/U.S._Triestina_Calcio"]
 ]
