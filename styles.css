@@ -27,6 +27,15 @@ a.pe-none.disabled {
 .btn.btn-outline-primary:hover {
 	background-color: #f1f4f6;
 }
+.btn.btn-primary {
+    border-color: #2b5873;
+    color: white;
+    background-color: #2b5873;
+}
+.btn.btn-primary:hover {
+    background-color: #f1f4f6;
+    color: #2b5873;
+}
 .nav-tabs .nav-link {
     color: #2b5873;
 }
