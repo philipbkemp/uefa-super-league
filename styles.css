@@ -139,6 +139,10 @@ table.division tbody tr.promoted td:nth-of-type(1):after {
     right: 11px;
     top: 9px;
 }
+table.division tbody tr.inprogress {
+    background-color: #5fc3ff6b;
+    opacity: 0.5;
+}
 table.division tbody tr.removed:not(.champion),
 table.division tbody tr.relegated:not(.champion) {
     background-color: #ffbfbf;

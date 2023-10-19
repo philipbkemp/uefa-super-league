@@ -22,6 +22,10 @@ function addTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 	}
 }
 
+function addTeamN(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
+	newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,"NEW");
+}
+
 function updateTeam(link,name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 	row = link.parentNode.parentNode;
 
@@ -62,7 +66,7 @@ function updateTeam(link,name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 	tds[13].innerHTML = _ppg;
 }
 
-function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
+function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 
 	row = document.createElement("TR");
 	if ( classes !== "" ) {
@@ -71,10 +75,12 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 		});
 	}
 
-	if ( allTeams.indexOf(flag.toLowerCase() + "/" + wiki) !== -1 ) {
+	if ( newReturn === "" && allTeams.indexOf(flag.toLowerCase() + "/" + wiki) !== -1 ) {
 		newReturn = "R";
 	} else {
-		newReturn = prompt("Is " + wiki + " [N]ew or [R]eturning or [D]uplicate?").toUpperCase();
+		if ( newReturn === "" ) {
+			newReturn = prompt("Is " + wiki + " [N]ew or [R]eturning or [D]uplicate?").toUpperCase();
+		}
 	}
 	if ( newReturn === "N" || newReturn === "NEW" ) {
 		row.classList.add("newclub");
@@ -180,6 +186,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 		.replaceAll("%c5%bd","z")
 		.replaceAll("%c5%be","z")
 		.replaceAll("%c5%ba","z")
+		.replaceAll("%26","and")
 		.replaceAll(" ","_").replaceAll(".","_").replaceAll("__","_");
     if ( /[^a-z0-9_]/.test(_teamUrl) ) {
         _teamUrl = prompt("Invalid URL " + _teamUrl,_teamUrl);
@@ -398,7 +405,7 @@ function listTeams() {
 }
 
 function listNewTeams() {
-	divisions = ["a","b","c","d","e","f","g","h"];
+	divisions = ["a","b","c","d","e","f","g","h","new"];
 	str = [];
 	divisions.forEach(function(i,idx) {
 		divTbl = document.querySelectorAll("#div_"+i+" table tbody")

@@ -459,7 +459,32 @@ allTeams = [
 "dnk/Fremad_Amager",
 "fin/HJK_Helsinki",
 "lva/C%C4%93su_Sporta_biedr%C4%ABba",
-"ltu/Tauras_Kaunas"
+"ltu/Tauras_Kaunas",
+"eng/Brentford_F.C.",
+"eng/Charlton_Athletic_F.C.",
+"eng/Fulham_F.C.",
+"eng/Luton_Town_F.C.",
+"eng/Ipswich_Town_F.C.",
+"eng/Leyton_Orient_F.C.",
+"eng/Northampton_Town_F.C.",
+"eng/Southampton_F.C.",
+"eng/Coventry_City_F.C.",
+"eng/Queens_Park_Rangers_F.C.",
+"eng/Crystal_Palace_F.C.",
+"eng/Norwich_City_F.C.",
+"eng/Carlisle_United_F.C.",
+"eng/Brighton_%26_Hove_Albion_F.C.",
+"eng/Swansea_City_A.F.C.",
+"eng/Watford_F.C.",
+"eng/Oxford_United_F.C.",
+"eng/Wimbledon_F.C.",
+"eng/Millwall_F.C.",
+"eng/Swindon_Town_F.C.",
+"eng/Barnsley_F.C.",
+"eng/Wigan_Athletic_F.C.",
+"eng/Reading_F.C.",
+"eng/Hull_City_A.F.C.",
+"eng/AFC_Bournemouth"
 ];
 
 redirects = [
@@ -491,5 +516,9 @@ redirects = [
 ["ita/F.C._Pro_Vercelli_1892","ita/U.S._Pro_Vercelli_Calcio"],
 ["ita/U.S._Triestina_Calcio_1918","ita/U.S._Triestina_Calcio"],
 ["irl/Waterford_United_F.C.","irl/Waterford_F.C."],
-["lva/Amatieris","lva/Amatieris_R%C4%ABga"]
+["lva/Amatieris","lva/Amatieris_R%C4%ABga"],
+["eng/Wolverhampton_Wanderers_F.C.","eng/Wolverhampton_Wanderers"],
+["eng/Leeds_United_F.C.","eng/Leeds_United_A.F.C."],
+["eng/Aston_Villa_F.C.","eng/Aston_Villa"],
+["eng/Tottenham_Hotspur_F.C.","eng/Tottenham_Hotspur_F.C"]
 ]
