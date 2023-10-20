@@ -1,14 +1,19 @@
-usl = document.querySelector(".usl");
-if ( ! usl ) {
+usl = document.querySelectorAll(".usl");
+if ( ! usl || usl.length === 0 ) {
     alert("No .usl class");
 }
-while ( usl.tagName !== "TABLE" ) {
-    usl = usl.parentNode;
-}
-rows = usl.querySelectorAll("tr");
-flag = prompt("Please enter country code:").toUpperCase();
+rows = [];
+usl.forEach(function(uslItem){
+    while ( uslItem.tagName !== "TABLE" ) {
+        uslItem = uslItem.parentNode;
+    }
+    r = Array.from(uslItem.querySelectorAll("tr"));
+    r.forEach(function(row){rows.push(row);});
+});
+flag = "ALB";//prompt("Please enter country code:").toUpperCase();
 country = "";
 switch (flag) {
+    case "ALB": country = "Albania"; break;
     case "AUT": country = "Austria"; break;
     case "BEL": country = "Belgium"; break;
     case "CZE": country = "Czechoslovakia"; break;

@@ -142,7 +142,9 @@
 				<div class="tab-pane fade" id="div_h" role="tabpanel" aria-labelledby="div_h-tab">Division H</div>
 				<div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="notes-tab">
 					<ul class="list-group">
-						<li class="list-group-item"><!--<img src="../../f/ENG.png" title="England">England: League added--></li>
+						<li class="list-group-item"><img src="../../f/ALB.png" title="Albania">Albania: Laçi were deducted 6 points for crowd trouble</li>
+						<li class="list-group-item"><img src="../../f/ALB.png" title="Albania">Albania: Pogradeci were deducted 3 points for crowd trouble</li>
+						<li class="list-group-item"><img src="../../f/ALB.png" title="Albania">Albania: Dinamo Tirana were deducted 3 points for failing to pay a player</li>
 					</ul>
 				</div>
 			</div>
@@ -153,6 +155,22 @@
 		<script src="../../scripts.js"></script>
 		<script src="../../teams.js"></script>
 		<script>
+flag = "ALB";
+country = "Albania";
+addTeam("Skënderbeu","KF_Sk%C3%ABnderbeu_Kor%C3%A7%C3%AB",17,6,3,45,16,0,"champion");
+addTeam("Teuta","KF_Teuta_Durr%C3%ABs",17,5,4,33,18,0,"");
+addTeam("Tirana","KF_Tirana",16,5,5,33,21,0,"");
+addTeam("Flamurtari","Flamurtari_Vlor%C3%AB",13,7,6,42,20,0,"");
+addTeam("Kastrioti","KS_Kastrioti",11,5,10,37,30,0,"");
+addTeam("Bylis","KF_Bylis_Ballsh",9,8,9,40,37,0,"");
+addTeam("Vllaznia","KF_Vllaznia_Shkod%C3%ABr",10,5,11,39,33,0,"");
+addTeam("Laçi","KF_La%C3%A7i",11,7,8,26,28,6,"deduction");
+addTeam("Shkumbini","Shkumbini_Peqin",8,7,11,37,45,0,"");
+addTeam("Tomori","FK_Tomori_Berat",8,4,14,36,47,0,"");
+addTeamN("Kamza","FC_Kamza",7,6,13,22,32,0,"removed");
+addTeam("Apolonia","KF_Apolonia_Fier",5,6,15,27,46,0,"");
+addTeam("Pogradeci","KS_Pogradeci",6,4,16,25,47,3,"removed|deduction");
+addTeam("Dinamo Tirana","FK_Dinamo_Tirana",3,7,16,19,41,3,"removed|deduction");
 flag = "ENG";
 country = "England";
 addTeam("Manchester City","Manchester_City_F.C.",28,5,5,93,29,0,"champion");

@@ -79,7 +79,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 		newReturn = "R";
 	} else {
 		if ( newReturn === "" ) {
-			newReturn = prompt("Is " + wiki + " [N]ew or [R]eturning or [D]uplicate?").toUpperCase();
+			newReturn = prompt("Is "+name+" (" + wiki + ") [N]ew or [R]eturning or [D]uplicate?").toUpperCase();
 		}
 	}
 	if ( newReturn === "N" || newReturn === "NEW" ) {
@@ -153,12 +153,14 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 		.replaceAll("%c3%85","a")
 		.replaceAll("%c4%8c","c")
 		.replaceAll("%c4%8d","c")
+		.replaceAll("%c3%a7","c")
 		.replaceAll("%c4%91","d")
 		.replaceAll("%c3%a8","e")
 		.replaceAll("%c4%99","e")
 		.replaceAll("%c3%a9","e")
 		.replaceAll("%c4%93","e")
 		.replaceAll("%c4%97","e")
+		.replaceAll("%c3%ab","e")
 		.replaceAll("%c4%a6","h")
 		.replaceAll("%c3%ad","i")
 		.replaceAll("%c4%ab","i")
@@ -404,7 +406,7 @@ function listTeams() {
 	console.log(",\n"+str.join(",\n"));
 }
 
-function listNewTeams() {
+function listNewTeams(f) {
 	divisions = ["a","b","c","d","e","f","g","h","new"];
 	str = [];
 	divisions.forEach(function(i,idx) {
@@ -416,7 +418,9 @@ function listNewTeams() {
 				link = r.querySelectorAll("a")[0];
 				s = link.getAttribute("data-wiki");
 				img = r.querySelectorAll("img")[0].getAttribute("src").split("/").pop().split(".")[0].toLowerCase();
-				str.push('"' + img + "/" + s + '"');
+				if ( !f || img === f ) {
+					str.push('"' + img + "/" + s + '"');
+				}
 			});
 		}
 	})
