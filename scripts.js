@@ -661,3 +661,18 @@ function checkMissing() {
 	    }
 	});
 }
+
+function bye() {
+    previous = prompt("Last season's removed teams");
+    prev = previous.split("|");
+    prev.forEach(function(prv){
+        if(document.querySelectorAll('a[data-wiki="'+prv+'"]').length!==0) {
+            console.log( prv + " was removed, but is still present" );
+        }
+    });
+    s = [];
+    document.querySelectorAll("tr.removed a").forEach(function(team){
+        s.push(team.getAttribute("data-wiki"));
+    });
+    return s.join("|");
+}
