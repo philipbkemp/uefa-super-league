@@ -144,6 +144,7 @@
 					<ul class="list-group">
 						<li class="list-group-item removed"><img src="../../f/ALB.png" title="Albania">Albania: League removed as it is not contested next season, and returns later as a knockout competition</li>
 						<li class="list-group-item removed"><img src="../../f/AUT.png" title="Austria">Austria: League removed due to the official Austrian Football Championship not being held until after WW2</li>
+						<li class="list-group-item removed"><img src="../../f/CZE.png" title="Czechoslovakia">Czechoslovakia: League removed due to the Nazi occupation and splitting of Czech, Slovak, and ethnic German clubs</li>
 					</ul>
 				</div>
 			</div>
@@ -154,6 +155,20 @@
 		<script src="../../scripts.js"></script>
 		<script src="../../teams.js"></script>
 		<script>
+			flag = "CZE";
+country = "Czechoslovakia";
+addTeam("Sparta Prague","AC_Sparta_Prague",17,2,3,66,34,0,"champion|removed");
+addTeam("Slavia Prague","SK_Slavia_Prague",14,1,7,72,33,0,"removed");
+addTeam("SK Židenice","FC_Zbrojovka_Brno",11,4,7,46,27,0,"removed");
+addTeam("SK Kladno","SK_Kladno",11,2,9,38,37,0,"removed");
+addTeam("1. ČsŠK Bratislava","%C5%A0K_Slovan_Bratislava",10,1,11,46,53,0,"removed");
+addTeam("SK Náchod","FK_N%C3%A1chod",9,3,10,37,53,0,"removed");
+addTeam("SK Plzeň","SK_Plze%C5%88",8,4,10,47,51,0,"removed");
+addTeam("Viktoria Žižkov","FK_Viktoria_%C5%BDi%C5%BEkov",9,2,11,36,42,0,"removed");
+addTeamN("SK Pardubice","SK_Pardubice",6,7,9,34,39,0,"removed");
+addTeamN("Slezská Ostrava","FC_Ban%C3%ADk_Ostrava",8,2,12,43,52,0,"removed");
+addTeam("SK Prostějov","SK_Prost%C4%9Bjov",5,6,11,39,65,0,"removed");
+addTeam("Viktoria Plzeň","FC_Viktoria_Plze%C5%88",4,6,12,33,51,0,"removed");
 flag = "BEL";
 country = "Belgium";
 addTeam("Beerschot","K._Beerschot_V.A.C.",18,5,3,83,31,0,"champion");
@@ -218,6 +233,7 @@ addTeam("Portsmouth","Portsmouth_F.C.",13,12,17,62,68,0,"");
 addTeam("Grimsby Town","Grimsby_Town_F.C.",13,12,17,51,68,0,"");
 addTeam("Manchester City","Manchester_City_F.C.",14,8,20,80,77,0,"removed");
 addTeam("West Bromwich Albion","West_Bromwich_Albion_F.C.",14,8,20,74,91,0,"removed");
+hm();
 		</script>
 	</body>
 </html>

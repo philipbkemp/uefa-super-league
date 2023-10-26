@@ -143,6 +143,7 @@
 				<div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="notes-tab">
 					<ul class="list-group">
 						<li class="list-group-item added"><img src="../../f/ALB.png" title="Albania">Albania: League returned</li>
+						<li class="list-group-item"><img src="../../f/CZE.png" title="Czechoslovakia">Czechoslovakia: Dukla Banská Bystrica were deducted 2 points</li>
 					</ul>
 				</div>
 			</div>
@@ -153,6 +154,22 @@
 		<script src="../../scripts.js"></script>
 		<script src="../../teams.js"></script>
 		<script>
+			flag = "CZE";
+country = "Czechoslovakia";
+addTeam("Spartak Trnava","FC_Spartak_Trnava",17,5,4,50,21,0,"champion");
+addTeam("Slovan Bratislava","%C5%A0K_Slovan_Bratislava",12,10,4,35,18,0,"");
+addTeam("Sparta Prague","AC_Sparta_Prague",12,5,9,36,27,0,"");
+addTeam("Inter Bratislava","FK_Inter_Bratislava",8,10,8,35,26,0,"");
+addTeam("Dukla Prague","Dukla_Prague",10,5,11,52,37,0,"");
+addTeam("Jednota Trenčín","TTS_Tren%C4%8D%C3%ADn",9,7,10,35,35,0,"");
+addTeam("ZVL Žilina","M%C5%A0K_%C5%BDilina",9,7,10,29,38,0,"");
+addTeam("VSS Košice","FC_VSS_Ko%C5%A1ice",10,4,12,32,28,0,"");
+addTeam("Baník Ostrava","FC_Ban%C3%ADk_Ostrava",8,8,10,22,37,0,"");
+addTeam("FC Lokomotíva Košice","FC_Lokomot%C3%ADva_Ko%C5%A1ice",9,6,11,23,39,0,"");
+addTeam("Slavia Prague","SK_Slavia_Prague",10,3,13,26,37,0,"");
+addTeam("Sklo Union Teplice","FK_Teplice",9,4,13,34,40,0,"");
+addTeamN("Dukla Banská Bystrica","FK_Dukla_Bansk%C3%A1_Bystrica",10,3,13,39,41,2,"removed|deduction");
+addTeamN("VCHZ Pardubice","FK_Pardubice_1899",7,7,12,23,47,0,"removed");
 flag = "BEL";
 country = "Belgium";
 addTeam("Standard Liège","Standard_Li%C3%A8ge",19,7,4,62,18,0,"champion");
@@ -228,6 +245,7 @@ addTeam("Stoke City","Stoke_City_F.C.",9,15,18,40,63,0,"");
 addTeam("Coventry City","Coventry_City_F.C.",10,11,21,46,64,0,"");
 addTeam("Leicester City","Leicester_City_F.C.",9,12,21,39,68,0,"removed");
 addTeamN("Queens Park Rangers","Queens_Park_Rangers_F.C.",4,10,28,39,95,0,"removed");
+hm();
 		</script>
 	</body>
 </html>

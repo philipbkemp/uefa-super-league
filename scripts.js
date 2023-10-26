@@ -161,6 +161,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 		.replaceAll("%c4%93","e")
 		.replaceAll("%c4%97","e")
 		.replaceAll("%c3%ab","e")
+		.replaceAll("%c4%9b","e")
 		.replaceAll("%c4%a6","h")
 		.replaceAll("%c3%ad","i")
 		.replaceAll("%c4%ab","i")
@@ -177,11 +178,14 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 		.replaceAll("%c5%91","o")
 		.replaceAll("%c3%b5","o")
 		.replaceAll("%c3%be","p")
+		.replaceAll("%c5%99","r")
 		.replaceAll("%c8%99","s")
 		.replaceAll("%c5%a0","s")
 		.replaceAll("%c5%9a","s")
+		.replaceAll("%c5%a1","s")
 		.replaceAll("%c3%9f","ss")
 		.replaceAll("%c8%9b","t")
+		.replaceAll("%c5%a5","t")
 		.replaceAll("%c3%9a","u")
 		.replaceAll("%c3%bc","u")
 		.replaceAll("%c5%b1","u")
@@ -675,4 +679,32 @@ function bye() {
         s.push(team.getAttribute("data-wiki"));
     });
     return s.join("|");
+}
+
+function hm() {
+	dn = document.querySelectorAll("#div_new tbody tr").length;
+	if ( dn > 100 && document.querySelector("#div_d-tab").classList.contains("disabled") ) {
+		console.error("Division A needs to be enabled");
+	} else if ( dn > 800 && document.querySelector("#div_h-tab").classList.contains("disabled") ) {
+		console.error("Division H needs to be enabled");
+	} else if ( dn > 700 && document.querySelector("#div_g-tab").classList.contains("disabled") ) {
+		console.error("Division G needs to be enabled");
+	} else if ( dn > 600 && document.querySelector("#div_f-tab").classList.contains("disabled") ) {
+		console.error("Division F needs to be enabled");
+	} else if ( dn > 500 && document.querySelector("#div_e-tab").classList.contains("disabled") ) {
+		console.error("Division E needs to be enabled");
+	} else if ( dn > 400 && document.querySelector("#div_d-tab").classList.contains("disabled") ) {
+		console.error("Division D needs to be enabled");
+	} else if ( dn > 300 && document.querySelector("#div_c-tab").classList.contains("disabled") ) {
+		console.error("Division C needs to be enabled");
+	} else if ( dn > 200 && document.querySelector("#div_b-tab").classList.contains("disabled") ) {
+		console.error("Division B needs to be enabled");
+	} else if ( dn > 100 && document.querySelector("#div_a-tab").classList.contains("disabled") ) {
+		console.error("Division A needs to be enabled");
+	} else {
+		console.warn(dn + " teams");
+	}
+	flg = document.querySelectorAll("#div_new tbody tr")[0];
+	flg = flg.querySelector("img").getAttribute("src").split("/").pop().split(".")[0];
+	listNewTeams(flg.toLowerCase());
 }
