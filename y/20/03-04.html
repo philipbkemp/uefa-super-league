@@ -142,7 +142,7 @@
 				<div class="tab-pane fade" id="div_h" role="tabpanel" aria-labelledby="div_h-tab">Division H</div>
 				<div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="notes-tab">
 					<ul class="list-group">
-						<li class="list-group-item"><!--<img src="../../f/ENG.png" title="England">England: League added--></li>
+						<li class="list-group-item"><img src="../../f/DNK.png" title="Denmark">Denmark: AB Copenhagen were deducted 9 points for using a fake passport for a player</li>
 					</ul>
 				</div>
 			</div>
@@ -153,6 +153,20 @@
 		<script src="../../scripts.js"></script>
 		<script src="../../teams.js"></script>
 		<script>
+			flag = "DNK";
+country = "Denmark";
+addTeam("FC København","FC_K%C3%B8benhavn",20,8,5,56,27,0,"champion");
+addTeam("Brøndby IF","Br%C3%B8ndby_IF",20,7,6,55,29,0,"");
+addTeam("Esbjerg fB","Esbjerg_fB",18,8,7,71,44,0,"");
+addTeam("Odense BK","Odense_BK",16,9,8,66,46,0,"");
+addTeam("Aalborg BK","AaB_Fodbold",16,9,8,55,41,0,"");
+addTeam("FC Midtjylland","FC_Midtjylland",14,6,13,65,51,0,"");
+addTeam("Viborg FF","Viborg_FF",11,9,13,47,44,0,"");
+addTeam("Aarhus GF","Aarhus_Gymnastik_Forening",11,3,19,45,67,0,"");
+addTeam("FC Nordsjælland","FC_Nordsj%C3%A6lland",7,11,15,35,59,0,"");
+addTeam("Herfølge BK","Herf%C3%B8lge_BK",8,7,18,34,57,0,"");
+addTeam("BK Frem","Boldklubben_Frem",8,3,22,40,65,0,"removed");
+addTeam("AB Copenhagen","Akademisk_Boldklub",8,2,23,31,70,9,"removed|deduction");
 			flag = "BEL";
 country = "Belgium";
 addTeam("Anderlecht","R.S.C._Anderlecht",25,6,3,77,27,0,"champion");
@@ -219,6 +233,7 @@ addTeam("Everton","Everton_F.C.",9,12,17,45,57,0,"");
 addTeam("Leicester City","Leicester_City_F.C.",6,15,17,48,65,0,"removed");
 addTeam("Leeds United","Leeds_United_F.C.",8,9,21,40,79,0,"removed");
 addTeam("Wolverhampton Wanderers","Wolverhampton_Wanderers_F.C.",7,12,19,38,77,0,"removed");
+hm();
 		</script>
 	</body>
 </html>

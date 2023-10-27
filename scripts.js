@@ -151,6 +151,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 		.replaceAll("%c4%81","a")
 		.replaceAll("%c4%85","a")
 		.replaceAll("%c3%85","a")
+		.replaceAll("%c3%a6","ae")
 		.replaceAll("%c4%8c","c")
 		.replaceAll("%c4%8d","c")
 		.replaceAll("%c3%a7","c")
@@ -683,9 +684,7 @@ function bye() {
 
 function hm() {
 	dn = document.querySelectorAll("#div_new tbody tr").length;
-	if ( dn > 100 && document.querySelector("#div_d-tab").classList.contains("disabled") ) {
-		console.error("Division A needs to be enabled");
-	} else if ( dn > 800 && document.querySelector("#div_h-tab").classList.contains("disabled") ) {
+	if ( dn > 800 && document.querySelector("#div_h-tab").classList.contains("disabled") ) {
 		console.error("Division H needs to be enabled");
 	} else if ( dn > 700 && document.querySelector("#div_g-tab").classList.contains("disabled") ) {
 		console.error("Division G needs to be enabled");
@@ -704,7 +703,5 @@ function hm() {
 	} else {
 		console.warn(dn + " teams");
 	}
-	flg = document.querySelectorAll("#div_new tbody tr")[0];
-	flg = flg.querySelector("img").getAttribute("src").split("/").pop().split(".")[0];
-	listNewTeams(flg.toLowerCase());
+	listNewTeams("dnk");
 }
