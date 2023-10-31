@@ -190,6 +190,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 		.replaceAll("%c3%9a","u")
 		.replaceAll("%c3%bc","u")
 		.replaceAll("%c5%b1","u")
+		.replaceAll("%c3%9c","u")
 		.replaceAll("%c3%bd","y")
 		.replaceAll("%c5%bd","z")
 		.replaceAll("%c5%be","z")
@@ -703,5 +704,5 @@ function hm() {
 	} else {
 		console.warn(dn + " teams");
 	}
-	listNewTeams("dnk");
+	listNewTeams("est");
 }

@@ -142,7 +142,8 @@
 				<div class="tab-pane fade" id="div_h" role="tabpanel" aria-labelledby="div_h-tab">Division H</div>
 				<div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="notes-tab">
 					<ul class="list-group">
-						<li class="list-group-item"><!--<img src="../../f/ENG.png" title="England">England: League added--></li>
+						<li class="list-group-item added"><img src="../../f/EST.png" title="Estonia">Estonia: League returned</li>
+						<li class="list-group-item"><img src="../../f/EST.png" title="Estonia">Estonia: Ülemiste Kalev were disqualified with their record expunged with five games remaining</li>
 					</ul>
 				</div>
 			</div>
@@ -153,6 +154,19 @@
 		<script src="../../scripts.js"></script>
 		<script src="../../teams.js"></script>
 		<script>
+			flag = "EST";
+country = "Estonia";
+addTeamN("Tempo","Tallinna_JK_Tempo",12,2,2,39,10,0,"champion");
+addTeam("Baltic Fleet","Baltic_Fleet",10,2,4,45,19,0,"");
+addTeamN("Aseri Kalev","Aseri_Kalev",9,3,4,24,19,0,"");
+addTeam("Norma","FC_Norma_Tallinn",8,3,5,28,16,0,"");
+addTeam("Narva Kreenholm","Narva_Kreenholm",6,2,8,28,31,0,"");
+addTeam("Kohtla-Järve Kalev","Kohtla-J%C3%A4rve_Kalev",6,2,8,23,33,0,"");
+addTeam("Pärnu Kalev","P%C3%A4rnu_Kalev",4,3,9,23,39,0,"");
+addTeamN("EAT Tallinn","EAT_Tallinn",4,2,10,24,51,0,"");
+addTeamN("Kiviõli Kombinaat","Kivi%C3%B5li_Kombinaat",3,1,12,21,37,0,"removed");
+addTeam("Ülemiste Kalev","%C3%9Clemiste_Kalev",0,0,0,0,0,0,"disqualified|expunged");
+console.error("Ülemiste Kalev has no record");
 			flag = "DNK";
 country = "Denmark";
 addTeam("Esbjerg fB","Esbjerg_fB",15,3,4,56,28,0,"champion");

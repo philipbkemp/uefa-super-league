@@ -143,6 +143,7 @@
 				<div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="notes-tab">
 					<ul class="list-group">
 						<li class="list-group-item removed"><img src="../../f/BEL.png" title="Belgium">Belgium: League removed as it was not contested next season</li>
+						<li class="list-group-item removed"><img src="../../f/EST.png" title="Estonia">Estonia: League removed as it was not contested next season due to Soviet occupation issues</li>
 					</ul>
 				</div>
 			</div>
@@ -153,6 +154,14 @@
 		<script src="../../scripts.js"></script>
 		<script src="../../teams.js"></script>
 		<script>
+			flag = "EST";
+country = "Estonia";
+addTeam("JS Estonia Tallinn","JS_Estonia_Tallinn",7,2,1,27,19,0,"champion|removed");
+addTeam("VS Sport Tallinn","VS_Sport_Tallinn",5,2,3,21,13,0,"removed");
+addTeam("Pärnu Tervis","P%C3%A4rnu_Tervis",4,2,4,31,25,0,"removed");
+addTeam("Narva Spordiklubi","Narva_Spordiklubi",3,2,5,19,26,0,"removed");
+addTeamN("Tartu Politsei Spordiring","Tartu_Politsei_Spordiring",3,1,6,18,25,0,"removed");
+addTeam("Tallinna Spordiklubi","Tallinna_Spordiklubi",3,1,6,14,22,0,"removed");
 flag = "BEL";
 country = "Belgium";
 addTeam("Royal Antwerp FC","Royal_Antwerp_FC",23,3,4,83,22,0,"champion|removed");
@@ -171,6 +180,7 @@ addTeam("K.A.A. Gent","K.A.A._Gent",6,11,13,54,70,0,"removed");
 addTeam("Standard Liège","Standard_Li%C3%A8ge",9,4,16,57,87,0,"removed");
 addTeam("K. Lyra","K._Lyra",5,9,16,55,79,0,"removed");
 addTeam("Tilleur","R.F.C._Tilleur",5,8,17,36,71,0,"removed");
+hm();
 		</script>
 	</body>
 </html>
