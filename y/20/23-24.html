@@ -142,7 +142,7 @@
 				<div class="tab-pane fade" id="div_h" role="tabpanel" aria-labelledby="div_h-tab">Division H</div>
 				<div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="notes-tab">
 					<ul class="list-group">
-						<li class="list-group-item"><!--<img src="../../f/ENG.png" title="England">England: League added--></li>
+						<li class="list-group-item">Stats correct as of 2nd November 2023</li>
 					</ul>
 				</div>
 			</div>
@@ -152,100 +152,104 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 		<script src="../../scripts.js"></script>
 		<script src="../../teams.js"></script>
-		<script>
-			flag = "EST";
+		<script>/* completed seasons */
+flag = "FIN";country = "Finland";addTeam("HJK","Helsingin_Jalkapalloklubi",15,8,4,50,26,0,"champion");addTeam("KuPS","Kuopion_Palloseura",16,5,6,41,20,0,"");addTeam("VPS","Vaasan_Palloseura",15,4,8,41,26,0,"");addTeam("SJK","Sein%C3%A4joen_Jalkapallokerho",12,6,9,35,33,0,"");addTeam("Honka","FC_Honka",12,5,10,29,27,0,"");addTeam("Inter Turku","FC_Inter_Turku",10,5,12,35,40,0,"");addTeam("Oulu","AC_Oulu",11,5,11,41,45,0,"");addTeam("Ilves","Ilves_(football)",8,9,10,35,33,0,"");addTeam("Haka","FC_Haka",7,11,9,35,42,0,"");addTeam("Lahti","FC_Lahti",7,8,12,26,41,0,"");addTeam("Mariehamn","IFK_Mariehamn",5,7,15,28,40,0,"");addTeam("KTP","Kotkan_Ty%C3%B6v%C3%A4en_Palloilijat",5,5,17,21,44,0,"removed");
+		</script>
+		<script>/* ongoing seasons */
+flag = "EST";
 country = "Estonia";
-addTeam("Flora","FC_Flora",22,9,2,70,21,0,"inprogress");
-addTeam("FCI Levadia","FCI_Levadia_Tallinn",21,9,3,63,21,0,"inprogress");
-addTeam("Paide Linnameeskond","Paide_Linnameeskond",12,12,9,42,28,0,"inprogress");
-addTeam("Tallinna Kalev","JK_Tallinna_Kalev",12,10,11,41,40,0,"inprogress");
-addTeam("Nõmme Kalju","N%C3%B5mme_Kalju_FC",12,10,11,46,38,0,"inprogress");
-addTeam("Vaprus","P%C3%A4rnu_JK_Vaprus",11,11,11,38,42,0,"inprogress");
-addTeam("Narva Trans","JK_Narva_Trans",12,2,19,30,53,0,"inprogress");
-addTeam("Kuressaare","FC_Kuressaare",10,6,17,33,59,0,"inprogress");
-addTeam("Tammeka","Tartu_JK_Tammeka",4,12,17,31,61,0,"inprogress");
-addTeamN("Harju","Harju_JK_Laagri",5,7,21,25,56,0,"inprogress");
-			flag = "DNK";
+addTeam("Flora","FC_Flora",23,9,2,73,22,0,"inprogress");
+addTeam("FCI Levadia","FCI_Levadia_Tallinn",21,10,3,63,21,0,"inprogress");
+addTeam("Tallinna Kalev","JK_Tallinna_Kalev",13,10,11,43,40,0,"inprogress");
+addTeam("Paide Linnameeskond","Paide_Linnameeskond",12,13,9,45,31,0,"inprogress");
+addTeam("Nõmme Kalju","N%C3%B5mme_Kalju_FC",12,11,11,49,41,0,"inprogress");
+addTeam("Vaprus","P%C3%A4rnu_JK_Vaprus",11,12,11,38,42,0,"inprogress");
+addTeam("Kuressaare","FC_Kuressaare",11,6,17,34,59,0,"inprogress");
+addTeam("Narva Trans","JK_Narva_Trans",12,2,20,31,56,0,"inprogress");
+addTeam("Tammeka","Tartu_JK_Tammeka",4,12,18,31,62,0,"inprogress");
+addTeamN("Harju","Harju_JK_Laagri",5,7,22,25,58,0,"inprogress");
+flag = "DNK";
 country = "Denmark";
-addTeam("Copenhagen","F.C._Copenhagen",8,2,2,24,15,0,"inprogress");
-addTeam("Silkeborg","Silkeborg_IF",8,1,3,23,10,0,"inprogress");
-addTeam("Brøndby","Br%C3%B8ndby_IF",8,1,3,23,12,0,"inprogress");
-addTeam("Nordsjælland","FC_Nordsj%C3%A6lland",6,4,2,23,9,0,"inprogress");
-addTeam("Midtjylland","FC_Midtjylland",6,3,3,17,16,0,"inprogress");
-addTeam("AGF","Aarhus_Gymnastikforening",4,5,3,14,14,0,"inprogress");
-addTeam("Lyngby","Lyngby_Boldklub",4,3,5,13,19,0,"inprogress");
-addTeam("Randers","Randers_FC",3,5,4,14,23,0,"inprogress");
-addTeam("Viborg","Viborg_FF",3,3,6,11,19,0,"inprogress");
-addTeam("OB","Odense_Boldklub",3,2,7,17,20,0,"inprogress");
-addTeam("Vejle","Vejle_Boldklub",2,2,8,13,18,0,"inprogress");
-addTeam("Hvidovre","Hvidovre_IF",0,3,9,5,22,0,"inprogress");
-			flag = "BEL";
+addTeam("Copenhagen","F.C._Copenhagen",9,2,2,28,15,0,"inprogress");
+addTeam("Brøndby","Br%C3%B8ndby_IF",9,1,3,25,13,0,"inprogress");
+addTeam("Silkeborg","Silkeborg_IF",8,2,3,23,10,0,"inprogress");
+addTeam("Midtjylland","FC_Midtjylland",7,3,3,19,17,0,"inprogress");
+addTeam("Nordsjælland","FC_Nordsj%C3%A6lland",6,4,3,24,11,0,"inprogress");
+addTeam("AGF","Aarhus_Gymnastikforening",5,5,3,16,15,0,"inprogress");
+addTeam("Lyngby","Lyngby_Boldklub",4,3,6,14,21,0,"inprogress");
+addTeam("Randers","Randers_FC",3,5,5,15,25,0,"inprogress");
+addTeam("Viborg","Viborg_FF",3,4,6,12,20,0,"inprogress");
+addTeam("OB","Odense_Boldklub",3,3,7,17,20,0,"inprogress");
+addTeam("Vejle","Vejle_Boldklub",2,3,8,14,19,0,"inprogress");
+addTeam("Hvidovre","Hvidovre_IF",0,3,10,5,26,0,"inprogress");
+flag = "BEL";
 country = "Belgium";
-addTeam("Union SG","Royale_Union_Saint-Gilloise",8,1,2,26,13,0,"inprogress");
-addTeam("Anderlecht","R.S.C._Anderlecht",6,3,2,18,13,0,"inprogress");
-addTeam("Gent","K.A.A._Gent",5,5,1,16,11,0,"inprogress");
-addTeam("Cercle Brugge","Cercle_Brugge_K.S.V.",6,0,5,13,11,0,"inprogress");
-addTeam("Genk","K.R.C._Genk",4,6,1,20,10,0,"inprogress");
-addTeam("Antwerp","Royal_Antwerp_F.C.",4,5,2,19,8,0,"inprogress");
-addTeam("Club Brugge","Club_Brugge_KV",4,4,3,23,12,0,"inprogress");
-addTeam("Standard Liège","Standard_Li%C3%A8ge",4,4,3,13,11,0,"inprogress");
-addTeam("Charleroi","R._Charleroi_S.C.",3,4,4,13,17,0,"inprogress");
-addTeam("Sint-Truiden","Sint-Truidense_V.V.",3,4,4,11,18,0,"inprogress");
-addTeamN("RWD Molenbeek","R.W.D._Molenbeek_(2015)",3,4,4,12,21,0,"inprogress");
-addTeam("OH Leuven","Oud-Heverlee_Leuven",3,3,5,18,19,0,"inprogress");
-addTeam("Mechelen","K.V._Mechelen",3,2,6,11,16,0,"inprogress");
-addTeam("Eupen","K.A.S._Eupen",3,1,7,14,26,0,"inprogress");
-addTeam("Kortrijk","K.V._Kortrijk",2,2,7,9,22,0,"inprogress");
-addTeam("Westerlo","K.V.C._Westerlo",1,4,6,12,20,0,"inprogress");
+addTeam("Union SG","Royale_Union_Saint-Gilloise",9,1,2,29,14,0,"inprogress");
+addTeam("Anderlecht","R.S.C._Anderlecht",7,3,2,23,14,0,"inprogress");
+addTeam("Gent","K.A.A._Gent",6,5,1,19,12,0,"inprogress");
+addTeam("Cercle Brugge","Cercle_Brugge_K.S.V.",7,0,5,15,11,0,"inprogress");
+addTeam("Genk","K.R.C._Genk",5,6,1,23,10,0,"inprogress");
+addTeam("Club Brugge","Club_Brugge_KV",5,4,3,25,13,0,"inprogress");
+addTeam("Antwerp","Royal_Antwerp_F.C.",4,5,3,20,10,0,"inprogress");
+addTeam("Standard Liège","Standard_Li%C3%A8ge",4,4,4,14,14,0,"inprogress");
+addTeam("Sint-Truiden","Sint-Truidense_V.V.",4,4,4,13,19,0,"inprogress");
+addTeam("Eupen","K.A.S._Eupen",4,1,7,16,26,0,"inprogress");
+addTeam("Charleroi","R._Charleroi_S.C.",3,4,5,13,19,0,"inprogress");
+addTeam("RWD Molenbeek","R.W.D._Molenbeek_(2015)",3,4,5,13,23,0,"inprogress");
+addTeam("OH Leuven","Oud-Heverlee_Leuven",3,3,6,19,24,0,"inprogress");
+addTeam("Mechelen","K.V._Mechelen",3,2,7,11,18,0,"inprogress");
+addTeam("Kortrijk","K.V._Kortrijk",2,2,8,9,25,0,"inprogress");
+addTeam("Westerlo","K.V.C._Westerlo",1,4,7,13,23,0,"inprogress");
 flag = "AUT";
 country = "Austria";
-addTeam("Sturm Graz","SK_Sturm_Graz",7,3,0,18,6,0,"inprogress");
-addTeam("Red Bull Salzburg","FC_Red_Bull_Salzburg",7,2,1,24,7,0,"inprogress");
-addTeam("LASK","LASK",5,3,2,13,7,0,"inprogress");
-addTeam("TSV Hartberg","TSV_Hartberg",4,4,2,15,14,0,"inprogress");
-addTeam("Austria Klagenfurt","SK_Austria_Klagenfurt_(2007)",3,6,1,15,11,0,"inprogress");
-addTeam("Rapid Wien","SK_Rapid_Wien",3,5,2,20,9,0,"inprogress");
-addTeam("Wolfsberger AC","Wolfsberger_AC",3,4,3,15,17,0,"inprogress");
-addTeam("Rheindorf Altach","SC_Rheindorf_Altach",3,3,4,9,12,0,"inprogress");
-addTeam("Austria Wien","FK_Austria_Wien",2,3,5,10,13,0,"inprogress");
-addTeamN("Blau-Weiß Linz","FC_Blau-Wei%C3%9F_Linz",2,3,5,11,23,0,"inprogress");
-addTeam("WSG Tirol","WSG_Tirol",1,2,7,10,22,0,"inprogress");
-addTeam("Austria Lustenau","SC_Austria_Lustenau",0,2,8,5,24,0,"inprogress");
+addTeam("Sturm Graz","SK_Sturm_Graz",8,3,1,20,8,0,"inprogress");
+addTeam("Red Bull Salzburg","FC_Red_Bull_Salzburg",8,2,2,27,8,0,"inprogress");
+addTeam("LASK","LASK",6,4,2,17,10,0,"inprogress");
+addTeam("Austria Klagenfurt","SK_Austria_Klagenfurt_(2007)",5,6,1,19,13,0,"inprogress");
+addTeam("TSV Hartberg","TSV_Hartberg",5,4,3,20,16,0,"inprogress");
+addTeam("SK Rapid","SK_Rapid_Wien",3,6,3,25,15,0,"inprogress");
+addTeam("Austria Wien","FK_Austria_Wien",4,3,5,13,13,0,"inprogress");
+addTeam("Wolfsberger AC","Wolfsberger_AC",3,5,4,15,19,0,"inprogress");
+addTeam("Rheindorf Altach","SC_Rheindorf_Altach",3,4,5,9,15,0,"inprogress");
+addTeam("Blau-Weiß Linz","FC_Blau-Wei%C3%9F_Linz",3,4,5,13,23,0,"inprogress");
+addTeam("WSG Tirol","WSG_Tirol",1,2,9,10,25,0,"inprogress");
+addTeam("Austria Lustenau","SC_Austria_Lustenau",0,3,9,5,28,0,"inprogress");
 flag = "ALB";
 country = "Albania";
-addTeam("Egnatia","KF_Egnatia",6,1,2,19,9,0,"inprogress");
-addTeam("Partizani","FK_Partizani_Tirana",5,2,1,13,8,0,"inprogress");
-addTeam("Laçi","KF_La%C3%A7i",4,1,4,17,10,0,"inprogress");
-addTeam("Tirana","KF_Tirana",4,1,4,14,15,0,"inprogress");
-addTeam("Vllaznia","KF_Vllaznia_Shkod%C3%ABr",3,3,3,11,9,0,"inprogress");
-addTeam("Skënderbeu","KF_Sk%C3%ABnderbeu_Kor%C3%A7%C3%AB",4,0,5,6,10,0,"inprogress");
-addTeam("Erzeni","KF_Erzeni",3,2,4,15,16,0,"inprogress");
-addTeam("Teuta","KF_Teuta_Durr%C3%ABs",3,2,3,8,13,0,"inprogress");
-addTeam("Kukësi","FK_Kuk%C3%ABsi",3,1,5,10,16,0,"inprogress");
-addTeam("Dinamo City","FC_Dinamo_City",2,1,6,10,17,0,"inprogress");
+addTeam("Egnatia","KF_Egnatia",7,2,2,22,11,0,"inprogress");
+addTeam("Partizani","FK_Partizani_Tirana",7,2,1,15,8,0,"inprogress");
+addTeam("Tirana","KF_Tirana",5,2,4,17,16,0,"inprogress");
+addTeam("Laçi","KF_La%C3%A7i",4,2,5,17,11,0,"inprogress");
+addTeam("Vllaznia","KF_Vllaznia_Shkod%C3%ABr",3,4,4,12,11,0,"inprogress");
+addTeam("Kukësi","FK_Kuk%C3%ABsi",4,1,6,12,18,0,"inprogress");
+addTeam("Skënderbeu","KF_Sk%C3%ABnderbeu_Kor%C3%A7%C3%AB",4,1,6,8,13,0,"inprogress");
+addTeam("Erzeni","KF_Erzeni",3,4,4,16,17,0,"inprogress");
+addTeam("Teuta","KF_Teuta_Durr%C3%ABs",3,2,5,8,16,0,"inprogress");
+addTeam("Dinamo City","FC_Dinamo_City",3,2,6,13,19,0,"inprogress");
 flag = "ENG";
 country = "England";
-addTeam("Tottenham Hotspur","Tottenham_Hotspur_F.C.",7,2,0,20,8,0,"inprogress");
-addTeam("Manchester City","Manchester_City_F.C.",7,0,2,19,7,0,"inprogress");
-addTeam("Arsenal","Arsenal_F.C.",6,3,0,18,8,0,"inprogress");
-addTeam("Liverpool","Liverpool_F.C.",6,2,1,20,9,0,"inprogress");
-addTeam("Aston Villa","Aston_Villa_F.C.",6,1,2,23,13,0,"inprogress");
-addTeam("Newcastle United","Newcastle_United_F.C.",5,1,3,24,9,0,"inprogress");
-addTeam("Brighton & Hove Albion","Brighton_%26_Hove_Albion_F.C.",5,1,3,22,18,0,"inprogress");
-addTeam("Manchester United","Manchester_United_F.C.",5,0,4,11,13,0,"inprogress");
-addTeam("West Ham United","West_Ham_United_F.C.",4,2,3,16,16,0,"inprogress");
-addTeam("Chelsea","Chelsea_F.C.",3,3,3,13,9,0,"inprogress");
-addTeam("Crystal Palace","Crystal_Palace_F.C.",3,3,3,7,11,0,"inprogress");
-addTeam("Wolverhampton Wanderers","Wolverhampton_Wanderers_F.C.",3,2,4,11,15,0,"inprogress");
-addTeam("Fulham","Fulham_F.C.",3,2,4,8,15,0,"inprogress");
-addTeam("Brentford","Brentford_F.C.",2,4,3,14,12,0,"inprogress");
-addTeam("Nottingham Forest","Nottingham_Forest_F.C.",2,4,3,10,12,0,"inprogress");
-addTeam("Everton","Everton_F.C.",2,1,6,9,14,0,"inprogress");
-addTeam("Luton Town","Luton_Town_F.C.",1,2,6,8,17,0,"inprogress");
-addTeam("Burnley","Burnley_F.C.",1,1,7,7,23,0,"inprogress");
-addTeam("Bournemouth","AFC_Bournemouth",0,3,6,6,20,0,"inprogress");
-addTeam("Sheffield United","Sheffield_United_F.C.",0,1,8,7,24,0,"inprogress");
+addTeam("Tottenham Hotspur","Tottenham_Hotspur_F.C.",8,2,0,22,9,0,"inprogress");
+addTeam("Arsenal","Arsenal_F.C.",7,3,0,23,8,0,"inprogress");
+addTeam("Manchester City","Manchester_City_F.C.",8,0,2,22,7,0,"inprogress");
+addTeam("Liverpool","Liverpool_F.C.",7,2,1,23,9,0,"inprogress");
+addTeam("Aston Villa","Aston_Villa_F.C.",7,1,2,26,14,0,"inprogress");
+addTeam("Newcastle United","Newcastle_United_F.C.",5,2,3,26,11,0,"inprogress");
+addTeam("Brighton & Hove Albion","Brighton_%26_Hove_Albion_F.C.",5,2,3,23,19,0,"inprogress");
+addTeam("Manchester United","Manchester_United_F.C.",5,0,5,11,16,0,"inprogress");
+addTeam("West Ham United","West_Ham_United_F.C.",4,2,4,16,17,0,"inprogress");
+addTeam("Brentford","Brentford_F.C.",3,4,3,16,12,0,"inprogress");
+addTeam("Chelsea","Chelsea_F.C.",3,3,4,13,11,0,"inprogress");
+addTeam("Wolverhampton Wanderers","Wolverhampton_Wanderers_F.C.",3,3,4,13,17,0,"inprogress");
+addTeam("Crystal Palace","Crystal_Palace_F.C.",3,3,4,8,13,0,"inprogress");
+addTeam("Fulham","Fulham_F.C.",3,3,4,9,16,0,"inprogress");
+addTeam("Everton","Everton_F.C.",3,1,6,10,14,0,"inprogress");
+addTeam("Nottingham Forest","Nottingham_Forest_F.C.",2,4,4,10,15,0,"inprogress");
+addTeam("Bournemouth","AFC_Bournemouth",1,3,6,8,21,0,"inprogress");
+addTeam("Luton Town","Luton_Town_F.C.",1,2,7,9,20,0,"inprogress");
+addTeam("Burnley","Burnley_F.C.",1,1,8,8,25,0,"inprogress");
+addTeam("Sheffield United","Sheffield_United_F.C.",0,1,9,7,29,0,"inprogress");
 hm();
+
 		</script>
 	</body>
 </html>

@@ -75,15 +75,22 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 		});
 	}
 
+	known = false;
 	if ( newReturn === "" && allTeams.indexOf(flag.toLowerCase() + "/" + wiki) !== -1 ) {
 		newReturn = "R";
 	} else {
 		if ( newReturn === "" ) {
 			newReturn = prompt("Is "+name+" (" + wiki + ") [N]ew or [R]eturning or [D]uplicate?").toUpperCase();
+		} else {
+			known = true;
 		}
 	}
 	if ( newReturn === "N" || newReturn === "NEW" ) {
 		row.classList.add("newclub");
+		if ( !known ) {
+			finalWiki = prompt("What's the final wiki page you end up?",wiki);
+			console.log("NEW TEAM => /*"+finalWiki+"*/\""+flag.toLowerCase()+"/"+wiki+"\",");
+		}
 	} else if ( newReturn === "R" || newReturn === "RETURNING" ) {
 		row.classList.add("returning");
 	} else if ( newReturn === "D" || newReturn === "DUPLICATE" ) {
@@ -92,7 +99,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 		});
 		if ( suggestWiki.length === 0 ) {
 			newWiki = prompt("What is their correct Wiki page?",wiki);
-			console.log('NEW REDIRECT => ["'+flag.toLowerCase()+"/"+newWiki+'","'+flag.toLowerCase()+"/"+wiki+'"]');
+			console.log('NEW REDIRECT => ["'+flag.toLowerCase()+"/"+newWiki+'","'+flag.toLowerCase()+"/"+wiki+'"],');
 		} else {
 			newWiki = suggestWiki[0][0].replace( flag.toLowerCase() + "/" , "");
 		}
@@ -151,6 +158,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 		.replaceAll("%c4%81","a")
 		.replaceAll("%c4%85","a")
 		.replaceAll("%c3%85","a")
+		.replaceAll("%c3%84","a")
 		.replaceAll("%c3%a6","ae")
 		.replaceAll("%c4%8c","c")
 		.replaceAll("%c4%8d","c")
@@ -704,5 +712,4 @@ function hm() {
 	} else {
 		console.warn(dn + " teams");
 	}
-	listNewTeams("est");
 }
