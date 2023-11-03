@@ -142,7 +142,8 @@
 				<div class="tab-pane fade" id="div_h" role="tabpanel" aria-labelledby="div_h-tab">Division H</div>
 				<div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="notes-tab">
 					<ul class="list-group">
-						<li class="list-group-item"><!--<img src="../../f/ENG.png" title="England">England: League added--></li>
+						<li class="list-group-item"><img src="../../f/HUN.png" title="Hungary">Hungary: Szeged LC were excluded from the final table and their record expunged</li>
+						<li class="list-group-item removed"><img src="../../f/HUN.png" title="Hungary">Hungary: League removed as next season saw a grouped league system</li>
 					</ul>
 				</div>
 			</div>
@@ -153,6 +154,27 @@
 		<script src="../../scripts.js"></script>
 		<script src="../../teams.js"></script>
 		<script>
+			flag = "HUN";
+country = "Hungary";
+addTeam("Dunaferr","Dunaferr_FC",24,7,1,79,23,0,"champion|removed");
+addTeam("MTK Hungária","MTK_Hung%C3%A1ria_FC",18,9,5,64,28,0,"removed");
+addTeam("Vasas","Vasas_SC",19,4,9,58,32,0,"removed");
+addTeam("Tatabánya","FC_Tatab%C3%A1nya",14,13,5,37,34,0,"removed");
+addTeam("Ferencváros","Ferencv%C3%A1rosi_TC",14,8,10,61,39,0,"removed");
+addTeam("Debrecen","Debreceni_VSC",14,8,10,52,41,0,"removed");
+addTeam("Pécs","P%C3%A9csi_MFC",11,12,9,41,47,0,"removed");
+addTeam("Győr","Gy%C5%91ri_ETO_FC",12,8,12,52,36,0,"removed");
+addTeam("Nyíregyháza","Ny%C3%ADregyh%C3%A1za_Spartacus",12,8,12,32,42,0,"removed");
+addTeam("Újpest","%C3%9Ajpest_FC",10,11,11,46,42,0,"removed");
+addTeam("Zalaegerszeg","Zalaegerszegi_TE",8,15,9,34,31,0,"removed");
+addTeam("Kispest Honvéd","Budapest_Honv%C3%A9d_FC",10,9,13,27,39,0,"removed");
+addTeam("Haladás","Szombathelyi_Halad%C3%A1s",8,8,16,37,53,0,"removed");
+addTeam("Nagykanizsa","Nagykanizsa_FC",7,10,15,27,44,0,"removed");
+addTeam("Siófok","BFC_Si%C3%B3fok",7,7,18,26,51,0,"removed");
+addTeam("Diósgyőr","Di%C3%B3sgy%C5%91ri_VTK",5,9,18,26,56,0,"removed");
+addTeam("Vác","V%C3%A1c-%C3%9Ajbuda_LTC",3,6,23,24,85,0,"removed");
+addTeamN("Szeged LC","Szeged_LC",0,0,0,0,0,0,"removed|excluded");
+console.error("Szeged LC were excluded");
 			flag = "FIN";
 country = "Finland";
 addTeam("Haka Valkeakoski","FC_Haka",20,7,2,54,18,0,"champion");

@@ -143,6 +143,7 @@
 				<div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="notes-tab">
 					<ul class="list-group">
 						<li class="list-group-item removed"><img src="../../f/ALB.png" title="Albania">Albania: League removed as next season used a grouped format</li>
+						<li class="list-group-item"><img src="../../f/HUN.png" title="Hungary">Hungary: Pécs were deducted 3 points</li>
 					</ul>
 				</div>
 			</div>
@@ -153,6 +154,24 @@
 		<script src="../../scripts.js"></script>
 		<script src="../../teams.js"></script>
 		<script>
+			flag = "HUN";
+country = "Hungary";
+addTeam("Ferencváros","Ferencv%C3%A1rosi_TC",21,3,6,56,25,0,"champion");
+addTeam("BVSC","BVSC_Budapest",18,7,5,50,29,0,"");
+addTeam("Újpest","%C3%9Ajpest_FC",12,12,6,43,31,0,"");
+addTeam("Debrecen","Debreceni_VSC",14,6,10,49,40,0,"");
+addTeam("MTK Hungária","MTK_Hung%C3%A1ria_FC",13,7,10,58,43,0,"");
+addTeam("Kispest Honvéd","Budapest_Honv%C3%A9d_FC",12,10,8,49,35,0,"");
+addTeam("Vasas","Vasas_SC",12,10,8,44,40,0,"");
+addTeam("Csepel","Csepel_SC",11,9,10,46,45,0,"");
+addTeam("Stadler","Kisk%C5%91r%C3%B6si_FC",8,12,10,35,41,0,"");
+addTeam("Zalaegerszeg","Zalaegerszegi_TE",8,10,12,42,48,0,"");
+addTeam("Vác","V%C3%A1c_FC",7,12,11,39,46,0,"");
+addTeam("Haladás","Szombathelyi_Halad%C3%A1s",8,8,14,30,48,0,"");
+addTeam("Fehérvár","Feh%C3%A9rv%C3%A1r_FC",8,7,15,38,54,0,"");
+addTeam("Békéscsaba","B%C3%A9k%C3%A9scsaba_1912_El%C3%B6re_SE",6,11,13,33,46,0,"");
+addTeam("Győr","Gy%C5%91ri_ETO_FC",6,9,15,34,54,0,"");
+addTeam("Pécs","P%C3%A9csi_MFC",7,5,18,32,53,3,"deduction");
 			flag = "FIN";
 country = "Finland";
 addTeam("Haka Valkeakoski","FC_Haka",18,5,3,56,17,0,"champion");
@@ -267,6 +286,7 @@ addTeam("Southampton","Southampton_F.C.",9,11,18,34,52,0,"");
 addTeam("Manchester City","Manchester_City_F.C.",9,11,18,33,58,0,"removed");
 addTeam("Queens Park Rangers","Queens_Park_Rangers_F.C.",9,6,23,38,57,0,"removed");
 addTeam("Bolton Wanderers","Bolton_Wanderers_F.C.",8,5,25,39,71,0,"removed");
+hm();
 		</script>
 	</body>
 </html>

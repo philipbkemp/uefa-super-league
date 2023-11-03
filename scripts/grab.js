@@ -10,7 +10,7 @@ usl.forEach(function(uslItem){
     r = Array.from(uslItem.querySelectorAll("tr"));
     r.forEach(function(row){rows.push(row);});
 });
-flag = "FIN";//prompt("Please enter country code:").toUpperCase();
+flag = "HUN";//prompt("Please enter country code:").toUpperCase();
 country = "";
 switch (flag) {
     case "ALB": country = "Albania"; break;
@@ -58,6 +58,7 @@ for ( r=1 ; r!==rows.length ; r++ ) {
         _teamName = td[1].innerText;
         _teamWiki = _teamName;
     }
+    pos = td[0].innerText;
     _played = td[2].innerText;
     _won = td[3].innerText;
     _drawn = td[4].innerText;
@@ -65,21 +66,24 @@ for ( r=1 ; r!==rows.length ; r++ ) {
     _for = td[6].innerText;
     _against = td[7].innerText;
     _deduct = 0;
-    if ( deduct.indexOf(r) !== -1 ) {
-        _deduct = prompt("How many points are deducted from " + _teamName);
+    if ( _won !== "W" ) {
+        if ( deduct.indexOf(r) !== -1 ) {
+            _deduct = prompt("How many points are deducted from " + _teamName);
+        }
+        _classes = [];
+        if ( r === 1 ) {
+            _classes.push("champion");
+        }
+        if ( removed.indexOf(pos+"") !== -1 ) {
+            _classes.push("removed");
+        }
+        if ( deduct.indexOf(pos) !== -1 ) {
+            _classes.push("deduction");
+        }
+        str = '';
+        str += 'addTeam("'+_teamName+'","'+_teamWiki+'",'+_won+','+_drawn+','+_lost+','+_for+','+_against+','+_deduct+',"'+_classes.join("|")+'");';
+        ret.push(str);
     }
-    _classes = [];
-    if ( r === 1 ) {
-        _classes.push("champion");
-    }
-    if ( removed.indexOf(r+"") !== -1 ) {
-        _classes.push("removed");
-    }
-    if ( deduct.indexOf(r) !== -1 ) {
-        _classes.push("deduction");
-    }
-    str = '';
-    str += 'addTeam("'+_teamName+'","'+_teamWiki+'",'+_won+','+_drawn+','+_lost+','+_for+','+_against+','+_deduct+',"'+_classes.join("|")+'");';
-    ret.push(str);
 }
+console.clear();
 console.log(ret.join("\n"));
