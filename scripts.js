@@ -713,3 +713,58 @@ function hm() {
 		console.warn(dn + " teams");
 	}
 }
+
+function nextSeasonTeams() {
+	nextSeason();
+	console.clear();
+	div = [];
+	divisions = ["a","b","c","d","e","f","g","h"];
+	divisions.forEach(function(i,idx) {
+		div[i] = [];
+		divRows = document.querySelectorAll("#div_"+i+" table tbody tr");
+		if ( divRows.length !== 0 ) {
+			divRows.forEach(function(r){
+				if ( ! r.classList.contains("removed") ) {
+					div[i].push( '"' + r.querySelector("a").getAttribute("href").replace("../../c/","") +'"' );
+				}
+			});
+		}
+	});
+	s = []
+	divisions.forEach(function(i,idx) {
+		if ( div[i].length !== 0 ) { s.push( "div"+i+"=[" + div[i].join(",") +"]" ); }
+	});
+	console.log(s.join("\n"));
+}
+function checkTeams() {
+	if ( typeof diva !== "undefined" ) {
+		diva.forEach(function(t){
+			tt = document.querySelector('#div_a tbody a[href$="'+t+'"]');
+			if ( tt ) {
+				tt.parentElement.parentElement.querySelectorAll("td")[0].innerHTML = "OK";
+			} else {
+				console.warn("Division A is missing " + t);
+			}
+		});
+	}
+	if ( typeof divb !== "undefined" ) {
+		divb.forEach(function(t){
+			tt = document.querySelector('#div_b tbody a[href$="'+t+'"]');
+			if ( tt ) {
+				tt.parentElement.parentElement.querySelectorAll("td")[0].innerHTML = "OK";
+			} else {
+				console.warn("Division B is missing " + t);
+			}
+		});
+	}
+	if ( typeof divc !== "undefined" ) {
+		divc.forEach(function(t){
+			tt = document.querySelector('#div_c tbody a[href$="'+t+'"]');
+			if ( tt ) {
+				tt.parentElement.parentElement.querySelectorAll("td")[0].innerHTML = "OK";
+			} else {
+				console.warn("Division C is missing " + t);
+			}
+		});
+	}
+}
