@@ -89,7 +89,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 		row.classList.add("newclub");
 		if ( !known ) {
 			finalWiki = prompt("What's the final wiki page you end up?",wiki);
-			console.log("NEW TEAM => /*"+finalWiki+"*/\""+flag.toLowerCase()+"/"+wiki+"\",");
+			console.warn("NEW TEAM => /*"+finalWiki+"*/\""+flag.toLowerCase()+"/"+wiki+"\",");
 		}
 	} else if ( newReturn === "R" || newReturn === "RETURNING" ) {
 		row.classList.add("returning");
@@ -99,7 +99,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 		});
 		if ( suggestWiki.length === 0 ) {
 			newWiki = prompt("What is their correct Wiki page?",wiki);
-			console.log('NEW REDIRECT => ["'+flag.toLowerCase()+"/"+newWiki+'","'+flag.toLowerCase()+"/"+wiki+'"],');
+			console.warn('NEW REDIRECT => ["'+flag.toLowerCase()+"/"+newWiki+'","'+flag.toLowerCase()+"/"+wiki+'"],');
 		} else {
 			newWiki = suggestWiki[0][0].replace( flag.toLowerCase() + "/" , "");
 		}
