@@ -1,9 +1,5 @@
 allTeams = [
-/********************************************************** */
-/********************************************************** */
-/************************************************************ ABLANIA */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** ABLANIA */
 /*Dinamo_Durrësi*/"alb/Dinamo_Durr%C3%ABsi",
 /*Dinamo_Shkodra*/"alb/Dinamo_Shkodra",
 /*FC_Dinamo_City*/"alb/FK_Dinamo_Tirana",
@@ -44,11 +40,7 @@ allTeams = [
 /*KS_Studenti*/"alb/KS_Studenti",
 /*Luftëtari_Enver_Hoxha_Tiranë*/"alb/Luft%C3%ABtari_Enver_Hoxha_Tiran%C3%AB",
 /*Spartaku_Shkodër*/"alb/Spartaku_Shkod%C3%ABr",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ AUSTRIA */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** AUSTRIA */
 /*1._Simmeringer_SC*/"aut/1._Simmeringer_SC",
 /*1._Wiener_Neustädter_SC*/"aut/1._Wiener_Neust%C3%A4dter_SC",
 /*1._Wiener_Neustädter_SC_(2008)*/"aut/SC_Wiener_Neustadt",
@@ -126,11 +118,7 @@ allTeams = [
 /*Wolfsberger_AC*/"aut/Wolfsberger_AC",
 /*WSG_Radenthein*/"aut/WSG_Radenthein",
 /*WSG_Tirol*/"aut/WSG_Wattens",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ BELGIUM */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** BELGIUM */
 /*A.S.V._Oostende_K.M.*/"bel/A.S.V._Oostende_K.M.",
 /*Athletic_and_Running_Club_de_Bruxelles*/"bel/Athletic_and_Running_Club_de_Bruxelles",
 /*Beerschot_A.C.*/"bel/K.F.C._Germinal_Beerschot",
@@ -209,11 +197,7 @@ allTeams = [
 /*Standard_Liège*/"bel/Standard_Li%C3%A8ge",
 /*Union_F.C._d%27Ixelles*/"bel/Union_F.C._d%27Ixelles",
 /*Wavre_Sports_FC*/"bel/R._Jet_Wavre",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ CZECHOSLOVAKIA */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** CZECHOSLOVAKIA */
 /*1._FC_Tatran_Prešov*/"cze/1._FC_Tatran_Pre%C5%A1ov",
 /*1._SK_Prostějov*/"cze/SK_Prost%C4%9Bjov",
 /*AC_Sparta_Prague*/"cze/AC_Sparta_Prague",
@@ -277,11 +261,7 @@ allTeams = [
 /*Tankista_Prague*/"cze/Tankista_Prague",
 /*Teplitzer_FK*/"cze/Teplitzer_FK",
 /*TTS_Trenčín*/"cze/TTS_Tren%C4%8D%C3%ADn",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ DENMARK */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** DENMARK */
 /*AaB_Fodbold*/"dnk/AaB_Fodbold",
 /*Aarhus_Fremad*/"dnk/Aarhus_Fremad",
 /*Aarhus_Gymnastikforening*/"dnk/Aarhus_Gymnastikforening",
@@ -342,11 +322,7 @@ allTeams = [
 /*Vendsyssel_FF*/"dnk/Vendsyssel_FF",
 /*Viborg_FF*/"dnk/Viborg_FF",
 /*VSK_Aarhus*/"dnk/IK_Skovbakken",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ ENGLAND */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** ENGLAND */
 /*Accrington_F.C.*/"eng/Accrington_F.C.",
 /*AFC_Bournemouth*/"eng/AFC_Bournemouth",
 /*Arsenal_F.C.*/"eng/Arsenal_F.C.",
@@ -412,11 +388,7 @@ allTeams = [
 /*Wigan_Athletic_F.C.*/"eng/Wigan_Athletic_F.C.",
 /*Wimbledon_F.C.*/"eng/Wimbledon_F.C.",
 /*Wolverhampton_Wanderers_F.C.*/"eng/Wolverhampton_Wanderers_F.C.",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ ESTONIA */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** ESTONIA */
 /*Aseri_Kalev*/"est/Aseri_Kalev",
 /*Aseri_Keraamikatehas*/"est/Aseri_Keraamikatehas",
 /*Aseri_SK*/"est/Aseri_SK",
@@ -540,11 +512,7 @@ allTeams = [
 /*Viljandi_Spartak*/"est/Viljandi_Spartak",
 /*VK_Merkur_Tallinn*/"est/VK_Merkur_Tallinn",
 /*VVS_Puhkekodu_Tallinn*/"est/VVS_Puhkekodu_Tallinn",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ FINLAND */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** FINLAND */
 /*Åbo_IFK*/"fin/%C3%85IFK_Turku",
 /*AC_Allianssi*/"fin/AC_Allianssi",
 /*AC_Oulu*/"fin/AC_Oulu",
@@ -620,11 +588,7 @@ allTeams = [
 /*ViPS_Viipuri*/"fin/ViPS_Viipuri",
 /*Vasa_IFK*/"fin/VIFK_Vaasa",
 /*Viipurin_Reipas*/"fin/Viipurin_Reipas",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ HUNGARY */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** HUNGARY */
 /*33_FC*/"hun/33_FC",
 /*Anger_réti_SFAC_1900_SE*/"hun/EMDSZ_Sopron_LC",
 /*Balmazújvárosi_FC*/"hun/Balmaz%C3%BAjv%C3%A1rosi_FC",
@@ -736,21 +700,7 @@ allTeams = [
 /*Zalaegerszegi_TE*/"hun/Zalaegerszegi_TE",
 /*Zuglói_AC*/"hun/Turul_FC",
 /*Zuglói_SE*/"hun/Zugl%C3%B3i_SE",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ ICELAND */
-/********************************************************** */
-/********************************************************** */
-/*Íþróttabandalag_Vestmannaeyja*/"isl/%C3%8D%C3%BEr%C3%B3ttabandalag_Vestmannaeyja",
-/*Knattspyrnufélag_Reykjavíkur*/"isl/Knattspyrnuf%C3%A9lag_Reykjav%C3%ADkur",
-/*Knattspyrnufélagið_Fram*/"isl/Knattspyrnuf%C3%A9lagi%C3%B0_Fram",
-/*Knattspyrnufélagið_Víkingur*/"isl/Knattspyrnuf%C3%A9lagi%C3%B0_V%C3%ADkingur",
-/*Valur_(men%27s_football)*/"isl/Valur_men%27s_football",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ IRELAND */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** IRELAND */
 /*Belfast_Celtic_F.C.*/"eir/Belfast_Celtic_F.C.",
 /*Bohemian_F.C.*/"eir/Bohemian_F.C.",
 /*Clarence_F.C.*/"eir/Clarence_F.C.",
@@ -774,11 +724,7 @@ allTeams = [
 /*Tritonville_F.C.*/"eir/Tritonville_F.C.",
 /*Ulster_F.C.*/"eir/Ulster_F.C.",
 /*YMCA_F.C._(Belfast)*/"eir/YMCA_F.C._(Belfast)",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ ITALY */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** ITALY */
 /*AC_Legnano*/"ita/A.C._Legnano",
 /*AC_Milan*/"ita/A.C._Milan",
 /*ACF_Fiorentina*/"ita/ACF_Fiorentina",
@@ -801,11 +747,7 @@ allTeams = [
 /*US_Cremonese*/"ita/U.S._Cremonese",
 /*US_Livorno_1915*/"ita/A.S._Livorno_Calcio",
 /*US_Triestina_Calcio_1918*/"ita/U.S._Triestina_Calcio_1918",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ LATVIA */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** LATVIA */
 /*Amatieris*/"lva/Amatieris",
 /*Cēsu_Sporta_biedrība*/"lva/C%C4%93su_Sporta_biedr%C4%ABba",
 /*FK_ASK*/"lva/ASK",
@@ -821,11 +763,7 @@ allTeams = [
 /*Riga_Vanderer*/"lva/Riga_Wanderer",
 /*Union_Riga*/"lva/Union",
 /*YMCA*/"lva/YMCA",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ LITHUANIA */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** LITHUANIA */
 /*Aviacija_Kaunas*/"ltu/Aviacija_Kaunas",
 /*BAB_(football_club)*/"ltu/BAB_(football_club)",
 /*Freya_Klaipėda*/"ltu/Freya_Klaip%C4%97da",
@@ -838,11 +776,7 @@ allTeams = [
 /*ŠŠ_Kovas_Kaunas*/"ltu/Kovas_Kaunas",
 /*Sveikata_Kybartai*/"ltu/Sveikata_Kybartai",
 /*Tauras_Kaunas*/"ltu/Tauras_Kaunas",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ LUXEMBOURG */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** LUXEMBOURG */
 /*CA_Spora_Luxembourg*/"lux/CA_Spora_Luxembourg",
 /*CS_Fola_Esch*/"lux/CS_Fola_Esch",
 /*CS_Pétange*/"lux/CS_P%C3%A9tange",
@@ -866,11 +800,7 @@ allTeams = [
 /*US_Hollerich_Bonnevoie*/"lux/US_Hollerich_Bonnevoie",
 /*US_Rumelange*/"lux/US_Rumelange",
 /*FC_Differdange_03*/"lux/FC_Differdange_03",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ MALTA */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** MALTA */
 /*Army_Service_Corps*/"mlt/Army_Service_Corps",
 /*Boys_Empire_League*/"mlt/Boys Empire League",
 /*Cospicua_Rangers*/"mlt/Cospicua_Rangers",
@@ -897,11 +827,7 @@ allTeams = [
 /*Valletta_F.C.*/"mlt/Valletta_F.C.",
 /*Valletta_Rovers*/"mlt/Valletta_Rovers",
 /*Vittoriosa_Stars_F.C.*/"mlt/Vittoriosa_Stars_F.C.",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ NETHERLANDS */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** NETHERLANDS */
 /*AVV_RAP*/"nld/RAP_(football_club)",
 /*GVC_(football_club)*/"nld/GVC_(football_club)",
 /*HBS_Craeyenhout*/"nld/HBS_Craeyenhout",
@@ -912,11 +838,7 @@ allTeams = [
 /*Sparta_Rotterdam*/"nld/Sparta_Rotterdam",
 /*VV_Concordia*/"nld/RC_en_VV_Rotterdam",
 /*VVA/Spartaan*/"nld/VVA/Spartaan",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ NORTHERN IRELAND */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** NORTHERN IRELAND */
 /*Ards_F.C.*/"nir/Ards_F.C.",
 /*Ballymena_F.C.*/"nir/Ballymena_F.C.",
 /*Bangor_F.C.*/"nir/Bangor_F.C.",
@@ -928,11 +850,7 @@ allTeams = [
 /*Newry_City_F.C.*/"nir/Newry_City_F.C.",
 /*Portadown_F.C.*/"nir/Portadown_F.C.",
 /*Queen%27s_Island_F.C.*/"nir/Queens_Island_F.C.",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ REPUBLIC OF IRELAND */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** REPUBLIC OF IRELAND */
 /*Athlone_Town_A.F.C.*/"irl/Athlone_Town_A.F.C.",
 /*Bray_Unknowns_F.C.*/"irl/Bray_Unknowns_F.C.",
 /*Brideville_F.C.*/"irl/Brideville_F.C.",
@@ -953,11 +871,7 @@ allTeams = [
 /*St_James%27s_Gate_F.C.*/"irl/St._James%27s_Gate_F.C.",
 /*Waterford_F.C.*/"irl/Waterford_United_F.C.",
 /*YMCA_F.C._(Dublin)*/"irl/YMCA_F.C._(Dublin)",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ POLAND */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** POLAND */
 /*1._FC_Kattowitz*/"pol/1._FC_Kattowitz",
 /*Czarni_Lwów*/"pol/Czarni_Lw%C3%B3w",
 /*Garbarnia_Kraków*/"pol/Garbarnia_Krak%C3%B3w",
@@ -977,11 +891,7 @@ allTeams = [
 /*Union_Touring_Łódź*/"pol/Union_Touring_%C5%81%C3%B3d%C5%BA",
 /*Warta_Poznań*/"pol/Warta_Pozna%C5%84",
 /*Wisła_Kraków*/"pol/Wis%C5%82a_Krak%C3%B3w",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ ROMANIA */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** ROMANIA */
 /*Bukarester_FC*/"rou/Bukarester_FC",
 /*Cercul_Atletic_București*/"rou/Cercul_Atletic_Bucure%C8%99ti",
 /*Colentina_A.C._București*/"rou/Colentina_Bucure%C8%99ti",
@@ -995,11 +905,7 @@ allTeams = [
 /*Româno-Americană_București*/"rou/Rom%C3%A2no-American%C4%83_Bucure%C8%99ti",
 /*Uniunea_Sportivă_București*/"rou/Uniunea_Sportiv%C4%83_Bucure%C8%99ti",
 /*Unirea_Tricolor_București*/"rou/Unirea_Tricolor_Bucure%C8%99ti",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ SCOTLAND */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** SCOTLAND */
 /*Abercorn_F.C.*/"sco/Abercorn_F.C.",
 /*Aberdeen_F.C.*/"sco/Aberdeen_F.C.",
 /*Airdrieonians_F.C._(1878)*/"sco/Airdrieonians_F.C._(1878)",
@@ -1037,11 +943,7 @@ allTeams = [
 /*St_Mirren_F.C.*/"sco/St_Mirren_F.C.",
 /*Third_Lanark_A.C.*/"sco/Third_Lanark_A.C.",
 /*Vale_of_Leven_F.C.*/"sco/Vale_of_Leven_F.C.",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ SPAIN */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** SPAIN */
 /*Arenas_Club_de_Getxo*/"esp/Arenas_Club_de_Getxo",
 /*Athletic_Bilbao*/"esp/Athletic_Bilbao",
 /*Atlético_Madrid*/"esp/Atl%C3%A9tico_de_Madrid",
@@ -1054,11 +956,7 @@ allTeams = [
 /*Real_Sociedad*/"esp/Real_Sociedad",
 /*Real_Unión*/"esp/Real_Uni%C3%B3n",
 /*Valencia_CF*/"esp/Valencia_CF",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ SWEDEN */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** SWEDEN */
 /*AIK_Fotboll*/"swe/AIK_Fotboll",
 /*Djurgårdens_IF_Fotboll*/"swe/Djurg%C3%A5rdens_IF_Fotboll",
 /*Eskilstuna_City_FK*/"swe/IK_City",
@@ -1082,11 +980,7 @@ allTeams = [
 /*Stattena_IF*/"swe/Stattena_IF",
 /*Västerås_IK_Fotboll*/"swe/V%C3%A4ster%C3%A5s_IK_Fotboll",
 /*Westermalms_IF*/"swe/Westermalms_IF",
-/********************************************************** */
-/********************************************************** */
-/************************************************************ YUGOSLAVIA */
-/********************************************************** */
-/********************************************************** */
+/* *********************************************************** YUGOSLAVIA */
 /*FK_Mačva_Šabac*/"yug/Ma%C4%8Dva_%C5%A0abac",
 /*HAŠK*/"yug/HA%C5%A0K",
 /*HNK_Hajduk_Split*/"yug/HNK_Hajduk_Split",
@@ -1097,9 +991,51 @@ allTeams = [
 /*OFK_Beograd*/"yug/OFK_Beograd",
 /*SAND_Subotica*/"yug/SAND_Subotica",
 /*SK_Jugoslavija*/"yug/SK_Jugoslavija",
+/* *********************************************************** ICELAND */
+/*Breiðablik_men%27s_football*/"isl/Brei%C3%B0ablik_UBK",
+/*FH_men%27s_football*/"isl/Fimleikaf%C3%A9lag_Hafnarfjar%C3%B0ar",
+/*Fylkir*/"isl/Fylkir",
+/*Grindavík_men%27s_football*/"isl/Ungmennaf%C3%A9lag_Grindav%C3%ADkur",
+/*Handknattleiksfélag_Kópavogs*/"isl/Handknattleiksf%C3%A9lag_K%C3%B3pavogs",
+/*Haukar_men%27s_football*/"isl/Haukar",
+/*ÍBV_men%27s_football*/"isl/%C3%8D%C3%BEr%C3%B3ttabandalag_Vestmannaeyja",
+/*Íþróttabandalag_Akraness*/"isl/%C3%8D%C3%BEr%C3%B3ttabandalag_Akraness",
+/*Íþróttabandalag_Hafnarfjarðar*/"isl/%C3%8D%C3%BEr%C3%B3ttabandalag_Hafnarfjar%C3%B0ar",
+/*Íþróttabandalag_Ísafjarðar*/"isl/%C3%8D%C3%BEr%C3%B3ttabandalag_%C3%8Dsafjar%C3%B0ar",
+/*Íþróttafélagið_Grótta*/"isl/%C3%8D%C3%BEr%C3%B3ttaf%C3%A9lagi%C3%B0_Gr%C3%B3tta",
+/*Íþróttafélagið_Völsungur*/"isl/%C3%8D%C3%BEr%C3%B3ttaf%C3%A9lagi%C3%B0_V%C3%B6lsungur",
+/*ÍR_men%27s_football*/"isl/%C3%8DR_men%27s_football",
+/*Knattspyrnudeild_Keflavík*/"isl/Knattspyrnudeild_Keflav%C3%ADk",
+/*Knattspyrnufélag_Akureyrar*/"isl/Knattspyrnuf%C3%A9lag_Akureyrar",
+/*Knattspyrnufélag_Fjallabyggðar*/"isl/Leiftur_%C3%93lafsfj%C3%B6r%C3%B0ur",
+/*Knattspyrnufélag_Reykjavíkur*/"isl/Knattspyrnuf%C3%A9lag_Reykjav%C3%ADkur",
+/*Knattspyrnufélagið_Fram*/"isl/Knattspyrnuf%C3%A9lagi%C3%B0_Fram",
+/*Knattspyrnufélagið_Þróttur*/"isl/Knattspyrnuf%C3%A9lagi%C3%B0_%C3%9Er%C3%B3ttur",
+/*Knattspyrnufélagið_Víkingur*/"isl/Knattspyrnuf%C3%A9lagi%C3%B0_V%C3%ADkingur",
+/*Knattspyrnufélagið_Víðir*/"isl/V%C3%AD%C3%B0ir",
+/*Leiknir_Reykjavík*/"isl/Leiknir_Reykjav%C3%ADk",
+/*Þór_Akureyri*/"isl/%C3%9E%C3%B3r_Akureyri",
+/*Selfoss_men%27s_football*/"isl/UMF_Selfoss",
+/*Stjarnan_men%27s_football*/"isl/Stjarnan",
+/*Ungmennafélagið_Fjölnir*/"isl/Knattspyrnudeild_Fj%C3%B6lnir",
+/*Ungmennafélagið_Skallagrímur*/"isl/UMF_Skallagr%C3%ADmur_Borganes",
+/*Ungmennafélagið_Víkingur*/"isl/Ungmennaf%C3%A9lagi%C3%B0_V%C3%ADkingur",
+/*Valur_(men%27s_football)*/"isl/Valur_men%27s_football",
 ];
 
 redirects = [
+["isl/Valur_men%27s_football","isl/Valur_(men%27s_football)"],
+["isl/Fimleikaf%C3%A9lag_Hafnarfjar%C3%B0ar","isl/FH_men%27s_football"],
+["isl/Brei%C3%B0ablik_UBK","isl/Brei%C3%B0ablik_men%27s_football"],
+["isl/%C3%8D%C3%BEr%C3%B3ttabandalag_Vestmannaeyja","isl/%C3%8DBV_men%27s_football"],
+["isl/Ungmennaf%C3%A9lag_Grindav%C3%ADkur","isl/Grindav%C3%ADk_men%27s_football"],
+["isl/Stjarnan","isl/Stjarnan_men%27s_football"],
+["isl/Knattspyrnudeild_Fj%C3%B6lnir","isl/Ungmennaf%C3%A9lagi%C3%B0_Fj%C3%B6lnir"],
+["isl/Knattspyrnudeild_Keflav%C3%ADk","isl/Keflav%C3%ADk_Football_Club"],
+["isl/Valur_men%27s_football","isl/Valur_(club)"],
+["isl/%C3%8D%C3%BEr%C3%B3ttabandalag_Akraness","isl/%C3%8DA_Akranes"],
+["isl/Ungmennaf%C3%A9lag_Grindav%C3%ADkur","isl/Knattspyrnudeild_UMFG"],
+["isl/Knattspyrnudeild_Keflav%C3%ADk","isl/Keflavik_%C3%8DF"],
 ["est/Viljandi_JK_Tulevik","est/JK_Viljandi_Tulevik"],
 ["est/Tallinna_JK_D%C3%BCnamo","est/FC_D%C3%BCnamo_Tallinn"],
 ["est/P%C3%A4rnu_Linnameeskond","est/FC_Levadia_P%C3%A4rnu"],

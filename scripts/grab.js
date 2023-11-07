@@ -10,7 +10,7 @@ usl.forEach(function(uslItem){
     r = Array.from(uslItem.querySelectorAll("tr"));
     r.forEach(function(row){rows.push(row);});
 });
-flag = "HUN";//prompt("Please enter country code:").toUpperCase();
+flag = "ISL";//prompt("Please enter country code:").toUpperCase();
 country = "";
 switch (flag) {
     case "ALB": country = "Albania"; break;
@@ -86,4 +86,4 @@ for ( r=1 ; r!==rows.length ; r++ ) {
     }
 }
 console.clear();
-console.log(ret.join("\n"));
+console.warn(ret.join("\n"));

@@ -188,6 +188,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 		.replaceAll("%c3%b5","o")
 		.replaceAll("%c3%93","o")
 		.replaceAll("%c3%be","p")
+		.replaceAll("%c3%9e","p")
 		.replaceAll("%c5%99","r")
 		.replaceAll("%c8%99","s")
 		.replaceAll("%c5%a0","s")
@@ -330,8 +331,31 @@ function sort(division) {
 						return valueB_W5 - valueA_W5;
 					} else {
 
-						alert("NEED ANOTHER SORTING LEVEL?");
-						console.log(a.cells[1].textContent," // ",b.cells[1].textContent);
+						// 5: Games played
+						var valueA_P = parseFloat(a.cells[2].textContent);
+						var valueB_P = parseFloat(b.cells[2].textContent);
+						if ( valueA_P !== valueB_P ) {
+							return valueB_P - valueA_P;
+						} else {
+
+							// 6: Draws
+							var valueA_D = parseFloat(a.cells[4].textContent);
+							var valueB_D = parseFloat(b.cells[4].textContent);
+							if ( valueA_D !== valueB_D ) {
+								return valueB_D - valueA_D;
+							} else {
+
+								// 7: Club name
+								var valueA_Name = a.cells[1].textContent;
+								var valueB_Name = b.cells[1].textContent;
+								if ( valueA_Name !== valueB_Name ) {
+									return valueA_Name.localeCompare(valueB_Name);
+								} else {
+
+									console.error("Tied teams: ",a.cells[1].textContent," // ",b.cells[1].textContent);
+								}
+							}
+						}
 					}
 				}
 			}
