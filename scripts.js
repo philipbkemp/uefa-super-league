@@ -49,6 +49,9 @@ function updateTeam(link,name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 			row.classList.add(k);
 		});
 	}
+	if ( deduct !== 0 ) {
+		row.classList.add("deduction");
+	}
 
 	clubName = tds[1].querySelector("a");
 	clubName.innerHTML = name;
@@ -64,6 +67,10 @@ function updateTeam(link,name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 	tds[11].innerHTML = _fpg;
 	tds[12].innerHTML = _apg;
 	tds[13].innerHTML = _ppg;
+
+	if ( deduct !== 0 ) {
+		tds[8].setAttribute("data-deduct",deduct);
+	}
 }
 
 function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
@@ -251,6 +258,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 
 	points = document.createElement("TD");
 	points.innerHTML = _pts;
+	points.setAttribute("data-deduct",deduct);
 	row.append(points);
 
 	gDiff = document.createElement("TD");
@@ -272,6 +280,10 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 	ppg = document.createElement("TD");
 	ppg.innerHTML = _ppg;
 	row.append(ppg);
+
+	if ( deduct !== 0 ) {
+		row.classList.add("deduction");
+	}
 
 	newTeams.append(row);
 }

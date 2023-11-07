@@ -223,3 +223,23 @@ table.division.history tbody tr td:nth-of-type(2) {
 table.division.history tbody tr td:nth-of-type(3) {
     text-align: left;
 }
+
+tr.deduction td:nth-of-type(9),
+tr.addition td:nth-of-type(9) {
+    position: relative;
+}
+tr.deduction td:nth-of-type(9):after,
+tr.addition td:nth-of-type(9):after {
+    content: '-'attr(data-deduct);
+    position: absolute;
+    font-size: 0.7rem;
+    top: 6px;
+    right: 1px;
+    background-color: #ce7878;
+    padding: 2px;
+    border-radius: 3px;
+}
+tr.addition td:nth-of-type(9):after {
+    content: '+'attr(data-addition);
+    background-color: #4ead66;
+}
