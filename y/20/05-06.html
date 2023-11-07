@@ -142,7 +142,8 @@
 				<div class="tab-pane fade" id="div_h" role="tabpanel" aria-labelledby="div_h-tab">Division H</div>
 				<div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="notes-tab">
 					<ul class="list-group">
-						<li class="list-group-item"><!--<img src="../../f/ENG.png" title="England">England: League added--></li>
+						<li class="list-group-item"><img src="../../f/ITA.png" title="Italy">Italy: Milan, Fiorentina, and Lazio were deducted 30 points for their involvement in Calciopoli scancal</li>
+						<li class="list-group-item"><img src="../../f/ITA.png" title="Italy">Italy: Juventus, originally champions, were disqualified and demoted to last place due to the Calciopoli scandal</li>
 					</ul>
 				</div>
 			</div>
@@ -153,6 +154,29 @@
 		<script src="../../scripts.js"></script>
 		<script src="../../teams.js"></script>
 		<script>
+			flag = "ITA";
+country = "Italy";
+addTeam("Internazionale","Inter_Milan",23,7,8,68,30,0,"champion");
+addTeam("Roma","A.S._Roma",19,12,7,70,42,0,"");
+addTeam("Milan","A.C._Milan",28,4,6,85,31,30,"");
+addTeam("Chievo","A.C._ChievoVerona",13,15,10,54,49,0,"");
+addTeam("Palermo","U.S._Citt%C3%A0_di_Palermo",13,13,12,50,52,0,"");
+addTeam("Livorno","A.S._Livorno_Calcio",12,13,13,37,44,0,"");
+addTeam("Parma","Parma_F.C.",12,9,17,46,60,0,"");
+addTeam("Empoli","Empoli_F.C.",13,6,19,47,61,0,"");
+addTeam("Fiorentina","ACF_Fiorentina",22,8,8,66,41,30,"");
+addTeam("Ascoli","Ascoli_Calcio_1898_F.C.",9,16,13,43,53,0,"");
+addTeam("Udinese","Udinese_Calcio",11,10,17,40,54,0,"");
+addTeam("Sampdoria","U.C._Sampdoria",10,11,17,47,51,0,"");
+addTeam("Reggina","Reggina_Calcio",11,8,19,39,65,0,"");
+addTeam("Cagliari","Cagliari_Calcio",8,15,15,42,55,0,"");
+addTeam("Siena","S.S._Robur_Siena",9,12,17,42,60,0,"");
+addTeam("Lazio","S.S._Lazio",16,14,8,57,47,30,"");
+addTeam("Messina","A.C.R._Messina",6,13,19,33,59,0,"");
+addTeam("Lecce","U.S._Lecce",7,8,23,30,57,0,"removed");
+addTeam("Treviso","A.C.D._Treviso",3,12,23,24,56,0,"removed");
+addTeam("Juventus","Juventus_F.C.",0,0,0,0,0,0,"disqualified|removed");
+console.error("Juventus were disqualified");
 			flag = "ISL";
 country = "Iceland";
 addTeam("FH","Fimleikaf%C3%A9lag_Hafnarfjar%C3%B0ar",16,0,2,53,11,0,"champion");

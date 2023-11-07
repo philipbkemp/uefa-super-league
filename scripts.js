@@ -159,6 +159,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 		.replaceAll("%c4%85","a")
 		.replaceAll("%c3%85","a")
 		.replaceAll("%c3%84","a")
+		.replaceAll("%c3%a0","a")
 		.replaceAll("%c3%a6","ae")
 		.replaceAll("%c4%8c","c")
 		.replaceAll("%c4%8d","c")

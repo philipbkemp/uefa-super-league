@@ -143,6 +143,7 @@
 				<div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="notes-tab">
 					<ul class="list-group">
 						<li class="list-group-item"><img src="../../f/EST.png" title="Estonia">Estonia: Aseri SK withdrew after one game, and had their record expunged</li>
+						<li class="list-group-item"><img src="../../f/ITA.png" title="Italy">Italy: Milan and Lazio were disqualified and demoted to last plae due to the Totonero 1980 match-fixing scandal</li>
 					</ul>
 				</div>
 			</div>
@@ -153,6 +154,26 @@
 		<script src="../../scripts.js"></script>
 		<script src="../../teams.js"></script>
 		<script>
+			flag = "ITA";
+country = "Italy";
+addTeam("Internazionale","Inter_Milan",14,13,3,44,25,0,"champion");
+addTeam("Juventus","Juventus_F.C.",16,6,8,42,25,0,"");
+addTeam("Torino","Torino_F.C.",11,13,6,26,15,0,"");
+addTeam("Ascoli","Ascoli_Calcio",11,12,7,35,28,0,"");
+addTeam("Fiorentina","ACF_Fiorentina",11,11,8,33,27,0,"");
+addTeam("Roma","A.S._Roma",10,12,8,34,35,0,"");
+addTeam("Bologna","Bologna_F.C.",8,14,8,23,24,0,"");
+addTeam("Cagliari","Cagliari_Calcio",8,14,8,27,29,0,"");
+addTeam("Perugia","Perugia_Calcio",9,12,9,27,32,0,"");
+addTeam("Napoli","S.S.C._Napoli",7,14,9,20,20,0,"");
+addTeam("Avellino","U.S._Avellino",7,13,10,24,32,0,"");
+addTeam("Catanzaro","Catanzaro_Calcio",5,14,11,20,34,0,"");
+addTeam("Udinese","Udinese_Calcio",3,15,12,24,38,0,"");
+addTeam("Pescara","Pescara_Calcio",4,8,18,18,44,0,"removed");
+addTeam("Milan","A.C._Milan",0,0,0,0,0,0,"disqualified|removed");
+addTeam("Lazio","S.S._Lazio",0,0,0,0,0,0,"disqualified|removed");
+console.error("Milan disqualified");
+console.error("Lazio disqualified");
 			flag = "ISL";
 country = "Iceland";
 addTeam("ÍBV","%C3%8D%C3%BEr%C3%B3ttabandalag_Vestmannaeyja",10,4,4,26,13,0,"champion");

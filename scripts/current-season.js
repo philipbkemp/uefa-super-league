@@ -13,6 +13,7 @@ switch ( window.location.href.split("/").pop().split("#")[0] ) {
 	case "2023%E2%80%9324_Danish_Superliga": 						flag = "DNK"; country = "Denmark"; usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling.nextElementSibling; break;
 	case "2023%E2%80%9324_Premier_League": 						flag = "ENG"; country = "England"; usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling; break;
 	case "2023%E2%80%9324_Nemzeti_Bajnoks%C3%A1g_I": 	flag = "HUN"; country = "Hungary"; usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling; break;
+	case "2023%E2%80%9324_Serie_A": 									flag = "ITA"; country = "Italy"; usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling; break;
 }
 if ( usl) {
 	usl = [usl];
