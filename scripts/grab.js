@@ -77,7 +77,7 @@ for ( r=1 ; r!==rows.length ; r++ ) {
         if ( removed.indexOf(pos+"") !== -1 ) {
             _classes.push("removed");
         }
-        if ( deduct.indexOf(pos) !== -1 ) {
+        if ( deduct.indexOf(r) !== -1 ) {
             _classes.push("deduction");
         }
         str = '';
