@@ -144,6 +144,7 @@
 					<ul class="list-group">
 						<li class="list-group-item added"><img src="../../f/DNK.png" title="Denmark">Denmark: League returned</li>
 						<li class="list-group-item"><img src="../../f/HUN.png" title="Hungary">Hungary: Szombathelyi Haladás deducted 2 points</li>
+						<li class="list-group-item"><img src="../../f/LVA.png" title="Latvia">Latvia: Rezekne withdrew after 9 games and had their record expunged</li>
 					</ul>
 				</div>
 			</div>
@@ -154,6 +155,19 @@
 		<script src="../../scripts.js"></script>
 		<script src="../../teams.js"></script>
 		<script>
+			flag = "LVA";
+country = "Latvia";
+addTeam("Sarkanais Metalurgs","Sarkanais_Metalurgs",11,6,1,35,10,0,"champion");
+addTeam("RVR","RVR_Riga",10,4,4,35,21,0,"");
+addTeamN("Tosmares c","Tosmares_c",10,4,4,26,23,0,"");
+addTeam("Dinamo Rīga","Dinamo_R%C4%ABga",9,5,4,30,19,0,"");
+addTeam("ASK","FK_ASK",9,4,5,24,20,0,"");
+addTeam("VEF","VEF",9,2,7,15,19,0,"");
+addTeam("RER","RER_Riga",8,2,8,18,16,0,"");
+addTeam("Vulkans","Vulkans",6,4,8,22,23,0,"");
+addTeamN("Lokomotive","Lokomotive_(Latvia)",1,1,16,11,65,0,"");
+addTeam("Rezekne","SK_Bl%C4%81zma",0,0,0,0,0,0,"withdrew|expunged|removed");
+console.error("Rezekne withdrew");
 			flag = "ITA";
 country = "Italy";
 addTeam("Milan","A.C._Milan",20,12,2,84,32,0,"champion");

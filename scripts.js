@@ -39,9 +39,13 @@ function updateTeam(link,name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 	_games = _w + _d + _l;
 	_pts = (_w*3) + _d - deduct;
 	_winPercent = ((_w / _games)*100).toFixed(1) + "%";
+	if ( _winPercent === "NaN%" ) { _winPercent = "0.0%"; }
 	_fpg = (_f / _games).toFixed(2);
+	if ( _fpg === "NaN" ) { _fpg = "0.00"; }
 	_apg = (_a / _games).toFixed(2);
+	if ( _apg === "NaN" ) { _apg = "0.00"; }
 	_ppg = (_pts / _games).toFixed(2);
+	if ( _ppg === "NaN" ) { _ppg = "0.00"; }
 
 	row.classList.remove( ...row.classList );
 	if ( classes !== "" ) {
@@ -87,7 +91,10 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 		newReturn = "R";
 	} else {
 		if ( newReturn === "" ) {
-			newReturn = prompt("Is "+name+" (" + wiki + ") [N]ew or [R]eturning or [D]uplicate?").toUpperCase();
+			newReturn = prompt("Is "+name+" (" + wiki + ") [N]ew or [R]eturning or [D]uplicate?");
+			if ( newReturn ) {
+				newReturn = newReturn.toUpperCase();
+			}
 		} else {
 			known = true;
 		}
@@ -183,6 +190,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 		.replaceAll("%c3%ad","i")
 		.replaceAll("%c4%ab","i")
 		.replaceAll("%c3%8d","i")
+		.replaceAll("ī","i")
 		.replaceAll("%c5%82","l")
 		.replaceAll("%c5%81","l")
 		.replaceAll("%c5%88","n")
@@ -210,6 +218,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 		.replaceAll("%c5%b1","u")
 		.replaceAll("%c3%9c","u")
 		.replaceAll("%c3%ba","u")
+		.replaceAll("%c5%ab","u")
 		.replaceAll("%c3%bd","y")
 		.replaceAll("%c5%bd","z")
 		.replaceAll("%c5%be","z")
@@ -228,9 +237,13 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 	_games = _w + _d + _l;
 	_pts = (_w*3) + _d - deduct;
 	_winPercent = ((_w / _games)*100).toFixed(1) + "%";
+	if ( _winPercent === "NaN%" ) { _winPercent = "0.0%"; }
 	_fpg = (_f / _games).toFixed(2);
+	if ( _fpg === "NaN" ) { _fpg = "0.00"; }
 	_apg = (_a / _games).toFixed(2);
+	if ( _apg === "NaN" ) { _apg = "0.00"; }
 	_ppg = (_pts / _games).toFixed(2);
+	if ( _ppg === "NaN" ) { _ppg = "0.00"; }
 
 	played = document.createElement("TD");
 	played.innerHTML = _games;
