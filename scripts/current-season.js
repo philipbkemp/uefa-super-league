@@ -4,7 +4,8 @@ ret = [];
 newTeams = [
 	"R.W.D._Molenbeek_(2015)",
 	"Harju_JK_Laagri",
-	"FC_Blau-Wei%C3%9F_Linz"
+	"FC_Blau-Wei%C3%9F_Linz",
+	"Almere_City_FC"
 ];
 switch ( window.location.href.split("/").pop().split("#")[0] ) {
 	case "2023%E2%80%9324_Kategoria_Superiore": 					flag = "ALB"; country = "Albania"; usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling; break;
@@ -15,6 +16,7 @@ switch ( window.location.href.split("/").pop().split("#")[0] ) {
 	case "2023%E2%80%9324_Nemzeti_Bajnoks%C3%A1g_I": 	flag = "HUN"; country = "Hungary"; usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling; break;
 	case "2023%E2%80%9324_Serie_A": 									flag = "ITA"; country = "Italy"; usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling; break;
 	case "2023_Latvian_Higher_League": 										flag = "LVA"; country = "Latvia"; usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling; break;
+	case "2023%E2%80%9324_Eredivisie": 									flag = "NLD"; country = "Netherlands"; usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling; break;
 }
 if ( usl) {
 	usl = [usl];
