@@ -143,6 +143,7 @@
 				<div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="notes-tab">
 					<ul class="list-group">
 						<li class="list-group-item"><img src="../../f/ITA.png" title="Italy">Italy: Napoli were disqualified due to a corruption case</li>
+						<li class="list-group-item removed"><img src="../../f/LTU.png" title="Lithuania">Lithuania: League removed as it changed to a grouped league next season</li>
 					</ul>
 				</div>
 			</div>
@@ -153,6 +154,18 @@
 		<script src="../../scripts.js"></script>
 		<script src="../../teams.js"></script>
 		<script>
+			flag = "LTU";
+country = "Lithuania";
+addTeam("Lokomotyvas Kaunas","Lokomotyvas_Kaunas",14,0,3,51,23,0,"champion|removed");
+addTeam("Spartakas Šiauliai","Spartakas_%C5%A0iauliai",11,1,5,58,30,0,"removed");
+addTeamN("Žalgiris Klaipėda","Baltija_Klaip%C4%97da",10,3,4,33,29,0,"removed");
+addTeam("Spartakas Kaunas","Spartakas_Kaunas",10,2,5,55,39,0,"removed");
+addTeam("Dinamo Kaunas","Dinamo_Kaunas",7,3,7,43,31,0,"removed");
+addTeamN("Vėliava Šiauliai","V%C4%97liava_%C5%A0iauliai",7,1,9,51,43,0,"removed");
+addTeamN("Žalgiris Marijampolė","%C5%BDalgiris_Marijampol%C4%97",6,3,8,33,38,0,"removed");
+addTeam("Žalgiris Panevėžys","%C5%BDalgiris_Panev%C4%97%C5%BEys",7,1,9,21,33,0,"removed");
+addTeam("Dinamo Vilnius","Dinamo_Vilnius",2,0,15,11,49,0,"removed");
+addTeam("Žalgiris Vilnius","%C5%BDalgiris_Vilnius",0,0,9,3,44,0,"removed");
 			flag = "LVA";
 country = "Latvia";
 addTeam("Daugava Liepaja","Daugava_Liepaja",9,3,0,43,12,0,"champion");
@@ -185,7 +198,6 @@ addTeamN("Salernitana","Salernitana_Calcio_1919",13,8,19,46,63,0,"removed");
 addTeam("Alessandria","U.S._Alessandria_Calcio_1912",11,9,20,49,75,0,"removed");
 addTeam("Vicenza","Vicenza_Calcio",10,6,24,31,75,0,"removed");
 addTeam("Napoli","S.S.C._Napoli",0,0,0,0,0,0,"disqualified|removed");
-console.error("Napoli disqualified");
 			flag = "ISL";
 country = "Iceland";
 addTeam("Fram","Knattspyrnuf%C3%A9lagi%C3%B0_Fram",3,1,0,7,4,0,"champion");

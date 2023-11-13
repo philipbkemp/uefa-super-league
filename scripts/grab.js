@@ -1,6 +1,15 @@
 usl = document.querySelectorAll(".usl");
+if ( ! usl || usl.length === 0 && document.querySelector("#League_standings") ) {
+    usl = [ document.querySelector("#League_standings").parentElement.nextElementSibling.nextElementSibling ];
+} else if  ( ! usl || usl.length === 0 && document.querySelector("#A_Lyga") ) {
+    usl = [ document.querySelector("#A_Lyga").parentElement.nextElementSibling.nextElementSibling.nextElementSibling ];
+} else if  ( ! usl || usl.length === 0 && document.querySelector("#Final_table") ) {
+    usl = [ document.querySelector("#Final_table").parentElement.nextElementSibling.nextElementSibling ];
+} else if  ( ! usl || usl.length === 0 && document.querySelector("#League_table") ) {
+    usl = [ document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling ];
+}
 if ( ! usl || usl.length === 0 ) {
-    alert("No .usl class");
+    alert("unable to find table");
 }
 rows = [];
 usl.forEach(function(uslItem){
@@ -10,7 +19,7 @@ usl.forEach(function(uslItem){
     r = Array.from(uslItem.querySelectorAll("tr"));
     r.forEach(function(row){rows.push(row);});
 });
-flag = "LVA";//prompt("Please enter country code:").toUpperCase();
+flag = "LTU";//prompt("Please enter country code:").toUpperCase();
 country = "";
 switch (flag) {
     case "ALB": country = "Albania"; break;
@@ -44,6 +53,7 @@ if ( typeof deduct === "undefined" ) {
     deduct = [];
 }
 removed = prompt("Which positions are removed?").split(",");
+thisSeasonUsl = [];
 ret = [];
 ret.push('flag = "'+flag+'";');
 ret.push('country = "'+country+'";');
@@ -76,6 +86,8 @@ for ( r=1 ; r!==rows.length ; r++ ) {
         }
         if ( removed.indexOf(pos+"") !== -1 ) {
             _classes.push("removed");
+        } else {
+            thisSeasonUsl.push([_teamName,_teamWiki]);
         }
         if ( deduct.indexOf(r) !== -1 ) {
             _classes.push("deduction");
@@ -86,4 +98,13 @@ for ( r=1 ; r!==rows.length ; r++ ) {
     }
 }
 console.clear();
+lastSeasonUsl = localStorage.usl ? JSON.parse(localStorage.usl) : [];
+relegatedTeams = [];
+lastSeasonUsl.forEach(function(lsu){
+    if ( thisSeasonUsl.filter(function(x){return x[1]===lsu[1];}).length === 0 ) {
+        relegatedTeams.push(lsu[0]);
+    }
+});
+localStorage.usl = JSON.stringify(thisSeasonUsl);
+console.error("RELEGATED: " + relegatedTeams.join("  |  "));
 console.warn(ret.join("\n"));
