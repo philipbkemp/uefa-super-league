@@ -7,16 +7,18 @@ newTeams = [
 	"FC_Blau-Wei%C3%9F_Linz",
 	"Almere_City_FC"
 ];
+usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling;
 switch ( window.location.href.split("/").pop().split("#")[0] ) {
-	case "2023%E2%80%9324_Kategoria_Superiore": 					flag = "ALB"; country = "Albania"; usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling; break;
-	case "2023%E2%80%9324_Austrian_Football_Bundesliga": 		flag = "AUT"; country = "Austria"; usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling.nextElementSibling; break;
-	case "2023%E2%80%9324_Belgian_Pro_League": 					flag = "BEL"; country = "Belgium"; usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling.nextElementSibling; break;
-	case "2023%E2%80%9324_Danish_Superliga": 						flag = "DNK"; country = "Denmark"; usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling.nextElementSibling; break;
-	case "2023%E2%80%9324_Premier_League": 						flag = "ENG"; country = "England"; usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling; break;
-	case "2023%E2%80%9324_Nemzeti_Bajnoks%C3%A1g_I": 	flag = "HUN"; country = "Hungary"; usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling; break;
-	case "2023%E2%80%9324_Serie_A": 									flag = "ITA"; country = "Italy"; usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling; break;
-	case "2023_Latvian_Higher_League": 										flag = "LVA"; country = "Latvia"; usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling; break;
-	case "2023%E2%80%9324_Eredivisie": 									flag = "NLD"; country = "Netherlands"; usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling; break;
+	case "2023%E2%80%9324_Kategoria_Superiore": 					flag = "ALB"; country = "Albania"; break;
+	case "2023%E2%80%9324_Austrian_Football_Bundesliga": 		flag = "AUT"; country = "Austria"; usl = usl.nextElementSibling; break;
+	case "2023%E2%80%9324_Belgian_Pro_League": 					flag = "BEL"; country = "Belgium"; usl = usl.nextElementSibling; break;
+	case "2023%E2%80%9324_Danish_Superliga": 						flag = "DNK"; country = "Denmark"; usl = usl.nextElementSibling; break;
+	case "2023%E2%80%9324_Premier_League": 						flag = "ENG"; country = "England"; break;
+	case "2023%E2%80%9324_Nemzeti_Bajnoks%C3%A1g_I": 	flag = "HUN"; country = "Hungary"; break;
+	case "2023%E2%80%9324_Serie_A": 									flag = "ITA"; country = "Italy"; break;
+	case "2023_Latvian_Higher_League": 										flag = "LVA"; country = "Latvia"; break;
+	case "2023%E2%80%9324_Eredivisie": 									flag = "NLD"; country = "Netherlands"; break;
+	case "2023%E2%80%9324_Scottish_Premiership":  				flag = "SCO"; country = "Scotland"; break;
 }
 if ( usl) {
 	usl = [usl];

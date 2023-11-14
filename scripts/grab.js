@@ -1,14 +1,21 @@
 usl = document.querySelectorAll(".usl");
-if ( ! usl || usl.length === 0 && document.querySelector("#League_standings") ) {
-    usl = [ document.querySelector("#League_standings").parentElement.nextElementSibling.nextElementSibling ];
-} else if  ( ! usl || usl.length === 0 && document.querySelector("#A_Lyga") ) {
-    usl = [ document.querySelector("#A_Lyga").parentElement.nextElementSibling.nextElementSibling.nextElementSibling ];
-} else if  ( ! usl || usl.length === 0 && document.querySelector("#Final_table") ) {
-    usl = [ document.querySelector("#Final_table").parentElement.nextElementSibling.nextElementSibling ];
-} else if  ( ! usl || usl.length === 0 && document.querySelector("#League_table") ) {
-    usl = [ document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling ];
-} else if  ( ! usl || usl.length === 0 && document.querySelector("#Standings") ) {
-    usl = [ document.querySelector("#Standings").parentElement.nextElementSibling.nextElementSibling ];
+if ( ! usl || usl.length === 0 ) {
+    if ( document.querySelector("#League_standings") ) { usl = document.querySelector("#League_standings"); }
+    else if ( document.querySelector("#A_Lyga") ) { usl = document.querySelector("#A_Lyga"); }
+    else if ( document.querySelector("#Final_table") ) { usl = document.querySelector("#Final_table"); }
+    else if ( document.querySelector("#League_table") ) { usl = document.querySelector("#League_table"); }
+    else if ( document.querySelector("#Standings") ) { usl = document.querySelector("#Standings"); }
+    else if ( document.querySelector("#Table") ) { usl = document.querySelector("#Table"); }
+    if ( usl ) {
+        usl = usl.parentElement.nextElementSibling.nextElementSibling;
+        if ( usl.tagName !== "TABLE" ) {
+            usl = usl.nextElementSibling;
+        }
+        if ( usl.tagName !== "TABLE" ) {
+            usl = usl.nextElementSibling;
+        }
+        usl = [ usl ];
+    }
 }
 if ( usl && usl[0].tagName !== "TABLE" ) {
     usl = [ usl[0].nextElementSibling ];
@@ -24,7 +31,7 @@ usl.forEach(function(uslItem){
     r = Array.from(uslItem.querySelectorAll("tr"));
     r.forEach(function(row){rows.push(row);});
 });
-flag = "NLD";//prompt("Please enter country code:").toUpperCase();
+flag = "SCO";//prompt("Please enter country code:").toUpperCase();
 country = "";
 switch (flag) {
     case "ALB": country = "Albania"; break;
@@ -81,7 +88,7 @@ for ( r=1 ; r!==rows.length ; r++ ) {
     _for = td[6].innerText;
     _against = td[7].innerText;
     _deduct = 0;
-    if ( _won !== "W" ) {
+    if ( _won !== "W" && _won !== "" ) {
         if ( deduct.indexOf(r) !== -1 ) {
             _deduct = prompt("How many points are deducted from " + _teamName);
         }
