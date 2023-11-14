@@ -53,7 +53,7 @@ function updateTeam(link,name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 			row.classList.add(k);
 		});
 	}
-	if ( deduct !== 0 ) {
+	if ( deduct !== 0 && classes.indexOf("addition") !== 0 ) {
 		row.classList.add("deduction");
 	}
 
@@ -225,6 +225,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 		.replaceAll("%c5%bd","z")
 		.replaceAll("%c5%be","z")
 		.replaceAll("%c5%ba","z")
+		.replaceAll("%c5%bb","z")
 		.replaceAll("%26","and")
 		.replaceAll(" ","_").replaceAll(".","_").replaceAll("__","_");
     if ( /[^a-z0-9_]/.test(_teamUrl) ) {
@@ -273,7 +274,11 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 
 	points = document.createElement("TD");
 	points.innerHTML = _pts;
-	points.setAttribute("data-deduct",deduct);
+	if ( classes.indexOf("addition") === -1 ) {
+		points.setAttribute("data-deduct",deduct);
+	} else {
+		points.setAttribute("data-addition",Math.abs(deduct));
+	}
 	row.append(points);
 
 	gDiff = document.createElement("TD");
@@ -296,7 +301,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 	ppg.innerHTML = _ppg;
 	row.append(ppg);
 
-	if ( deduct !== 0 ) {
+	if ( deduct !== 0 && classes.indexOf("addition") === -1 ) {
 		row.classList.add("deduction");
 	}
 

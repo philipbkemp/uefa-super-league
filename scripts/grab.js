@@ -17,9 +17,6 @@ if ( ! usl || usl.length === 0 ) {
         usl = [ usl ];
     }
 }
-if ( usl && usl[0].tagName !== "TABLE" ) {
-    usl = [ usl[0].nextElementSibling ];
-}
 if ( ! usl || usl.length === 0 ) {
     alert("unable to find table");
 }
@@ -31,7 +28,7 @@ usl.forEach(function(uslItem){
     r = Array.from(uslItem.querySelectorAll("tr"));
     r.forEach(function(row){rows.push(row);});
 });
-flag = "SCO";//prompt("Please enter country code:").toUpperCase();
+flag = "MLT";//prompt("Please enter country code:").toUpperCase();
 country = "";
 switch (flag) {
     case "ALB": country = "Albania"; break;
