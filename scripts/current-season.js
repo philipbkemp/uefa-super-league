@@ -7,7 +7,12 @@ newTeams = [
 	"FC_Blau-Wei%C3%9F_Linz",
 	"Almere_City_FC"
 ];
-usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling;
+if ( document.querySelector("#League_table") ) {
+	usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling;
+} else if ( document.querySelector("#Regular_season") ) {
+	usl = document.querySelector("#Regular_season").parentElement.nextElementSibling.nextElementSibling;
+}
+console.log(usl);
 switch ( window.location.href.split("/").pop().split("#")[0] ) {
 	case "2023%E2%80%9324_Kategoria_Superiore": 					flag = "ALB"; country = "Albania"; break;
 	case "2023%E2%80%9324_Austrian_Football_Bundesliga": 		flag = "AUT"; country = "Austria"; usl = usl.nextElementSibling; break;
@@ -19,6 +24,7 @@ switch ( window.location.href.split("/").pop().split("#")[0] ) {
 	case "2023_Latvian_Higher_League": 										flag = "LVA"; country = "Latvia"; break;
 	case "2023%E2%80%9324_Maltese_Premier_League":  			flag = "MLT"; country = "Malta"; break;
 	case "2023%E2%80%9324_Eredivisie": 									flag = "NLD"; country = "Netherlands"; break;
+	case "2023%E2%80%9324_Liga_I": 										flag = "ROU"; country = "Romania"; usl = usl.nextElementSibling.nextElementSibling.nextElementSibling; break;
 	case "2023%E2%80%9324_Scottish_Premiership":  				flag = "SCO"; country = "Scotland"; break;
 }
 if ( usl) {

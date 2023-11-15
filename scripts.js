@@ -2,6 +2,13 @@ flag = "";
 country = "";
 newTeams = document.querySelector(".division.division_new tbody");
 
+function playoff_addTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,_pw,_pd,_pl,_pf,_pa) {
+	addTeam(name,wiki,_w+_pw,_d+_pd,_l+_pl,_f+_pw,_a+_pa,deduct,classes);
+}
+function playoff_addTeamN(name,wiki,_w,_d,_l,_f,_a,deduct,classes,_pw,_pd,_pl,_pf,_pa) {
+	addTeamN(name,wiki,_w+_pw,_d+_pd,_l+_pl,_f+_pw,_a+_pa,deduct,classes);
+}
+
 function addTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 	wiki = wiki.replaceAll("'","%27");
 	existingClub = document.querySelectorAll("a[data-wiki='"+wiki+"']");
@@ -211,9 +218,11 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 		.replaceAll("%c5%a0","s")
 		.replaceAll("%c5%9a","s")
 		.replaceAll("%c5%a1","s")
+		.replaceAll("%c8%98","s")
 		.replaceAll("%c3%9f","ss")
 		.replaceAll("%c8%9b","t")
 		.replaceAll("%c5%a5","t")
+		.replaceAll("%c5%a3","t")
 		.replaceAll("%c3%9a","u")
 		.replaceAll("%c3%bc","u")
 		.replaceAll("%c5%b1","u")

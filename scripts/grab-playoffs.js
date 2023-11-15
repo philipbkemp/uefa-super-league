@@ -1,19 +1,11 @@
 usl = document.querySelectorAll(".usl");
 if ( ! usl || usl.length === 0 ) {
-    if ( document.querySelector("#League_standings") ) { usl = document.querySelector("#League_standings"); }
-    else if ( document.querySelector("#A_Lyga") ) { usl = document.querySelector("#A_Lyga"); }
-    else if ( document.querySelector("#Final_table") ) { usl = document.querySelector("#Final_table"); }
-    else if ( document.querySelector("#League_table") ) { usl = document.querySelector("#League_table"); }
-    else if ( document.querySelector("#Standings") ) { usl = document.querySelector("#Standings"); }
-    else if ( document.querySelector("#Table") ) { usl = document.querySelector("#Table"); }
+    if ( document.querySelector("#Regular_season") ) { usl = document.querySelector("#Regular_season"); }
     if ( usl ) {
         usl = usl.parentElement.nextElementSibling.nextElementSibling;
-        if ( usl.tagName !== "TABLE" ) {
-            usl = usl.nextElementSibling;
-        }
-        if ( usl.tagName !== "TABLE" ) {
-            usl = usl.nextElementSibling;
-        }
+        if ( usl.tagName !== "TABLE" ) { usl = usl.nextElementSibling; }
+        if ( usl.tagName !== "TABLE" ) { usl = usl.nextElementSibling; }
+        if ( usl.tagName !== "TABLE" ) { usl = usl.nextElementSibling; }
         usl = [ usl ];
     }
 }
@@ -106,6 +98,57 @@ for ( r=1 ; r!==rows.length ; r++ ) {
         ret.push(str);
     }
 }
+
+// playoff
+if ( document.querySelector("#Championship_play-offs") ) { po_up = document.querySelector("#Championship_play-offs").parentElement; }
+else if ( document.querySelector("#Play-off_round") ) { po_up = document.querySelector("#Play-off_round").parentElement; }
+while (po_up.tagName !== "TABLE") {
+    po_up = po_up.nextElementSibling;
+}
+po_up.querySelectorAll("tr").forEach(function(po_up_r){
+    po_up_r_c = po_up_r.querySelectorAll("td,th");
+    if ( po_up_r_c.length !== 0 ) {
+        // team
+        po_up_team = po_up_r_c[1].querySelectorAll("A");
+        if ( po_up_team.length !== 0 ) {
+            po_up_team = po_up_team[0].getAttribute("href").replace("/wiki/","");
+            ret.forEach(function(retR,retI){
+                if ( retR.indexOf(po_up_team) !== -1 ) {
+                    _pstr = [parseInt(po_up_r_c[3].innerHTML),parseInt(po_up_r_c[4].innerHTML),parseInt(po_up_r_c[5].innerHTML),parseInt(po_up_r_c[6].innerHTML),parseInt(po_up_r_c[7].innerHTML)].join(",");
+                    _p_str = ret[retI].replace(");","");
+                    _p_str += ","+_pstr +");";
+                    ret[retI] = "playoff_" + _p_str;
+                }
+            });
+        }
+    }
+});
+
+//playout
+if ( document.querySelector("#Relegation_play-outs") ) { po_down = document.querySelector("#Relegation_play-outs").parentElement; }
+else if ( document.querySelector("#Play-out_round") ) { po_down = document.querySelector("#Play-out_round").parentElement; }
+while (po_down.tagName !== "TABLE") {
+    po_down = po_down.nextElementSibling;
+}
+po_down.querySelectorAll("tr").forEach(function(po_up_r){
+    po_down_r_c = po_up_r.querySelectorAll("td,th");
+    if ( po_down_r_c.length !== 0 ) {
+        // team
+        po_down_team = po_down_r_c[1].querySelectorAll("A");
+        if ( po_down_team.length !== 0 ) {
+            po_down_team = po_down_team[0].getAttribute("href").replace("/wiki/","");
+            ret.forEach(function(retR,retI){
+                if ( retR.indexOf(po_down_team) !== -1 ) {
+                    _pstr = [parseInt(po_down_r_c[3].innerHTML),parseInt(po_down_r_c[4].innerHTML),parseInt(po_down_r_c[5].innerHTML),parseInt(po_down_r_c[6].innerHTML),parseInt(po_down_r_c[7].innerHTML)].join(",");
+                    _p_str = ret[retI].replace(");","");
+                    _p_str += ","+_pstr +");";
+                    ret[retI] = "playoff_" + _p_str;
+                }
+            });
+        }
+    }
+});
+
 console.clear();
 lastSeasonUsl = localStorage.usl ? JSON.parse(localStorage.usl) : [];
 relegatedTeams = [];
