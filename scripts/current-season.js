@@ -12,7 +12,6 @@ if ( document.querySelector("#League_table") ) {
 } else if ( document.querySelector("#Regular_season") ) {
 	usl = document.querySelector("#Regular_season").parentElement.nextElementSibling.nextElementSibling;
 }
-console.log(usl);
 switch ( window.location.href.split("/").pop().split("#")[0] ) {
 	case "2023%E2%80%9324_Kategoria_Superiore": 					flag = "ALB"; country = "Albania"; break;
 	case "2023%E2%80%9324_Austrian_Football_Bundesliga": 		flag = "AUT"; country = "Austria"; usl = usl.nextElementSibling; break;
@@ -26,6 +25,7 @@ switch ( window.location.href.split("/").pop().split("#")[0] ) {
 	case "2023%E2%80%9324_Eredivisie": 									flag = "NLD"; country = "Netherlands"; break;
 	case "2023%E2%80%9324_Liga_I": 										flag = "ROU"; country = "Romania"; usl = usl.nextElementSibling.nextElementSibling.nextElementSibling; break;
 	case "2023%E2%80%9324_Scottish_Premiership":  				flag = "SCO"; country = "Scotland"; break;
+	case "2023_Allsvenskan": 														flag = "SWE"; country = "Sweden"; break;
 }
 if ( usl) {
 	usl = [usl];

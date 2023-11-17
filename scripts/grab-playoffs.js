@@ -1,6 +1,7 @@
 usl = document.querySelectorAll(".usl");
 if ( ! usl || usl.length === 0 ) {
     if ( document.querySelector("#Regular_season") ) { usl = document.querySelector("#Regular_season"); }
+    if ( document.querySelector("#Spring_"+window.location.href.split("/").pop().split("_")[0]) ) { usl = document.querySelector("#Spring_"+window.location.href.split("/").pop().split("_")[0]); }
     if ( usl ) {
         usl = usl.parentElement.nextElementSibling.nextElementSibling;
         if ( usl.tagName !== "TABLE" ) { usl = usl.nextElementSibling; }
@@ -20,7 +21,7 @@ usl.forEach(function(uslItem){
     r = Array.from(uslItem.querySelectorAll("tr"));
     r.forEach(function(row){rows.push(row);});
 });
-flag = "ROU";//prompt("Please enter country code:").toUpperCase();
+flag = "SWE";//prompt("Please enter country code:").toUpperCase();
 country = "";
 switch (flag) {
     case "ALB": country = "Albania"; break;
@@ -102,6 +103,8 @@ for ( r=1 ; r!==rows.length ; r++ ) {
 // playoff
 if ( document.querySelector("#Championship_play-offs") ) { po_up = document.querySelector("#Championship_play-offs").parentElement; }
 else if ( document.querySelector("#Play-off_round") ) { po_up = document.querySelector("#Play-off_round").parentElement; }
+else if ( document.querySelector("#Mästerskapsserien_"+window.location.href.split("/").pop().split("_")[0]) ) { po_up = document.querySelector("#Mästerskapsserien_"+window.location.href.split("/").pop().split("_")[0]).parentElement; }
+
 while (po_up.tagName !== "TABLE") {
     po_up = po_up.nextElementSibling;
 }
@@ -127,6 +130,8 @@ po_up.querySelectorAll("tr").forEach(function(po_up_r){
 //playout
 if ( document.querySelector("#Relegation_play-outs") ) { po_down = document.querySelector("#Relegation_play-outs").parentElement; }
 else if ( document.querySelector("#Play-out_round") ) { po_down = document.querySelector("#Play-out_round").parentElement; }
+else if ( document.querySelector("#Kvalsvenskan_"+window.location.href.split("/").pop().split("_")[0]) ) { po_down = document.querySelector("#Kvalsvenskan_"+window.location.href.split("/").pop().split("_")[0]).parentElement; }
+
 while (po_down.tagName !== "TABLE") {
     po_down = po_down.nextElementSibling;
 }
