@@ -39,7 +39,7 @@ function updateTeam(link,name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 	tds = row.querySelectorAll("TD");
 
 	if ( tds[2].innerHTML.trim() !== "" ) {
-		alert("Duplicate team " + wiki + " / " + name);
+		console.error("Duplicate team " + wiki + " / " + name);
 		return;
 	}
 

@@ -5,6 +5,7 @@ if ( ! usl || usl.length === 0 ) {
     else if ( document.querySelector("#Final_table") ) { usl = document.querySelector("#Final_table"); }
     else if ( document.querySelector("#League_table") ) { usl = document.querySelector("#League_table"); }
     else if ( document.querySelector("#Standings") ) { usl = document.querySelector("#Standings"); }
+    else if ( document.querySelector("#Final_standings") ) { usl = document.querySelector("#Final_standings"); }
     else if ( document.querySelector("#Table") ) { usl = document.querySelector("#Table"); }
     if ( usl ) {
         usl = usl.parentElement.nextElementSibling.nextElementSibling;
@@ -28,7 +29,7 @@ usl.forEach(function(uslItem){
     r = Array.from(uslItem.querySelectorAll("tr"));
     r.forEach(function(row){rows.push(row);});
 });
-flag = "SWE";//prompt("Please enter country code:").toUpperCase();
+flag = "LUX";//prompt("Please enter country code:").toUpperCase();
 country = "";
 switch (flag) {
     case "ALB": country = "Albania"; break;
@@ -93,6 +94,14 @@ for ( r=1 ; r!==rows.length ; r++ ) {
         if ( r === 1 ) {
             _classes.push("champion");
         }
+
+        if ( _teamName === "Racing Rodange" && _teamWiki === "FC_Rodange_91" ) { _teamWiki += "Racing_Rodange"; }
+        if ( _teamName === "Chiers Rodange" && _teamWiki === "FC_Rodange_91" ) { _teamWiki += "Chiers_Rodange"; }
+        if ( _teamName === "US Dudelange" && _teamWiki === "F91_Dudelange" ) { _teamWiki = "US_Dudelange"; }
+        if ( _teamName === "Alliance Dudelange" && _teamWiki === "F91_Dudelange" ) { _teamWiki = "Alliance_Dudelange"; }
+        if ( _teamName === "Stade Dudelange" && _teamWiki === "F91_Dudelange" ) { _teamWiki = "Stade_Dudelange"; }
+        if ( _teamName === "FC Olympique Eischen" && _teamWiki === "FC_Alliance_%C3%84ischdall" ) { _teamWiki = "FC_Olympique_Eischen"; }
+        
         if ( removed.indexOf(pos+"") !== -1 ) {
             _classes.push("removed");
         } else {
