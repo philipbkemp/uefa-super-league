@@ -780,6 +780,19 @@ function hm() {
 	} else {
 		console.warn(dn + " teams");
 	}
+	if ( parseInt(localStorage.maxTeams) === dn ) {
+		if ( localStorage.maxTeamsYear.indexOf(document.querySelector("H1").innerHTML) === -1 ) {
+			localStorage.maxTeamsYear += "|" + document.querySelector("H1").innerHTML;
+		}
+		console.warn("MAX: " + localStorage.maxTeams);
+		console.warn("MAX: " + localStorage.maxTeamsYear);
+	}
+	if ( parseInt(localStorage.maxTeams) < dn ) {
+		localStorage.maxTeams = dn;
+		localStorage.maxTeamsYear = document.querySelector("H1").innerHTML;
+		console.warn("MAX: " + localStorage.maxTeams);
+		console.warn("MAX: " + localStorage.maxTeamsYear);
+	}
 }
 
 function nextSeasonTeams() {

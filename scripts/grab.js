@@ -29,7 +29,7 @@ usl.forEach(function(uslItem){
     r = Array.from(uslItem.querySelectorAll("tr"));
     r.forEach(function(row){rows.push(row);});
 });
-flag = "LUX";//prompt("Please enter country code:").toUpperCase();
+flag = "NIR";//prompt("Please enter country code:").toUpperCase();
 country = "";
 switch (flag) {
     case "ALB": country = "Albania"; break;
