@@ -41,7 +41,7 @@
 					<button class="nav-link" id="div_c-tab" data-bs-toggle="tab" data-bs-target="#div_c" type="button" role="tab" aria-controls="div_c" aria-selected="true">Division C</button>
 				</li>
 				<li class="nav-item" role="presentation">
-					<button class="nav-link disabled" id="div_d-tab" data-bs-toggle="tab" data-bs-target="#div_d" type="button" role="tab" aria-controls="div_d" aria-selected="true">Division D</button>
+					<button class="nav-link" id="div_d-tab" data-bs-toggle="tab" data-bs-target="#div_d" type="button" role="tab" aria-controls="div_d" aria-selected="true">Division D</button>
 				</li>
 				<li class="nav-item" role="presentation">
 					<button class="nav-link disabled" id="div_e-tab" data-bs-toggle="tab" data-bs-target="#div_e" type="button" role="tab" aria-controls="div_e" aria-selected="true">Division E</button>
@@ -135,7 +135,7 @@
 					</table>
 
 				</div>
-				<div class="tab-pane fade" id="div_d" role="tabpanel" aria-labelledby="div_d-tab">Division D</div>
+				<div class="tab-pane fade" id="div_d" role="tabpanel" aria-labelledby="div_d-tab"><table class="division"><thead><th><abbr title="Position">#</abbr></th><th>Team</th><th><abbr title="Played">P</abbr></th><th><abbr title="Won">W</abbr></th><th><abbr title="Drawn">D</abbr></th><th><abbr title="Lost">L</abbr></th><th><abbr title="Goals For">F</abbr></th><th><abbr title="Goals Against">A</abbr></th><th><abbr title="Points">Pts</abbr></th><th><abbr title="Goal Difference">GD</abbr></th><th><abbr title="Win Percentage">W%</abbr></th><th><abbr title="Goals For Per Game">FPG</abbr></th><th><abbr title="Goals Conceded Per Game">APG</abbr></th><th><abbr title="Points Per Game">PPG</abbr></th></thead><tbody></tbody></table></div>
 				<div class="tab-pane fade" id="div_e" role="tabpanel" aria-labelledby="div_e-tab">Division E</div>
 				<div class="tab-pane fade" id="div_f" role="tabpanel" aria-labelledby="div_f-tab">Division F</div>
 				<div class="tab-pane fade" id="div_g" role="tabpanel" aria-labelledby="div_g-tab">Division G</div>
@@ -154,6 +154,22 @@
 		<script src="../../scripts.js"></script>
 		<script src="../../teams.js"></script>
 		<script>
+			flag = "IRL";
+country = "Republic of Ireland";
+addTeam("Shamrock Rovers","Shamrock_Rovers_F.C.",19,4,3,64,15,0,"champion");
+addTeam("Bohemians","Bohemian_F.C.",13,10,3,39,20,0,"");
+addTeam("Athlone Town","Athlone_Town_A.F.C.",15,4,7,44,28,0,"");
+addTeam("Limerick City","Limerick_F.C.",13,7,6,38,26,0,"");
+addTeam("Shelbourne","Shelbourne_F.C.",9,10,7,41,34,0,"");
+addTeam("UCD","University_College_Dublin_A.F.C.",9,10,7,24,23,0,"");
+addTeam("Dundalk","Dundalk_F.C.",9,9,8,38,31,0,"");
+addTeam("Waterford United","Waterford_United_F.C.",10,6,10,34,34,0,"");
+addTeam("Finn Harps","Finn_Harps_F.C.",8,8,10,36,46,0,"");
+addTeam("St Patrick's Athletic","St_Patrick%27s_Athletic_F.C.",8,7,11,36,37,0,"");
+addTeam("Drogheda United","Drogheda_United_F.C.",10,2,14,37,54,0,"");
+addTeam("Galway United","Galway_United_F.C.",6,9,11,26,33,0,"");
+addTeam("Home Farm","Home_Farm_F.C.",4,4,18,16,54,0,"");
+addTeam("Sligo Rovers","Sligo_Rovers_F.C.",2,4,20,20,58,0,"");
 			flag = "NIR";
 country = "Northern Ireland";
 addTeam("Linfield","Linfield_F.C.",22,1,3,76,23,0,"champion");

@@ -3,9 +3,11 @@ if ( ! usl || usl.length === 0 ) {
     if ( document.querySelector("#League_standings") ) { usl = document.querySelector("#League_standings"); }
     else if ( document.querySelector("#A_Lyga") ) { usl = document.querySelector("#A_Lyga"); }
     else if ( document.querySelector("#Final_table") ) { usl = document.querySelector("#Final_table"); }
+    else if ( document.querySelector("#Final_Table") ) { usl = document.querySelector("#Final_Table"); }
     else if ( document.querySelector("#League_table") ) { usl = document.querySelector("#League_table"); }
     else if ( document.querySelector("#Standings") ) { usl = document.querySelector("#Standings"); }
     else if ( document.querySelector("#Final_standings") ) { usl = document.querySelector("#Final_standings"); }
+    else if ( document.querySelector("#Final_classification") ) { usl = document.querySelector("#Final_classification"); }
     else if ( document.querySelector("#Table") ) { usl = document.querySelector("#Table"); }
     if ( usl ) {
         usl = usl.parentElement.nextElementSibling.nextElementSibling;
@@ -29,7 +31,7 @@ usl.forEach(function(uslItem){
     r = Array.from(uslItem.querySelectorAll("tr"));
     r.forEach(function(row){rows.push(row);});
 });
-flag = "NIR";//prompt("Please enter country code:").toUpperCase();
+flag = "IRL";//prompt("Please enter country code:").toUpperCase();
 country = "";
 switch (flag) {
     case "ALB": country = "Albania"; break;
@@ -67,6 +69,7 @@ thisSeasonUsl = [];
 ret = [];
 ret.push('flag = "'+flag+'";');
 ret.push('country = "'+country+'";');
+strDeduct = [];
 for ( r=1 ; r!==rows.length ; r++ ) {
     thisRow = rows[r];
     td = thisRow.querySelectorAll("td,th");
@@ -89,18 +92,12 @@ for ( r=1 ; r!==rows.length ; r++ ) {
     if ( _won !== "W" && _won !== "" ) {
         if ( deduct.indexOf(r) !== -1 ) {
             _deduct = prompt("How many points are deducted from " + _teamName);
+            strDeduct.push('<li class="list-group-item"><img src="../../f/'+flag+'.png" title="'+country+'">'+country+': '+_teamName+' were deducted '+_deduct+' point'+(parseInt(_deduct)===1?'':'s')+'</li>');
         }
         _classes = [];
         if ( r === 1 ) {
             _classes.push("champion");
         }
-
-        if ( _teamName === "Racing Rodange" && _teamWiki === "FC_Rodange_91" ) { _teamWiki += "Racing_Rodange"; }
-        if ( _teamName === "Chiers Rodange" && _teamWiki === "FC_Rodange_91" ) { _teamWiki += "Chiers_Rodange"; }
-        if ( _teamName === "US Dudelange" && _teamWiki === "F91_Dudelange" ) { _teamWiki = "US_Dudelange"; }
-        if ( _teamName === "Alliance Dudelange" && _teamWiki === "F91_Dudelange" ) { _teamWiki = "Alliance_Dudelange"; }
-        if ( _teamName === "Stade Dudelange" && _teamWiki === "F91_Dudelange" ) { _teamWiki = "Stade_Dudelange"; }
-        if ( _teamName === "FC Olympique Eischen" && _teamWiki === "FC_Alliance_%C3%84ischdall" ) { _teamWiki = "FC_Olympique_Eischen"; }
         
         if ( removed.indexOf(pos+"") !== -1 ) {
             _classes.push("removed");
@@ -126,3 +123,6 @@ lastSeasonUsl.forEach(function(lsu){
 localStorage.usl = JSON.stringify(thisSeasonUsl);
 console.error("RELEGATED: " + relegatedTeams.join("  |  "));
 console.warn(ret.join("\n"));
+if ( strDeduct.length !== 0 ) {
+    console.warn(strDeduct.join("\n"));
+}
