@@ -5,7 +5,8 @@ newTeams = [
 	"R.W.D._Molenbeek_(2015)",
 	"Harju_JK_Laagri",
 	"FC_Blau-Wei%C3%9F_Linz",
-	"Almere_City_FC"
+	"Almere_City_FC",
+	"Puszcza_Niepołomice"
 ];
 if ( document.querySelector("#League_table") ) {
 	usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling;
@@ -25,6 +26,7 @@ switch ( window.location.href.split("/").pop().split("#")[0] ) {
 	case "2023%E2%80%9324_Maltese_Premier_League":  			flag = "MLT"; country = "Malta"; break;
 	case "2023%E2%80%9324_Eredivisie": 									flag = "NLD"; country = "Netherlands"; break;
 	case "2023%E2%80%9324_NIFL_Premiership": 						flag = "NIR"; country = "Northern Ireland"; break;
+	case "2023%E2%80%9324_Ekstraklasa": 								flag = "POL"; country = "Poland"; break;
 	case "2023%E2%80%9324_Liga_I": 										flag = "ROU"; country = "Romania"; usl = usl.nextElementSibling.nextElementSibling.nextElementSibling; break;
 	case "2023%E2%80%9324_Scottish_Premiership":  				flag = "SCO"; country = "Scotland"; break;
 	case "2023_Allsvenskan": 														flag = "SWE"; country = "Sweden"; break;
