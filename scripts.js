@@ -203,6 +203,7 @@ function newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,newReturn="") {
 		.replaceAll("%c5%81","l")
 		.replaceAll("%c5%88","n")
 		.replaceAll("%c5%84","n")
+		.replaceAll("%c3%b1","n")
 		.replaceAll("%c3%96","o")
 		.replaceAll("%c3%98","o")
 		.replaceAll("%c3%b3","o")

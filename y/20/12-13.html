@@ -41,7 +41,7 @@
 					<button class="nav-link" id="div_c-tab" data-bs-toggle="tab" data-bs-target="#div_c" type="button" role="tab" aria-controls="div_c" aria-selected="true">Division C</button>
 				</li>
 				<li class="nav-item" role="presentation">
-					<button class="nav-link disabled" id="div_d-tab" data-bs-toggle="tab" data-bs-target="#div_d" type="button" role="tab" aria-controls="div_d" aria-selected="true">Division D</button>
+					<button class="nav-link " id="div_d-tab" data-bs-toggle="tab" data-bs-target="#div_d" type="button" role="tab" aria-controls="div_d" aria-selected="true">Division D</button>
 				</li>
 				<li class="nav-item" role="presentation">
 					<button class="nav-link disabled" id="div_e-tab" data-bs-toggle="tab" data-bs-target="#div_e" type="button" role="tab" aria-controls="div_e" aria-selected="true">Division E</button>
@@ -135,7 +135,7 @@
 					</table>
 
 				</div>
-				<div class="tab-pane fade" id="div_d" role="tabpanel" aria-labelledby="div_d-tab">Division D</div>
+				<div class="tab-pane fade" id="div_d" role="tabpanel" aria-labelledby="div_d-tab"><table class="division"><thead><th><abbr title="Position">#</abbr></th><th>Team</th><th><abbr title="Played">P</abbr></th><th><abbr title="Won">W</abbr></th><th><abbr title="Drawn">D</abbr></th><th><abbr title="Lost">L</abbr></th><th><abbr title="Goals For">F</abbr></th><th><abbr title="Goals Against">A</abbr></th><th><abbr title="Points">Pts</abbr></th><th><abbr title="Goal Difference">GD</abbr></th><th><abbr title="Win Percentage">W%</abbr></th><th><abbr title="Goals For Per Game">FPG</abbr></th><th><abbr title="Goals Conceded Per Game">APG</abbr></th><th><abbr title="Points Per Game">PPG</abbr></th></thead><tbody></tbody></table></div>
 				<div class="tab-pane fade" id="div_e" role="tabpanel" aria-labelledby="div_e-tab">Division E</div>
 				<div class="tab-pane fade" id="div_f" role="tabpanel" aria-labelledby="div_f-tab">Division F</div>
 				<div class="tab-pane fade" id="div_g" role="tabpanel" aria-labelledby="div_g-tab">Division G</div>
@@ -158,6 +158,28 @@
 		<script src="../../scripts.js"></script>
 		<script src="../../teams.js"></script>
 		<script>
+			flag = "ESP";
+country = "Spain";
+addTeam("Barcelona","FC_Barcelona",32,4,2,115,40,0,"champion");
+addTeam("Real Madrid","Real_Madrid_C.F.",26,7,5,103,42,0,"");
+addTeam("Atlético Madrid","Atl%C3%A9tico_Madrid",23,7,8,65,31,0,"");
+addTeam("Real Sociedad","Real_Sociedad",18,12,8,70,49,0,"");
+addTeam("Valencia","Valencia_CF",19,8,11,67,54,0,"");
+addTeam("Málaga","M%C3%A1laga_CF",16,9,13,53,50,0,"");
+addTeam("Real Betis","Real_Betis",16,8,14,57,56,0,"");
+addTeam("Rayo Vallecano","Rayo_Vallecano",16,5,17,50,66,0,"");
+addTeam("Sevilla","Sevilla_FC",14,8,16,58,54,0,"");
+addTeam("Getafe","Getafe_CF",13,8,17,43,57,0,"");
+addTeam("Levante","Levante_UD",12,10,16,40,57,0,"");
+addTeam("Athletic Bilbao","Athletic_Bilbao",12,9,17,44,65,0,"");
+addTeam("Espanyol","RCD_Espanyol",11,11,16,43,52,0,"");
+addTeam("Valladolid","Real_Valladolid",11,10,17,49,58,0,"");
+addTeam("Granada","Granada_CF",11,9,18,37,54,0,"");
+addTeam("Osasuna","CA_Osasuna",10,9,19,33,50,0,"");
+addTeam("Celta Vigo","Celta_de_Vigo",10,7,21,37,52,0,"");
+addTeam("Mallorca","RCD_Mallorca",9,9,20,43,72,0,"removed");
+addTeam("Deportivo La Coruña","Deportivo_de_La_Coru%C3%B1a",8,11,19,47,70,0,"removed");
+addTeam("Zaragoza","Real_Zaragoza",9,7,22,37,62,0,"removed");
 			flag = "POL";
 country = "Poland";
 addTeam("Legia Warsaw","Legia_Warsaw",20,7,3,59,22,0,"champion");
