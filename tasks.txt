@@ -1,0 +1,27 @@
+PREVIOUS SEASON:
+	bye()
+	no input in prompt
+	copy output
+THIS SEASON:
+	bye()
+	paste previous season bye() output
+	For each "was removed but still present":
+		Is it the same team?
+		Removed "removed" class from PREVIOUS SEASON
+	Repeat promote/relegate check
+	Repeat nextSeason()
+	Copy each div to THIS SEASON
+	For each checkMissing():
+		Were they removed?
+		Sort out PREVIOUS SEASON
+	sort(a);store(a); -> repeat
+	moveNew(a,100); -> as needed
+	Removed JS script block
+	relegatePromote():
+		DIV goes down to 90
+		DIV go up to 100
+		Repeat for each DIV
+	releatePromote() should give 100 for each DIV except laste one
+	getWinner() and paste into club and nation winning pages
+	nextSeason():
+		Copy each DIV to NEXT SEASON
