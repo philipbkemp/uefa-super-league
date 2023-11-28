@@ -134,4 +134,4 @@
 2020-21	ALB	FIN	EST	ITA	ESP	POL	x--	x--	IRL	NIR	LTU	LVA	LUX	ISL	SWE	AUT	ROU	MLT	HUN	BEL	x--	SCO	NLD	DNK	ENG	
 2021-22	ALB	FIN	EST	ITA	ESP	POL	x--	x--	IRL	NIR	LTU	LVA	LUX	ISL	SWE	AUT	ROU	MLT	HUN	BEL	x--	SCO	NLD	DNK	ENG	
 2022-23	ALB	FIN	EST	ITA	ESP	POL	x--	x--	IRL	NIR	LTU	LVA	LUX	ISL	SWE	AUT	ROU	MLT	HUN	BEL	x--	SCO	NLD	DNK	ENG	
-2023-24	alb	fin		EST	ita		esp	pol	x--	x--	IRL	nir		ltu		lva	lux	ISL	swe	aut	rou	mlt	hun	bel	x--	sco	nld	dnk	eng	
+2023-24	alb	fin		EST	ita		esp	pol	x--	x--	IRL	nir		LTU	LVA	lux	ISL	SWE	aut	rou	mlt	hun	bel	x--	sco	nld	dnk	eng	

@@ -164,7 +164,6 @@ allTeams = [
 /*Léopold_FC*/"bel/R._L%C3%A9opold_Uccle_Forestoise",
 /*Lierse_S.K.*/"bel/Lierse_S.K.",
 /*Oud-Heverlee_Leuven*/"bel/Oud-Heverlee_Leuven",
-/*R._Charleroi_S.C.*/"bel/R._Charleroi_S.C.",
 /*R._Daring_Club_Molenbeek*/"bel/Daring_Club_de_Bruxelles",
 /*R._Olympic_Charleroi_Châtelet_Farciennes*/"bel/R.O.C._de_Charleroi-Marchienne",
 /*R._Uccle_Sport*/"bel/R._Uccle_Sport",
@@ -184,6 +183,7 @@ allTeams = [
 /*R.W.D.M._Brussels_F.C.*/"bel/FC_Brussels",
 /*RFC_Liège*/"bel/R.F.C._de_Li%C3%A8ge",
 /*Royal_Antwerp_F.C.*/"bel/R._Antwerp_F.C.",
+/*Royal_Charleroi_S.C.*/"bel/R._Charleroi_S.C.",
 /*Royal_Excel_Mouscron*/"bel/Royal_Mouscron-P%C3%A9ruwelz",
 /*Royal_Excelsior_Sports_Club*/"bel/R.E._Sport%27s_Club",
 /*Royale_Union_Saint-Gilloise*/"bel/R._Union_Saint-Gilloise",
@@ -1769,6 +1769,7 @@ allTeams = [
 ];
 
 redirects = [
+["bel/R._Charleroi_S.C.","bel/Royal_Charleroi_S.C."],
 ["yug/Gra%C4%91anski_Zagreb","yug/H%C5%A0K_Gra%C4%91anski_Zagreb"],
 ["yug/HA%C5%A0K","yug/NK_HA%C5%A0K"],
 ["yug/FK_BASK_Beograd","yug/FK_BASK"],

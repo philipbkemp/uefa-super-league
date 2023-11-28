@@ -19,6 +19,7 @@ switch ( window.location.href.split("/").pop().split("#")[0] ) {
 	case "2023%E2%80%9324_Belgian_Pro_League": 					flag = "BEL"; country = "Belgium"; usl = usl.nextElementSibling; break;
 	case "2023%E2%80%9324_Danish_Superliga": 						flag = "DNK"; country = "Denmark"; usl = usl.nextElementSibling; break;
 	case "2023%E2%80%9324_Premier_League": 						flag = "ENG"; country = "England"; break;
+	case "2023_Meistriliiga": 														flag = "EST"; country = "Estonia"; break;
 	case "2023%E2%80%9324_Nemzeti_Bajnoks%C3%A1g_I": 	flag = "HUN"; country = "Hungary"; break;
 	case "2023%E2%80%9324_Serie_A": 									flag = "ITA"; country = "Italy"; break;
 	case "2023_Latvian_Higher_League": 										flag = "LVA"; country = "Latvia"; break;
