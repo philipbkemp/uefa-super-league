@@ -31,7 +31,7 @@ usl.forEach(function(uslItem){
     r = Array.from(uslItem.querySelectorAll("tr"));
     r.forEach(function(row){rows.push(row);});
 });
-flag = "YUG";//prompt("Please enter country code:").toUpperCase();
+flag = "FRA";//prompt("Please enter country code:").toUpperCase();
 country = "";
 switch (flag) {
     case "ALB": country = "Albania"; break;
@@ -44,6 +44,7 @@ switch (flag) {
     case "ESP": country = "Spain"; break;
     case "EST": country = "Estonia"; break;
     case "FIN": country = "Finland"; break;
+    case "FRA": country = "France"; break;
     case "HUN": country = "Hungary"; break;
     case "IRL": country = "Republic of Ireland"; break;
     case "ISL": country = "Iceland"; break;
