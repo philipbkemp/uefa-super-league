@@ -1,7 +1,8 @@
 usl = document.querySelectorAll(".usl");
 if ( ! usl || usl.length === 0 ) {
     if ( document.querySelector("#Regular_season") ) { usl = document.querySelector("#Regular_season"); }
-    if ( document.querySelector("#Spring_"+window.location.href.split("/").pop().split("_")[0]) ) { usl = document.querySelector("#Spring_"+window.location.href.split("/").pop().split("_")[0]); }
+    else if ( document.querySelector("#First_stage") ) { usl = document.querySelector("#First_stage"); }
+    else if ( document.querySelector("#Spring_"+window.location.href.split("/").pop().split("_")[0]) ) { usl = document.querySelector("#Spring_"+window.location.href.split("/").pop().split("_")[0]); }
     if ( usl ) {
         usl = usl.parentElement.nextElementSibling.nextElementSibling;
         if ( usl.tagName !== "TABLE" ) { usl = usl.nextElementSibling; }
@@ -21,12 +22,13 @@ usl.forEach(function(uslItem){
     r = Array.from(uslItem.querySelectorAll("tr"));
     r.forEach(function(row){rows.push(row);});
 });
-flag = "SWE";//prompt("Please enter country code:").toUpperCase();
+flag = "CHE";//prompt("Please enter country code:").toUpperCase();
 country = "";
 switch (flag) {
     case "ALB": country = "Albania"; break;
     case "AUT": country = "Austria"; break;
     case "BEL": country = "Belgium"; break;
+    case "CHE": country = "Switzerland"; break;
     /*case "CSK": country = "Czechoslovakia"; break;*/
     case "DNK": country = "Denmark"; break;
     /*case "EIR": country = "Ireland"; break;*/
@@ -101,10 +103,17 @@ for ( r=1 ; r!==rows.length ; r++ ) {
 }
 
 // playoff
+po_up = null;
 if ( document.querySelector("#Championship_play-offs") ) { po_up = document.querySelector("#Championship_play-offs").parentElement; }
 else if ( document.querySelector("#Play-off_round") ) { po_up = document.querySelector("#Play-off_round").parentElement; }
-else if ( document.querySelector("#Mästerskapsserien_"+window.location.href.split("/").pop().split("_")[0]) ) { po_up = document.querySelector("#Mästerskapsserien_"+window.location.href.split("/").pop().split("_")[0]).parentElement; }
-
+else if ( document.querySelector("#Playoff") ) { po_up = document.querySelector("#Playoff").parentElement; }
+else if ( document.querySelector("#Champion_Playoffs") ) { po_up = document.querySelector("#Champion_Playoffs").parentElement; }
+else if ( document.querySelector("#Champion_playoffs") ) { po_up = document.querySelector("#Champion_playoffs").parentElement; }
+else if ( document.querySelector("#Championship_group") ) { po_up = document.querySelector("#Championship_group").parentElement; }
+if ( ! po_up  ) {
+    _up = prompt("What's the heading of the promotion table?");
+    if ( document.querySelector("#"+_up) ) { po_up = document.querySelector("#"+_up).parentElement; }
+}
 while (po_up.tagName !== "TABLE") {
     po_up = po_up.nextElementSibling;
 }
@@ -128,31 +137,66 @@ po_up.querySelectorAll("tr").forEach(function(po_up_r){
 });
 
 //playout
+po_down = null;
 if ( document.querySelector("#Relegation_play-outs") ) { po_down = document.querySelector("#Relegation_play-outs").parentElement; }
 else if ( document.querySelector("#Play-out_round") ) { po_down = document.querySelector("#Play-out_round").parentElement; }
-else if ( document.querySelector("#Kvalsvenskan_"+window.location.href.split("/").pop().split("_")[0]) ) { po_down = document.querySelector("#Kvalsvenskan_"+window.location.href.split("/").pop().split("_")[0]).parentElement; }
-
-while (po_down.tagName !== "TABLE") {
-    po_down = po_down.nextElementSibling;
+else if ( document.querySelector("#Playout") ) { po_down = document.querySelector("#Playout").parentElement; }
+else if ( document.querySelector("#Group_A") ) { po_down = document.querySelector("#Group_A").parentElement; }
+else if ( window.location.href.split("/").pop().split("_")[0].indexOf("%") === -1) {
+    if ( document.querySelector("#Kvalsvenskan_"+window.location.href.split("/").pop().split("_")[0]) ) { po_down = document.querySelector("#Kvalsvenskan_"+window.location.href.split("/").pop().split("_")[0]).parentElement; }
 }
-po_down.querySelectorAll("tr").forEach(function(po_up_r){
-    po_down_r_c = po_up_r.querySelectorAll("td,th");
-    if ( po_down_r_c.length !== 0 ) {
-        // team
-        po_down_team = po_down_r_c[1].querySelectorAll("A");
-        if ( po_down_team.length !== 0 ) {
-            po_down_team = po_down_team[0].getAttribute("href").replace("/wiki/","");
-            ret.forEach(function(retR,retI){
-                if ( retR.indexOf(po_down_team) !== -1 ) {
-                    _pstr = [parseInt(po_down_r_c[3].innerHTML),parseInt(po_down_r_c[4].innerHTML),parseInt(po_down_r_c[5].innerHTML),parseInt(po_down_r_c[6].innerHTML),parseInt(po_down_r_c[7].innerHTML)].join(",");
-                    _p_str = ret[retI].replace(");","");
-                    _p_str += ","+_pstr +");";
-                    ret[retI] = "playoff_" + _p_str;
-                }
-            });
-        }
+
+if ( po_down ) {
+    while (po_down.tagName !== "TABLE") {
+        po_down = po_down.nextElementSibling;
     }
-});
+    po_down.querySelectorAll("tr").forEach(function(po_up_r){
+        po_down_r_c = po_up_r.querySelectorAll("td,th");
+        if ( po_down_r_c.length !== 0 ) {
+            // team
+            po_down_team = po_down_r_c[1].querySelectorAll("A");
+            if ( po_down_team.length !== 0 ) {
+                po_down_team = po_down_team[0].getAttribute("href").replace("/wiki/","");
+                ret.forEach(function(retR,retI){
+                    if ( retR.indexOf(po_down_team) !== -1 ) {
+                        _pstr = [parseInt(po_down_r_c[3].innerHTML),parseInt(po_down_r_c[4].innerHTML),parseInt(po_down_r_c[5].innerHTML),parseInt(po_down_r_c[6].innerHTML),parseInt(po_down_r_c[7].innerHTML)].join(",");
+                        _p_str = ret[retI].replace(");","");
+                        _p_str += ","+_pstr +");";
+                        ret[retI] = "playoff_" + _p_str;
+                    }
+                });
+            }
+        }
+    });
+}
+
+//playout 2
+po_down = null;
+if ( document.querySelector("#Group_B") ) { po_down = document.querySelector("#Group_B").parentElement; }
+
+if ( po_down ) {
+    while (po_down.tagName !== "TABLE") {
+        po_down = po_down.nextElementSibling;
+    }
+    po_down.querySelectorAll("tr").forEach(function(po_up_r){
+        po_down_r_c = po_up_r.querySelectorAll("td,th");
+        if ( po_down_r_c.length !== 0 ) {
+            // team
+            po_down_team = po_down_r_c[1].querySelectorAll("A");
+            if ( po_down_team.length !== 0 ) {
+                po_down_team = po_down_team[0].getAttribute("href").replace("/wiki/","");
+                ret.forEach(function(retR,retI){
+                    if ( retR.indexOf(po_down_team) !== -1 ) {
+                        _pstr = [parseInt(po_down_r_c[3].innerHTML),parseInt(po_down_r_c[4].innerHTML),parseInt(po_down_r_c[5].innerHTML),parseInt(po_down_r_c[6].innerHTML),parseInt(po_down_r_c[7].innerHTML)].join(",");
+                        _p_str = ret[retI].replace(");","");
+                        _p_str += ","+_pstr +");";
+                        ret[retI] = "playoff_" + _p_str;
+                    }
+                });
+            }
+        }
+    });
+}
 
 console.clear();
 lastSeasonUsl = localStorage.usl ? JSON.parse(localStorage.usl) : [];

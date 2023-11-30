@@ -41,7 +41,7 @@
 					<button class="nav-link" id="div_c-tab" data-bs-toggle="tab" data-bs-target="#div_c" type="button" role="tab" aria-controls="div_c" aria-selected="true">Division C</button>
 				</li>
 				<li class="nav-item" role="presentation">
-					<button class="nav-link disabled" id="div_d-tab" data-bs-toggle="tab" data-bs-target="#div_d" type="button" role="tab" aria-controls="div_d" aria-selected="true">Division D</button>
+					<button class="nav-link " id="div_d-tab" data-bs-toggle="tab" data-bs-target="#div_d" type="button" role="tab" aria-controls="div_d" aria-selected="true">Division D</button>
 				</li>
 				<li class="nav-item" role="presentation">
 					<button class="nav-link disabled" id="div_e-tab" data-bs-toggle="tab" data-bs-target="#div_e" type="button" role="tab" aria-controls="div_e" aria-selected="true">Division E</button>
@@ -135,7 +135,7 @@
 					</table>
 
 				</div>
-				<div class="tab-pane fade" id="div_d" role="tabpanel" aria-labelledby="div_d-tab">Division D</div>
+				<div class="tab-pane fade" id="div_d" role="tabpanel" aria-labelledby="div_d-tab"><table class="division"><thead><th><abbr title="Position">#</abbr></th><th>Team</th><th><abbr title="Played">P</abbr></th><th><abbr title="Won">W</abbr></th><th><abbr title="Drawn">D</abbr></th><th><abbr title="Lost">L</abbr></th><th><abbr title="Goals For">F</abbr></th><th><abbr title="Goals Against">A</abbr></th><th><abbr title="Points">Pts</abbr></th><th><abbr title="Goal Difference">GD</abbr></th><th><abbr title="Win Percentage">W%</abbr></th><th><abbr title="Goals For Per Game">FPG</abbr></th><th><abbr title="Goals Conceded Per Game">APG</abbr></th><th><abbr title="Points Per Game">PPG</abbr></th></thead><tbody></tbody></table></div>
 				<div class="tab-pane fade" id="div_e" role="tabpanel" aria-labelledby="div_e-tab">Division E</div>
 				<div class="tab-pane fade" id="div_f" role="tabpanel" aria-labelledby="div_f-tab">Division F</div>
 				<div class="tab-pane fade" id="div_g" role="tabpanel" aria-labelledby="div_g-tab">Division G</div>
@@ -156,6 +156,22 @@
 		<script src="../../scripts.js"></script>
 		<script src="../../teams.js"></script>
 		<script>
+			flag = "CHE";
+country = "Switzerland";
+addTeam("Servette FC Genève","Servette_FC",16,3,7,73,41,0,"champion");
+addTeam("FC Basel","FC_Basel",14,5,7,48,40,0,"");
+addTeam("Lausanne Sports","Lausanne_Sports",12,8,6,57,35,0,"");
+addTeam("FC Chiasso","FC_Chiasso",13,5,8,45,39,0,"");
+addTeam("FC La Chaux-de-Fonds","FC_La_Chaux-de-Fonds",12,7,7,56,53,0,"");
+addTeam("FC Zürich","FC_Z%C3%BCrich",12,4,10,59,46,0,"");
+addTeam("FC Grenchen","FC_Grenchen",10,7,9,43,44,0,"");
+addTeam("AC Bellinzona","AC_Bellinzona",11,4,11,43,44,0,"");
+addTeam("FC Lugano","AC_Lugano",9,6,11,47,45,0,"");
+addTeam("Young Fellows Zürich","SC_Young_Fellows_Juventus",10,4,12,48,50,0,"");
+addTeam("FC Locarno","FC_Locarno",10,4,12,40,47,0,"");
+addTeam("FC Biel-Bienne","FC_Biel-Bienne",8,6,12,45,42,0,"");
+addTeam("FC St. Gallen","FC_St._Gallen",7,2,17,40,79,0,"removed");
+addTeam("FC Bern","FC_Bern",4,3,19,31,70,0,"removed");
 			flag = "FRA";
 country = "France";
 addTeam("Bordeaux","FC_Girondins_de_Bordeaux",21,9,4,88,40,0,"champion");

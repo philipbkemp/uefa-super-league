@@ -6,12 +6,15 @@ newTeams = [
 	"Harju_JK_Laagri",
 	"FC_Blau-Wei%C3%9F_Linz",
 	"Almere_City_FC",
-	"Puszcza_Niepołomice"
+	"Puszcza_Niepołomice",
+	"FC_Stade_Lausanne_Ouchy"
 ];
 if ( document.querySelector("#League_table") ) {
 	usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling;
 } else if ( document.querySelector("#Regular_season") ) {
 	usl = document.querySelector("#Regular_season").parentElement.nextElementSibling.nextElementSibling;
+} else if ( document.querySelector("#Table") ) {
+	usl = document.querySelector("#Table").parentElement.nextElementSibling.nextElementSibling;
 }
 switch ( window.location.href.split("/").pop().split("#")[0] ) {
 	case "2023%E2%80%9324_Kategoria_Superiore": 					flag = "ALB"; country = "Albania"; break;
@@ -33,6 +36,7 @@ switch ( window.location.href.split("/").pop().split("#")[0] ) {
 	case "2023%E2%80%9324_Scottish_Premiership":  				flag = "SCO"; country = "Scotland"; break;
 	case "2023%E2%80%9324_La_Liga": 										flag = "ESP"; country = "Spain"; break;
 	case "2023_Allsvenskan": 														flag = "SWE"; country = "Sweden"; break;
+	case "2023%E2%80%9324_Swiss_Super_League": 					flag = "CHE"; country = "Switzerland"; break;
 }
 if ( usl) {
 	usl = [usl];
@@ -66,28 +70,30 @@ if ( usl) {
 		_for = td[6].innerText;
 		_against = td[7].innerText;
 		_deduct = 0;
-		if ( deduct.indexOf(r) !== -1 ) {
-			_deduct = prompt("How many points are deducted from " + _teamName);
+		if ( _won !== "W" && _won !== "" ) {
+			if ( deduct.indexOf(r) !== -1 ) {
+				_deduct = prompt("How many points are deducted from " + _teamName);
+			}
+			_classes = [];
+			/*if ( r === 1 ) {
+				_classes.push("champion");
+			}
+			if ( removed.indexOf(r+"") !== -1 ) {
+				_classes.push("removed");
+			}
+			if ( deduct.indexOf(r) !== -1 ) {
+				_classes.push("deduction");
+			}*/
+			_classes.push("inprogress");
+			str = '';
+			if ( newTeams.indexOf(_teamWiki) !== -1 ) {
+				str += "addTeamN(";
+			} else {
+				str += "addTeam(";
+			}
+			str += '"'+_teamName+'","'+_teamWiki+'",'+_won+','+_drawn+','+_lost+','+_for+','+_against+','+_deduct+',"'+_classes.join("|")+'");';
+			ret.push(str);
 		}
-		_classes = [];
-		/*if ( r === 1 ) {
-			_classes.push("champion");
-		}
-		if ( removed.indexOf(r+"") !== -1 ) {
-			_classes.push("removed");
-		}
-		if ( deduct.indexOf(r) !== -1 ) {
-			_classes.push("deduction");
-		}*/
-		_classes.push("inprogress");
-		str = '';
-		if ( newTeams.indexOf(_teamWiki) !== -1 ) {
-			str += "addTeamN(";
-		} else {
-			str += "addTeam(";
-		}
-		str += '"'+_teamName+'","'+_teamWiki+'",'+_won+','+_drawn+','+_lost+','+_for+','+_against+','+_deduct+',"'+_classes.join("|")+'");';
-		ret.push(str);
 	}
 }
 console.clear();

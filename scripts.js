@@ -778,7 +778,6 @@ function hm() {
 		console.error("Division E needs to be enabled");
 	} else if ( dn > 300 && document.querySelector("#div_d-tab").classList.contains("disabled") ) {
 		console.error("Division D needs to be enabled");
-		console.warn('<div class="tab-pane fade" id="div_d" role="tabpanel" aria-labelledby="div_d-tab"><table class="division"><thead><th><abbr title="Position">#</abbr></th><th>Team</th><th><abbr title="Played">P</abbr></th><th><abbr title="Won">W</abbr></th><th><abbr title="Drawn">D</abbr></th><th><abbr title="Lost">L</abbr></th><th><abbr title="Goals For">F</abbr></th><th><abbr title="Goals Against">A</abbr></th><th><abbr title="Points">Pts</abbr></th><th><abbr title="Goal Difference">GD</abbr></th><th><abbr title="Win Percentage">W%</abbr></th><th><abbr title="Goals For Per Game">FPG</abbr></th><th><abbr title="Goals Conceded Per Game">APG</abbr></th><th><abbr title="Points Per Game">PPG</abbr></th></thead><tbody></tbody></table></div>');
 	} else if ( dn > 200 && document.querySelector("#div_c-tab").classList.contains("disabled") ) {
 		console.error("Division C needs to be enabled");
 	} else if ( dn > 100 && document.querySelector("#div_b-tab").classList.contains("disabled") ) {

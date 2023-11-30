@@ -31,12 +31,13 @@ usl.forEach(function(uslItem){
     r = Array.from(uslItem.querySelectorAll("tr"));
     r.forEach(function(row){rows.push(row);});
 });
-flag = "FRA";//prompt("Please enter country code:").toUpperCase();
+flag = "CHE";//prompt("Please enter country code:").toUpperCase();
 country = "";
 switch (flag) {
     case "ALB": country = "Albania"; break;
     case "AUT": country = "Austria"; break;
     case "BEL": country = "Belgium"; break;
+    case "CHE": country = "Switzerland"; break;
     /*case "CSK": country = "Czechoslovakia"; break;*/
     case "DNK": country = "Denmark"; break;
     /*case "EIR": country = "Ireland"; break;*/
