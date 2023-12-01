@@ -652,7 +652,10 @@ function addWinner(_url,_year,_club,_wiki,_name,_flag,_country) {
 		tbody.appendChild(row);
 	});
 
-    console.log( document.querySelector(".winners tbody").innerHTML );
+	output = document.querySelector(".winners tbody").innerHTML.trim().split("<tr><td>");
+	output = output.join("\n<tr><td>");
+
+    console.log( output );
 }
 
 function moveNew(target,count) {
