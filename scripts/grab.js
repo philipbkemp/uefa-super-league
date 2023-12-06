@@ -31,7 +31,7 @@ usl.forEach(function(uslItem){
     r = Array.from(uslItem.querySelectorAll("tr"));
     r.forEach(function(row){rows.push(row);});
 });
-flag = "CYP";//prompt("Please enter country code:").toUpperCase();
+flag = "PRT";//prompt("Please enter country code:").toUpperCase();
 country = "";
 switch (flag) {
     case "ALB": country = "Albania"; break;
@@ -58,6 +58,7 @@ switch (flag) {
     case "NIR": country = "Northern Ireland"; break;
     case "NLD": country = "Netherlands"; break;
     case "POL": country = "Poland"; break;
+    case "PRT": country = "Portugal"; break;
     case "ROU": country = "Romania"; break;
     case "SCO": country = "Scotland"; break;
     case "SWE": country = "Sweden"; break;

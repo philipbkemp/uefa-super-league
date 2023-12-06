@@ -7,7 +7,8 @@ newTeams = [
 	"FC_Blau-Wei%C3%9F_Linz",
 	"Almere_City_FC",
 	"Puszcza_Niepołomice",
-	"FC_Stade_Lausanne_Ouchy"
+	"FC_Stade_Lausanne_Ouchy",
+	"C.F._Estrela_da_Amadora"
 ];
 if ( document.querySelector("#League_table") ) {
 	usl = document.querySelector("#League_table").parentElement.nextElementSibling.nextElementSibling;
