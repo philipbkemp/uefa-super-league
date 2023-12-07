@@ -30,6 +30,11 @@ function addTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
 }
 
 function addTeamN(name,wiki,_w,_d,_l,_f,_a,deduct,classes) {
+	wiki = wiki.replaceAll("'","%27");
+	existingClub = document.querySelectorAll("a[data-wiki='"+wiki+"']");
+	if ( existingClub.length === 1 ) {
+		return;
+	}
 	newTeam(name,wiki,_w,_d,_l,_f,_a,deduct,classes,"NEW");
 }
 

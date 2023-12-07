@@ -24,5 +24,6 @@ THIS SEASON:
 			add 'promoted' to clubs in DIV below to reach 100
 	releatePromote() should give 100 for each DIV except last one
 	getWinner() and paste into club and nation winning pages
+	Is the NOTES tab needed?
 	nextSeason():
 		Copy each DIV to NEXT SEASON
