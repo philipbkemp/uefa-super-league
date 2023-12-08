@@ -19,9 +19,11 @@ THIS SEASON:
 	moveNew(a,100); -> as needed, repeating sort() and store()
 	Removed JS script block
 	relegatePromote():
-		for each DIV:
-			if 100-90: add 'relegated' until 90
-			add 'promoted' to clubs in DIV below to reach 100
+		DIV 1:
+			"relegated" until D1= 90
+		DIV 2:
+			"promoted" until D1= 100
+		repeat
 	releatePromote() should give 100 for each DIV except last one
 	getWinner() and paste into club and nation winning pages
 	Is the NOTES tab needed?
